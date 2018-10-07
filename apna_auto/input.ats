@@ -1,0 +1,15 @@
+FiniteAutomaton nfa = (
+    alphabet = {"x < 0" "x >= 0" "x = (-1)" "x = 1" "x == 0"},
+    states = {"q0" "q1" "q2" "q3" "qerr"},
+    initialStates = {"q0"},
+    finalStates = {"qerr"},
+    transitions = {
+        ("q0" "x < 0" "q2")
+        ("q2" "x = (-1)" "q3")
+        ("q0" "x >= 0" "q1")
+        ("q1" "x = 1" "q3")
+        ("q3" "x == 0" "qerr")
+    }
+);
+
+print(getAcceptedWord(nfa));
