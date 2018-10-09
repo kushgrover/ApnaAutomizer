@@ -7,7 +7,7 @@ file = open("temp.txt", "r")
 p = "print(getAcceptedWord(nfa))"
 k = ""
 while p not in k:
-	k = file.readline()
+    k = file.readline()
 s = file.readline()
 f = [line for line in [line.strip() for line in s.split("\"")] if line]
 print f
