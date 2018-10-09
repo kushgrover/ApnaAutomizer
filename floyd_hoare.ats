@@ -6,5 +6,14 @@ FiniteAutomaton nfa1 = (
      transitions = {
          (q0 "x = 0" q0)
          (q0 "y = 0" q1)
+         (q0 "x = 0" q0)
+         (q0 "y = 0" q0)
+         (q0 "x = 0" q1)
+         (q0 "y = 0" q1)
+         (q1 "x = 0" q0)
+         (q1 "y = 0" q0)
+         (q1 "x = 0" q1)
+         (q1 "y = 0" q1)
      }
-);print(getAcceptedWord(nfa1));
+);
+print(getAcceptedWord(nfa1));

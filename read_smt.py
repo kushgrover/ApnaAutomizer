@@ -1,3 +1,6 @@
+from mathsat import *
+from collections import OrderedDict
+
 def floyd_hoare(trace):
 	smt_f = open("example_interpolants.smt", "r")
 
@@ -7,7 +10,6 @@ def floyd_hoare(trace):
 	for line in smt_f:
 		if line.startswith("(assert"):
 			interpolants.append(line)
-
 	print "interpolants read : "+str(interpolants)
 
 	if len(trace) == (len(interpolants)-1):
@@ -16,7 +18,7 @@ def floyd_hoare(trace):
 		print "problem : number of interpolants "+str(len(interpolants))+" mismatches number of transition "+str(len(trace))
 
 
-	new_ats_tr = []
+	new_ats_tr = []	#transition list in new floyd-hoare automaton
 	it_ip=1
 	state_count = 0
 	for transition in trace:
@@ -26,6 +28,16 @@ def floyd_hoare(trace):
 			new_ats_tr.append("q"+str(state_count)+" \""+transition+"\" "+"q"+str(state_count+1))
 			state_count += 1
 		it_ip += 1
+
+	interpolants = list(OrderedDict.fromkeys(interpolants))
+
+	for pre_state_no, pre_state in enumerate(interpolants):	#most "unsmart" way to get all hoare triples
+		for post_state_no, post_state in enumerate(interpolants):
+			for transition in trace:
+				if is_valid_hoare_triple(pre_state,transition,post_state):
+					new_ats_tr.append("q"+str(pre_state_no)+" \""+transition+"\" "+"q"+str(post_state_no))
+
+
 
 	alphabet = set(trace)
 
@@ -53,12 +65,26 @@ def floyd_hoare(trace):
 		new_ats.write("         ("+transition+")\n")
 
 	new_ats.write("     }\n")
-	new_ats.write(");")
+	new_ats.write(");\n")
 	new_ats.write("print(getAcceptedWord(nfa1));")
 
 
 
-		
+def is_valid_hoare_triple(pre,f,post):
+	#implement this
+	#pre and post are msat declare types
+	#f is of form in which they are in ats file transitions
+	cfg = msat_create_config()
+	env = msat_create_env(cfg)
+
+	return True
+
+
+
+
+
+
+
 tr = ["x = 0", "y = 0"]#, "x = x + 1", "x = (-1)"]
 
 floyd_hoare(tr)
