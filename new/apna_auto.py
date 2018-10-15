@@ -1,8 +1,10 @@
 import os
 from timestamp import *
 from mathsat import *
+from read_smt import *
+# import make_hoare_automaton
 
-os.system("/home/arijit/verification/UAutomizer-linux/Ultimate -tc AutomataScriptInterpreter.xml -i input.ats > temp.txt")
+os.system("/home/hydra/Downloads/UltimateAutomizer-linux/UAutomizer-linux/Ultimate -tc AutomataScriptInterpreter.xml -i input.ats > temp.txt")
 file = open("temp.txt", "r")
 p = "print(getAcceptedWord(nfa))"
 k = ""
@@ -10,6 +12,7 @@ while p not in k:
     k = file.readline()
 s = file.readline()
 f = [line for line in [line.strip() for line in s.split("\"")] if line]
+file.close()
 print f
 
 # f=[]
@@ -36,8 +39,8 @@ for j in range(len(f)):
     f[j]=time_stamp(f[j],vars,time)
 
 for j in range(len(vars)):
-    for k in range(time[j]):
-        d = msat_declare_function(env, vars[j]+str(k+1), int_tp)
+    for k in range(time[j]+1):
+        d = msat_declare_function(env, vars[j]+"_"+str(k+1), int_tp)
         assert(not(MSAT_ERROR_DECL(d)))
 
 for j in range(len(f)):
@@ -45,8 +48,8 @@ for j in range(len(f)):
     print f[j]
     assert(not(MSAT_ERROR_TERM(formula[j])))
 
-filename="temp.smt2"
-file=open(filename,"w")
+# filename="temp.txt"
+# file=open(filename,"w")
 
 
 group=[]
@@ -59,14 +62,30 @@ for j in range(len(f)):
 res=msat_solve(env)
 assert(res==MSAT_UNSAT)
 ga=[]
+itp=[]
+itp.append(msat_from_string(env,"true"))
 for j in range(len(f)):
     ga.append(group[j])
-    itp=msat_get_interpolant(env, ga)
-    assert(not(MSAT_ERROR_TERM(itp)))
-    s=msat_to_smtlib2(env,itp)
-    file.write(s)
+    itp.append(msat_get_interpolant(env, ga))
+    assert(not(MSAT_ERROR_TERM(itp[j])))
 
+for j in range(len(itp)):
+    print "itp"+str(j)+"="+msat_to_smtlib2_term(env,itp[j])
 
+file=open("input.ats","r")
+p = "print(getAcceptedWord(nfa))"
+k = ""
+while p not in k:
+    k = file.readline()
+    if("alphabet" in k):
+        n=k.find("{")
+        m=k.find("}")
+        alphabet=k[n+2:m-1]
+        alphabet=alphabet.split('" "')
+
+floyd_hoare(env,alphabet,itp)
+    # s=msat_to_smtlib2_term(env,itp[j])
+    # file.write(s)
 
 
 # group_a=msat_create_itp_group(env)
@@ -93,5 +112,4 @@ for j in range(len(f)):
 
 file.close()
 
-
-
+os.system("rm temp.txt")

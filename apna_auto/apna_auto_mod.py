@@ -2,7 +2,7 @@ import os
 from timestamp import *
 from mathsat import *
 
-os.system("/home/arijit/verification/UAutomizer-linux/Ultimate -tc AutomataScriptInterpreter.xml -i input.ats > temp.txt")
+os.system("/home/hydra/Downloads/UltimateAutomizer-linux/UAutomizer-linux/Ultimate -tc AutomataScriptInterpreter.xml -i input.ats > temp.txt")
 file = open("temp.txt", "r")
 p = "print(getAcceptedWord(nfa))"
 k = ""
@@ -45,7 +45,7 @@ for j in range(len(f)):
     print f[j]
     assert(not(MSAT_ERROR_TERM(formula[j])))
 
-filename="temp.smt2"
+filename="temp.txt"
 file=open(filename,"w")
 
 
@@ -94,4 +94,18 @@ for j in range(len(f)):
 file.close()
 
 
+
+def runner():
+    while not verification_done:
+        tr = generate_trace("input.ats")
+        if (tr == []):
+            verification_done = True
+            print "Verification Successful"
+        else:
+            itp = get_interpolant(tr) #itp of msat type?
+            floyd_hoare(itp,"floyd_hoare.ats")
+            res = cover_check("input.ats", "floyd_hoare.ats")     #this modifies input.ats too, as input \ floyd_hoare)
+            if res:
+                verification_done = True
+                print "Verification Failed"
 
