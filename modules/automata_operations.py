@@ -26,7 +26,7 @@ def execute_automatascript(ats_file, result, operation, iteration = 0):
 	with open("apna_ats.ats", "a") as ats:
 		ats.write("\n")
 		if(operation == "trace"):
-			print "[DEBUG] fyck"
+			print "[DEBUG] fcck"
 			ats.write("print(getAcceptedWord(nfa));\n\n")
 		if(operation == "subset"):
 			ats.write("print(isEmpty(intersect(complement(nfa), fha_"+str(iteration)+")));")

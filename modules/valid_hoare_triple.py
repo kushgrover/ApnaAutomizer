@@ -68,65 +68,86 @@ def current_time(var,pre,post,num):
         var_new=var
     return var_new        
 
-def is_valid_hoare_triple(env,pre,string,post):
+def is_valid_hoare_triple(env,pre,statement,post):
 	#implement this
 	#pre and post are msat declare types
 	#f is of form in which they are in ats file transitions
     int_tp = msat_get_integer_type(env)
 
-    for var in find_vars(string):
+    # declare all the variables in statement
+    for var in find_vars(statement):
         d = msat_declare_function(env, var, int_tp)
         assert(not(MSAT_ERROR_DECL(d)))
-    for j in range(len(string)):
-        if(string[j]==" "):
+
+    # break statement into lhs, operator and rhs 
+    for j in range(len(statement)):
+        if(statement[j]==" "):
             k=j
-            lhs=string[0:j]
+            lhs=statement[0:j]
             break
-    for j in range(k+1,len(string)):
-        if(string[j]==" "):
-            operator=string[k+1:j]
-            rhs=string[j+1:len(string)]
+    for j in range(k+1,len(statement)):
+        if(statement[j]==" "):
+            operator=statement[k+1:j]
+            rhs=statement[j+1:len(statement)]
+
+    # checking if operator is assignment then adding time stamps to lhs
     if(operator=="="):
         lhs=current_time(lhs,pre,post,0)
     else:
         lhs=current_time(lhs,pre,post,1)
+
+    # adding time stamps in rhs
     for var in find_vars(rhs):
         if(var_in(pre,var)):
+            print "[DEBUG] lode lag gaye"
             rhs=replace_with_time(rhs, pre, var)
         elif(var_in(post,var)):
+            print "[DEBUG] lode nahi lage"
             rhs=replace_with_time(rhs, post, var)
+
+    # replacing "==" by "="
     if(operator=="=="):
         operator="="
-    f="("+operator+" "+lhs+" "+infix_to_prefix(rhs)+")"
+    
+    # writing statement in smtlib2 term
+    statement="("+operator+" "+lhs+" "+infix_to_prefix(rhs)+")"
 
+    # for Debugging
+    print "[DEBUG] check Hoare Triple : {"+pre+"} "+statement+" {"+post+"}"
+
+    # push
     msat_push_backtrack_point(env)
 
-    f=msat_from_string(env,f)
-    assert(not(MSAT_ERROR_TERM(f)))
+    # creating msat terms from pre, statement, post
+    statement=msat_from_string(env,statement)
+    assert(not(MSAT_ERROR_TERM(statement)))
     pre=msat_from_string(env,pre)
     assert(not(MSAT_ERROR_TERM(pre)))
     post=msat_from_string(env,post)
     assert(not(MSAT_ERROR_TERM(post)))
 
-    res=msat_assert_formula(env, msat_make_and(env, pre, f))
+    # asserting (pre) and (statement) and (not (post))
+    res=msat_assert_formula(env, pre)
+    assert(res==0)
+    res=msat_assert_formula(env, statement)
     assert(res==0)
     res=msat_assert_formula(env,msat_make_not(env,post) )
     assert(res==0)
 
+    for madarchod in msat_get_asserted_formulas(env):
+        print "assetrion formula "+msat_to_smtlib2_term(env,madarchod)
+
+    # if env is SAT then return False else return True
     res=msat_solve(env)
-    madarchod=msat_get_asserted_formulas(env)
-    for j in range(len(madarchod)):
-        print "stack"+str(j)+"= "+msat_to_smtlib2_term(env,madarchod[j])
     if(res==MSAT_SAT):
-        print False
+        print "[DEBUG] Hoare Triple is NOT valid."
+
+        # pop
         msat_pop_backtrack_point(env)
-        # res=msat_reset_env(env)
-        # assert(res==0)
     	return False
     else:
-        print True
+        print "[DEBUG] Hoare Triple is valid."
+
+        #pop
         msat_pop_backtrack_point(env)
-        # res=msat_reset_env(env)
-        # assert(res==0)
         return True
-    # msat_pop_backtrack_point(env)

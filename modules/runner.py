@@ -19,7 +19,7 @@ def runner(program_ats):
     alp = automata_operations.getalphabet(input_file)
     while not verification_done:
         iteration += 1
-        print"[DEBUG] iteration count = "+ str(iteration)
+        print"\n\n[DEBUG] iteration count = "+ str(iteration)
         tr = gentrace.generate_trace(input_file)
         print "[DEBUG] Trace generated : "+str(tr)
         if (tr == []):
