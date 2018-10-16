@@ -29,7 +29,7 @@ def runner(program_ats):
             (env,itp) = geninterpolants.get_interpolant(tr) #itp of msat type. env is the environment
             hoare_automaton.floyd_hoare(env,alp,itp,input_file,iteration)
             res = automata_operations.cover_check(input_file, iteration)     #this modifies input_file too, as input \ floyd_hoare
-            #slice_automaton(input_file)   #Do we need this?
+            #slice_automaton(input_file)   #Do we need this? No.
             if res:
                 verification_done = True
                 print "Verification Failed"

@@ -2,7 +2,8 @@
 from timestamp import infix_to_prefix
 from mathsat import *
 
-def replace_with_time(formula, according_to, variable):
+# function to replace time stamp of 'variable' in 'formula' according to 'according_to' 
+def replace_with_time(formula, according_to, variable): 
     n=according_to.find(variable)
     if(n==-1):
         return formula
@@ -20,6 +21,7 @@ def replace_with_time(formula, according_to, variable):
     else:
         print "error"
 
+# function to check if 'var' is a variable in 'string'
 def var_in(string, var):
     n=string.find(var)
     if(string[n+len(var)]=="_"):
@@ -27,6 +29,7 @@ def var_in(string, var):
     else:
         return False
 
+# return the list of all the variables in 'string'
 def find_vars(string):
     string=string.replace("(","")
     string=string.replace(")","")
@@ -45,6 +48,11 @@ def find_vars(string):
             var.pop(j)
     return var
 
+# returns 'new_var' with current appropriate time stamp
+# num=0 means assignment operator
+# eg: pre = "< x_1 0" , post = "= x_2 0" , var = "x" , num = 0
+# then returns "x_2"
+# if num = 1 then returns "x_1"
 def current_time(var,pre,post,num):
     if(var_in(pre,var)):
         var_new=replace_with_time(var,pre,var)
@@ -69,8 +77,6 @@ def is_valid_hoare_triple(env,pre,string,post):
     for var in find_vars(string):
         d = msat_declare_function(env, var, int_tp)
         assert(not(MSAT_ERROR_DECL(d)))
-    # d = msat_declare_function(env, "x_3", int_tp)
-    # assert(not(MSAT_ERROR_DECL(d)))
     for j in range(len(string)):
         if(string[j]==" "):
             k=j
@@ -102,16 +108,25 @@ def is_valid_hoare_triple(env,pre,string,post):
     post=msat_from_string(env,post)
     assert(not(MSAT_ERROR_TERM(post)))
 
-    result=msat_assert_formula(env, msat_make_and(env, pre, f))
-    assert(result==0)
+    res=msat_assert_formula(env, msat_make_and(env, pre, f))
+    assert(res==0)
     res=msat_assert_formula(env,msat_make_not(env,post) )
     assert(res==0)
 
     res=msat_solve(env)
+    madarchod=msat_get_asserted_formulas(env)
+    for j in range(len(madarchod)):
+        print "stack"+str(j)+"= "+msat_to_smtlib2_term(env,madarchod[j])
     if(res==MSAT_SAT):
         print False
+        msat_pop_backtrack_point(env)
+        # res=msat_reset_env(env)
+        # assert(res==0)
     	return False
     else:
         print True
+        msat_pop_backtrack_point(env)
+        # res=msat_reset_env(env)
+        # assert(res==0)
         return True
-    msat_pop_backtrack_point(env)
+    # msat_pop_backtrack_point(env)

@@ -36,7 +36,7 @@ def get_interpolant(f):
     # filename="temp.txt"
     # file=open(filename,"w")
 
-
+    msat_push_backtrack_point(env)
     group=[]
     for j in range(len(f)):
         group.append(msat_create_itp_group(env))
@@ -57,6 +57,6 @@ def get_interpolant(f):
     for j in range(len(itp)):
         print "itp"+str(j)+"="+msat_to_smtlib2_term(env,itp[j])
 
-
+    msat_pop_backtrack_point(env)
 
     return (env,itp)
