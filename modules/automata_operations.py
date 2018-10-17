@@ -21,17 +21,16 @@ def getalphabet(ats_file):		#what is this doing exactly? seems more complicated 
 
 # automata library execution is hardcoded. need to install and change properly.
 def execute_automatascript(ats_file, result, operation, iteration):
-	os.system("cp "+ats_file+" apna_ats.ats")
+	os.system("cp "+ats_file+" temp/apna_ats.ats")
 
-	with open("apna_ats.ats", "a") as ats:
+	with open("temp/apna_ats.ats", "a") as ats:
 		ats.write("\n")
 		if(operation == "trace"):
-			print "[DEBUG] fyck"
 			ats.write("print(getAcceptedWord(nfa_"+str(iteration)+"));\n\n")
 		if(operation == "subset"):
 			ats.write("print(isEmpty(nfa_"+str(iteration)+"));")
 	#os.system("/home/hydra/Downloads/UltimateAutomizer-linux/UAutomizer-linux/Ultimate -tc AutomataScriptInterpreter.xml -i "+ ats_file + " > temp.txt")
-	os.system("/home/arijit/verification/UAutomizer-linux/Ultimate -tc AutomataScriptInterpreter.xml -i apna_ats.ats > "+result)
+	os.system("/home/arijit/verification/UAutomizer-linux/Ultimate -tc AutomataScriptInterpreter.xml -i ./temp/apna_ats.ats > ./temp/"+result)
 
 
 
@@ -62,7 +61,7 @@ def cover_check(first_file, iteration): #checks first subset second
 
 	#keep fail check
 
-	file = open("temp.txt", "r")
+	file = open("temp/temp.txt", "r")
 
 	p = "print(isEmpty("
 
@@ -73,7 +72,7 @@ def cover_check(first_file, iteration): #checks first subset second
 
 	s = file.readline()
 
-	if "ture" in s:
+	if "true" in s:
 		return True
 	else:
 		return False

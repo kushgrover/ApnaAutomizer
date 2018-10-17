@@ -1,8 +1,8 @@
 from mathsat import *
 from collections import OrderedDict
-from library.valid_hoare_triple import is_valid_hoare_triple
+from valid_hoare_triple import is_valid_hoare_triple
 
-def floyd_hoare(env,alpha,interpolants,ats_file,iter_c):
+def floyd_hoare(env,alpha,interpolants):
 
 	new_ats_tr = []	#transition list in new floyd-hoare automaton
 
@@ -23,9 +23,9 @@ def floyd_hoare(env,alpha,interpolants,ats_file,iter_c):
 
 	alphabet = set(alpha)
 
-	new_ats =  open(ats_file, "a")
+	new_ats =  open("floyd_hoare.ats", "w")
 
-	new_ats.write("\nFiniteAutomaton fha_"+str(iter_c)+" = (\n")
+	new_ats.write("FiniteAutomaton nfa1 = (\n")
 
 	s = "     alphabet = {"
 	for letter in alphabet:
@@ -49,7 +49,7 @@ def floyd_hoare(env,alpha,interpolants,ats_file,iter_c):
 
 	new_ats.write("     }\n")
 	new_ats.write(");\n")
-	# new_ats.write("print(getAcceptedWord(nfa1));")
+	new_ats.write("print(getAcceptedWord(nfa1));")
 
 
 # tr = ["x = 0", "y = 0", "x = x + 1", "x == (-1)"]

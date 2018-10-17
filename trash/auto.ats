@@ -1,0 +1,13 @@
+FiniteAutomaton nfa1 = (
+    alphabet = {"x=0" "y=0" "x++" "x==-1" "y==-1"},
+    states = {"l0" "l1" "l2" "lerr"},
+    initialStates = {"l0"},
+    finalStates = {"lerr"},
+    transitions = {
+        ("l0" "x=0" "l1")
+        ("l1" "y=0" "l2")
+        ("l2" "x++" "l2")
+        ("l2" "x==-1" "lerr")
+        ("l2" "y==-1" "lerr")
+    }
+)

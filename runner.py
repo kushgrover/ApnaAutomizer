@@ -1,9 +1,9 @@
 import os
 import sys
-import gentrace
-import geninterpolants
-import hoare_automaton
-import automata_operations
+import modules.gentrace as gentrace 
+import modules.geninterpolants as geninterpolants
+import modules.hoare_automaton as hoare_automaton
+import modules.automata_operations as automata_operations
 
 #input_file is program automaton
 #automaton must be named "nfa" ()
@@ -14,8 +14,8 @@ def runner(program_ats):
     # fha = "floyd_hoare.ats"
     iteration = 0
     verification_done = False
-    input_file = "input.ats"
-    os.system("cp "+program_ats+" "+input_file)
+    input_file = "temp/input.ats"
+    os.system("cp "+program_ats+" ./"+input_file)
     alp = automata_operations.getalphabet(input_file)
     while not verification_done:
         print"[DEBUG] iteration count = "+ str(iteration)

@@ -1,4 +1,4 @@
-FiniteAutomaton nfa = (
+FiniteAutomaton nfa_0 = (
     alphabet = {"x < 0" "x >= 0" "x = (-1)" "x = 1" "x == 0"},
     states = {"q0" "q1" "q2" "q3" "qerr"},
     initialStates = {"q0"},
@@ -25,22 +25,19 @@ FiniteAutomaton fha_1 = (
          (q1 "x < 0" q1)
          (q0 "x < 0" q1)
          (q1 "x >= 0" q1)
-         (q0 "x >= 0" q1)
          (q1 "x = (-1)" q1)
-         (q0 "x = (-1)" q1)
          (q1 "x = 1" q1)
          (q0 "x = 1" q1)
          (q1 "x == 0" q1)
-         (q0 "x == 0" q1)
          (q2 "x < 0" q2)
-         (q1 "x < 0" q2)
          (q2 "x >= 0" q2)
-         (q1 "x >= 0" q2)
          (q2 "x = (-1)" q2)
-         (q1 "x = (-1)" q2)
          (q2 "x = 1" q2)
-         (q1 "x = 1" q2)
          (q2 "x == 0" q2)
          (q1 "x == 0" q2)
      }
 );
+
+FiniteAutomaton nfa_1 = intersect(nfa_0,complement(fha_1));
+
+print(isEmpty(nfa_1));

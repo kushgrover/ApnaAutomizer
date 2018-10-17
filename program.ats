@@ -1,4 +1,4 @@
-FiniteAutomaton nfa = (
+FiniteAutomaton nfa_0 = (
     alphabet = {"x < 0" "x >= 0" "x = (-1)" "x = 1" "x == 0"},
     states = {"q0" "q1" "q2" "q3" "qerr"},
     initialStates = {"q0"},

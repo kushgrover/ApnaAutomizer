@@ -1,51 +1,41 @@
-from library.timestamp import *
+from timestamp import *
 from mathsat import *
-from library.formula_translator import *
+from formula_translator import *
 
 
 def get_interpolant(f):
     vars=[]
     time=[]
 
-    # create config
     cfg = msat_create_config()
-
-    # enable interpolation support 
-    msat_set_option(cfg, "interpolation", "true")       
-    
-    # create environment
+    msat_set_option(cfg, "interpolation", "true")       #   enable interpolation support 
     env = msat_create_env(cfg)
     assert(not(MSAT_ERROR_ENV(env)))
-    # destroy config
     msat_destroy_config(cfg)
 
     int_tp = msat_get_integer_type(env)
-    # paramtps = []
-    # paramtps.append(int_tp)
-    # func_tp = msat_get_function_type(env, paramtps, int_tp)
+    paramtps = []
+    paramtps.append(int_tp)
+    func_tp = msat_get_function_type(env, paramtps, int_tp)
 
-    # adding time stamp to all formulas in the trace accordingly
+    formula=[]
     for j in range(len(f)):
         f[j]=time_stamp(f[j],vars,time)
 
-    # declaring all the variables with possible time stamps 
     for j in range(len(vars)):
         for k in range(time[j]+1):
-            d = msat_declare_function(env, vars[j]+"_"+str(k+1), int_tp) #did_changes
-            # print "[DEBUG] var declared in msat : "+vars[j]+str(k+1)
+            d = msat_declare_function(env, vars[j]+"_"+str(k+1), int_tp)
             assert(not(MSAT_ERROR_DECL(d)))
 
-    # creating mathsat terms from trace
-    formula=[]
     for j in range(len(f)):
         formula.append(msat_from_string(env, f[j]))
-        print "cool"+str(f[j])
+        print f[j]
         assert(not(MSAT_ERROR_TERM(formula[j])))
 
-    # push
-    msat_push_backtrack_point(env)
+    # filename="temp.txt"
+    # file=open(filename,"w")
 
-    # Find interpolants between all consecutives statements in trace
+
     group=[]
     for j in range(len(f)):
         group.append(msat_create_itp_group(env))
@@ -63,11 +53,9 @@ def get_interpolant(f):
         itp.append(msat_get_interpolant(env, ga))
         assert(not(MSAT_ERROR_TERM(itp[j])))
 
-    # for Debugging
-    # for j in range(len(itp)):
-        # print "[DEBUG] Found interpolant "+str(j)+" : "+msat_to_smtlib2_term(env,itp[j])
-    
-    # pop
-    msat_pop_backtrack_point(env)
+    for j in range(len(itp)):
+        print "itp"+str(j)+"="+msat_to_smtlib2_term(env,itp[j])
+
+
 
     return (env,itp)

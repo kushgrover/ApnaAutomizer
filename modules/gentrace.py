@@ -7,8 +7,8 @@ def generate_trace(input_file,iteration):
 
     automata_operations.execute_automatascript(input_file, "temp.txt", "trace",iteration)
 
-    file = open("temp.txt", "r")
-    p = "print(getAcceptedWord(nfa))"
+    file = open("temp/temp.txt", "r")
+    p = "print(getAcceptedWord(nfa"
     k = ""
     while p not in k:
         k = file.readline()
