@@ -2,10 +2,10 @@ import os
 import automata_operations
 
 
-def generate_trace(input_file):
+def generate_trace(input_file,iteration):
 
 
-    automata_operations.execute_automatascript(input_file, "temp.txt", "trace")
+    automata_operations.execute_automatascript(input_file, "temp.txt", "trace",iteration)
 
     file = open("temp.txt", "r")
     p = "print(getAcceptedWord(nfa))"

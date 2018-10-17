@@ -18,10 +18,10 @@ def runner(program_ats):
     os.system("cp "+program_ats+" "+input_file)
     alp = automata_operations.getalphabet(input_file)
     while not verification_done:
-        iteration += 1
         print"[DEBUG] iteration count = "+ str(iteration)
-        tr = gentrace.generate_trace(input_file)
+        tr = gentrace.generate_trace(input_file,iteration)
         print "[DEBUG] Trace generated : "+str(tr)
+        iteration += 1
         if (tr == []):
             verification_done = True
             print "Verification Successful"
