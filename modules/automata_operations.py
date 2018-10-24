@@ -29,8 +29,8 @@ def execute_automatascript(ats_file, result, operation, iteration):
 			ats.write("print(getAcceptedWord(nfa_"+str(iteration)+"));\n\n")
 		if(operation == "subset"):
 			ats.write("print(isEmpty(nfa_"+str(iteration)+"));")
-	#os.system("/home/hydra/Downloads/UltimateAutomizer-linux/UAutomizer-linux/Ultimate -tc AutomataScriptInterpreter.xml -i "+ ats_file + " > temp.txt")
-	os.system("/home/arijit/verification/UAutomizer-linux/Ultimate -tc AutomataScriptInterpreter.xml -i ./temp/apna_ats.ats > ./temp/"+result)
+	os.system("/home/hydra/Downloads/UltimateAutomizer-linux/UAutomizer-linux/Ultimate -tc AutomataScriptInterpreter.xml -i ./temp/apna_ats.ats > ./temp/"+result)
+	# os.system("/home/arijit/verification/UAutomizer-linux/Ultimate -tc AutomataScriptInterpreter.xml -i ./temp/apna_ats.ats > ./temp/"+result)
 
 
 

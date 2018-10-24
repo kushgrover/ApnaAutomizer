@@ -1,0 +1,10 @@
+FiniteAutomaton nfa_0 = (
+    alphabet = {"x = 1" "x != 0"},
+    states = {"q0" "q1" "qerr"},
+    initialStates = {"q0"},
+    finalStates = {"qerr"},
+    transitions = {
+        ("q0" "x = 1" "q1")
+        ("q1" "x != 0" "qerr")
+    }
+);

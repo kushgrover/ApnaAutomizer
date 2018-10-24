@@ -14,8 +14,10 @@ def floyd_hoare(env,alpha,interpolants,ats_file,iter_c):
 		for letter in alpha:
 			state_string=msat_to_smtlib2_term(env,state)
 			pre_state_string=msat_to_smtlib2_term(env,pre_state)
+			# print "[DEBUG] check hoare triple : {"+pre_state_string+"} "+letter+" {"+pre_state_string+"}"
 			if is_valid_hoare_triple(env,state_string,letter,state_string):
 				new_ats_tr.append("q"+str(state_no)+" \""+letter+"\" "+"q"+str(state_no))
+			# print "[DEBUG] check hoare triple : {"+pre_state_string+"} "+letter+" {"+state_string+"}"			
 			if is_valid_hoare_triple(env,pre_state_string,letter,state_string) and state_no > 0:
 				new_ats_tr.append("q"+str(state_no-1)+" \""+letter+"\" "+"q"+str(state_no))	
 		pre_state = state

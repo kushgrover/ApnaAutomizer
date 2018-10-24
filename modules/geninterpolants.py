@@ -27,19 +27,19 @@ def get_interpolant(f):
     # adding time stamp to all formulas in the trace accordingly
     for j in range(len(f)):
         f[j]=time_stamp(f[j],vars,time)
+        print f[j]
 
     # declaring all the variables with possible time stamps 
     for j in range(len(vars)):
-        for k in range(time[j]+1):
-            d = msat_declare_function(env, vars[j]+"_"+str(k+1), int_tp) #did_changes
+        for k in range(time[j]+2):
+            d = msat_declare_function(env, vars[j]+"_"+str(k), int_tp) #did_changes
             # print "[DEBUG] var declared in msat : "+vars[j]+str(k+1)
             assert(not(MSAT_ERROR_DECL(d)))
-
+    
     # creating mathsat terms from trace
     formula=[]
     for j in range(len(f)):
         formula.append(msat_from_string(env, f[j]))
-        print "cool"+str(f[j])
         assert(not(MSAT_ERROR_TERM(formula[j])))
 
     # push
@@ -54,9 +54,11 @@ def get_interpolant(f):
         assert(res==0)
 
     res=msat_solve(env)
-    assert(res==MSAT_UNSAT)
     ga=[]
     itp=[]
+    if(res==MSAT_SAT):
+        return (env,itp,1)
+    assert(res==MSAT_UNSAT)    
     itp.append(msat_from_string(env,"true"))
     for j in range(len(f)):
         ga.append(group[j])
@@ -64,10 +66,10 @@ def get_interpolant(f):
         assert(not(MSAT_ERROR_TERM(itp[j])))
 
     # for Debugging
-    # for j in range(len(itp)):
-        # print "[DEBUG] Found interpolant "+str(j)+" : "+msat_to_smtlib2_term(env,itp[j])
+    for j in range(len(itp)):
+        print "[DEBUG] Found interpolant "+str(j)+" : "+msat_to_smtlib2_term(env,itp[j])
     
     # pop
     msat_pop_backtrack_point(env)
 
-    return (env,itp)
+    return (env,itp,0)
