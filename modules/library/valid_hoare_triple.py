@@ -51,24 +51,33 @@ def change_time(variable,change):
     return variable[:n]+str(new_time)
 # print change_time("zdfsg_1",3)
 
+def remove_time_stamps(formula):
+    for vars in find_vars(formula):
+        n=vars.find("_")
+        new_var=vars[:n]
+        formula=replace_with(formula,vars,new_var)
+        return formula
+
 # return the list of all the variables in 'string'
 def find_vars(string):
     string=string.replace("(","")
     string=string.replace(")","")
-    string=string.replace("= ","")
     string=string.replace("+ ","")
     string=string.replace("== ","")
     string=string.replace("- ","")
+    string=string.replace("!= ","")
     string=string.replace("* ","")
-    string=string.replace("< ","")
     string=string.replace("<= ","")
     string=string.replace(">= ","")
+    string=string.replace("= ","")
+    string=string.replace("< ","")
     string=string.replace("> ","")
-    string=string.replace("!= ","")
     var=string.split(" ")
+    x=0
     for j in range(len(var)):
-        if(var[j][0]=="0" or var[j][0]=="1" or var[j][0]=="2" or var[j][0]=="3" or var[j][0]=="4" or var[j][0]=="5" or var[j][0]=="6" or var[j][0]=="7" or var[j][0]=="8" or var[j][0]=="9"):
-            var.pop(j)
+        if(var[j-x][0]=="0" or var[j-x][0]=="1" or var[j-x][0]=="2" or var[j-x][0]=="3" or var[j-x][0]=="4" or var[j-x][0]=="5" or var[j-x][0]=="6" or var[j-x][0]=="7" or var[j-x][0]=="8" or var[j-x][0]=="9"):
+            var.pop(j-x)
+            x+=1
     return var
 
 
@@ -87,6 +96,9 @@ def is_valid_hoare_triple(env,pre,statement,post):
             operator=statement[k+1:j]
             rhs=statement[j+1:len(statement)]
             break
+    
+    # push
+    msat_push_backtrack_point(env)
     
     if(operator=="="):
         if(pre==post):
@@ -111,6 +123,15 @@ def is_valid_hoare_triple(env,pre,statement,post):
                 lhs_temp=find_var_with_time(post,lhs)
                 if(lhs_temp=="error"):
                     lhs=lhs+"_0"
+                    for vars in find_vars(post):
+                        n=vars.find("_")
+                        if(not(n==-1)):
+                            new=vars[:n]
+                        else:
+                            new=vars
+                        new_var = find_var_with_time(pre,new)
+                        if(not(new_var=="error")):
+                            post=replace_with(post,vars,new_var)
                     d = msat_declare_function(env, lhs, int_tp)
                     assert(not(MSAT_ERROR_DECL(d)))
                 else:
@@ -133,27 +154,39 @@ def is_valid_hoare_triple(env,pre,statement,post):
                 else:
                     rhs=replace_with(rhs,var,new_var)
     else:
-        lhs_temp=find_var_with_time(pre,lhs)
-        if(lhs_temp=="error"):
-            lhs_temp=find_var_with_time(post,lhs)
-            if(lhs_temp=="error"):
-                d = msat_declare_function(env, lhs, int_tp)
-                assert(not(MSAT_ERROR_DECL(d)))
-            else:
-                lhs=lhs_temp
-        else:
-            lhs=lhs_temp
-        for var in find_vars(rhs):
-            new_var=find_var_with_time(pre,var)
-            if(new_var=="error"):
-                new_var=find_var_with_time(post,var)
-                if(new_var=="error"):
-                    d = msat_declare_function(env, lhs, int_tp)
-                    assert(not(MSAT_ERROR_DECL(d)))
-                else:
-                    rhs=replace_with(rhs,var,new_var)
-            else:
-                rhs=replace_with(rhs,var,new_var)
+        pre=remove_time_stamps(pre)
+        post=remove_time_stamps(post)
+        # for vars in find_vars(pre):
+        #     d = msat_declare_function(env, vars, int_tp)
+        #     assert(not(MSAT_ERROR_DECL(d)))
+        # for vars in find_vars(post):
+        #     d = msat_declare_function(env, vars, int_tp)
+        #     assert(not(MSAT_ERROR_DECL(d)))
+        for vars in find_vars(statement):
+            d = msat_declare_function(env, vars, int_tp)
+            assert(not(MSAT_ERROR_DECL(d)))
+
+        # lhs_temp=find_var_with_time(pre,lhs)
+        # if(lhs_temp=="error"):
+        #     lhs_temp=find_var_with_time(post,lhs)
+        #     if(lhs_temp=="error"):
+        #         d = msat_declare_function(env, lhs, int_tp)
+        #         assert(not(MSAT_ERROR_DECL(d)))
+        #     else:
+        #         lhs=lhs_temp
+        # else:
+        #     lhs=lhs_temp
+        # for var in find_vars(rhs):
+        #     new_var=find_var_with_time(pre,var)
+        #     if(new_var=="error"):
+        #         new_var=find_var_with_time(post,var)
+        #         if(new_var=="error"):
+        #             d = msat_declare_function(env, lhs, int_tp)
+        #             assert(not(MSAT_ERROR_DECL(d)))
+        #         else:
+        #             rhs=replace_with(rhs,var,new_var)
+        #     else:
+        #         rhs=replace_with(rhs,var,new_var)
 
     # replacing "==" by "="
     kinky_stuff=0
@@ -173,8 +206,7 @@ def is_valid_hoare_triple(env,pre,statement,post):
     # for Debugging
     print "[DEBUG] check Hoare Triple : {"+pre+"} "+statement+" {"+post+"}"
 
-    # push
-    msat_push_backtrack_point(env)
+    
 
     # creating msat terms from pre, statement, post
     statement=msat_from_string(env,statement)
