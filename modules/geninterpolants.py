@@ -27,7 +27,7 @@ def get_interpolant(f):
     # adding time stamp to all formulas in the trace accordingly
     for j in range(len(f)):
         f[j]=time_stamp(f[j],vars,time)
-        print f[j]
+        # print f[j]
 
     # declaring all the variables with possible time stamps 
     for j in range(len(vars)):
