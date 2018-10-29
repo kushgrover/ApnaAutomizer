@@ -10,7 +10,8 @@ def index_of(string,vars):
             return j
     return -1
 
-def find_vars(string):
+def find_vars(string1):
+    string=string1
     string=string.replace("(","")
     string=string.replace(")","")
     string=string.replace("/ ","")

@@ -57,13 +57,16 @@ def change_time(variable,change):
 
 def remove_time_stamps(formula):
     for vars in find_vars(formula):
+        print vars
         n=vars.find("_")
-        new_var=vars[:n]
-        formula=replace_with(formula,vars,new_var,0)
+        if(not(n==-1)):
+            new_var=vars[:n]
+            formula=replace_with(formula,vars,new_var,0)
     return formula
 
 # return the list of all the variables in 'string'
-def find_vars(string):
+def find_vars(string1):
+    string=string1
     string=string.replace("(","")
     string=string.replace(")","")
     string=string.replace("/ ","")
