@@ -1,17 +1,17 @@
 FiniteAutomaton nfa_0 = (
-    alphabet = {"a = 36" "b = 14" "a == b" "a != b" "a == 2" "a > b" "b > a" "a = a - b" "b = b - a"},
+    alphabet = {"a = 2" "b = 10" "a == b" "a != b" "a != 2" "a > b" "b > a" "a = a - b" "b = b - a"},
     states = {"q0" "q1" "q2" "q3" "q4" "q5" "q6" "qerr"},
     initialStates = {"q0"},
     finalStates = {"qerr"},
     transitions = {
-        ("q0" "a = 36" "q1")
-        ("q1" "b = 14" "q2")
+        ("q0" "a = 2" "q1")
+        ("q1" "b = 10" "q2")
         ("q2" "a == b" "q3")
         ("q2" "a != b" "q4")
         ("q4" "a > b" "q5")
         ("q4" "b > a" "q6")
         ("q5" "a = a - b" "q2")
         ("q6" "b = b - a" "q2")
-        ("q3" "a == 2" "qerr")
+        ("q3" "a != 2" "qerr")
     }
 );

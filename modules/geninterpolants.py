@@ -54,10 +54,13 @@ def get_interpolant(f):
         assert(res==0)
 
     res=msat_solve(env)
+
+    # for madarchod in msat_get_asserted_formulas(env):
+    #     print "assetrion formula "+msat_to_smtlib2_term(env,madarchod)
+
     ga=[]
     itp=[]
     if(not(res==MSAT_UNSAT)):
-        print "kush"
         return (env,itp,1)
     assert(res==MSAT_UNSAT)    
     itp.append(msat_from_string(env,"true"))

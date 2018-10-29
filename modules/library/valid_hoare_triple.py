@@ -57,7 +57,6 @@ def change_time(variable,change):
 
 def remove_time_stamps(formula):
     for vars in find_vars(formula):
-        print vars
         n=vars.find("_")
         if(not(n==-1)):
             new_var=vars[:n]
@@ -110,6 +109,7 @@ def is_valid_hoare_triple(env,pre,statement,post):
     msat_push_backtrack_point(env)
     
     if(operator=="="):
+        lhs_init=lhs
         if(pre==post):
             lhs_temp=find_var_with_time(pre,lhs)
             if(lhs_temp=="error"):
@@ -125,7 +125,7 @@ def is_valid_hoare_triple(env,pre,statement,post):
                     d = msat_declare_function(env, var, int_tp)
                     assert(not(MSAT_ERROR_DECL(d)))
                 else:
-                    rhs=replace_with(rhs,var,new_var,0)
+                    rhs=replace_with(rhs,var,new_var,1)
         else:
             lhs_temp=find_var_with_time(pre,lhs)
             if(lhs_temp=="error"):
@@ -149,6 +149,7 @@ def is_valid_hoare_triple(env,pre,statement,post):
                 lhs=change_time(lhs_temp,1)
 
             for var in find_vars(rhs):
+                
                 new_var=find_var_with_time(pre,var)
                 if(new_var=="error"):
                     new_var=find_var_with_time(post,var)
@@ -156,10 +157,14 @@ def is_valid_hoare_triple(env,pre,statement,post):
                         d = msat_declare_function(env, lhs, int_tp)
                         assert(not(MSAT_ERROR_DECL(d)))
                     else:
-                        new_var=change_time(new_var,-1)
+                        if(var==lhs_init):
+                            new_var=change_time(lhs,-1)
+                            rhs=replace_with(rhs,var,new_var,1)
+                            continue
+                        # new_var=change_time(new_var,-1)
                         d = msat_declare_function(env, new_var, int_tp)
                         assert(not(MSAT_ERROR_DECL(d)))
-                        rhs=replace_with(rhs,var,new_var,0)
+                        rhs=replace_with(rhs,var,new_var,1)
                 else:
                     rhs=replace_with(rhs,var,new_var,1)
     else:
@@ -213,7 +218,7 @@ def is_valid_hoare_triple(env,pre,statement,post):
     # print statement
 
     # for Debugging
-    print "[DEBUG] check Hoare Triple : {"+pre+"} "+statement+" {"+post+"}"
+    # print "[DEBUG] check Hoare Triple : {"+pre+"} "+statement+" {"+post+"}"
 
     
 
@@ -249,13 +254,13 @@ def is_valid_hoare_triple(env,pre,statement,post):
     # if env is SAT then return False else return True
     res=msat_solve(env)
     if(res==MSAT_SAT):
-        print "[DEBUG] Hoare Triple is NOT valid."
+        # print "[DEBUG] Hoare Triple is NOT valid."
 
         # pop
         msat_pop_backtrack_point(env)
     	return False
     else:
-        print "[DEBUG] Hoare Triple is valid."
+        # print "[DEBUG] Hoare Triple is valid."
 
         #pop
         msat_pop_backtrack_point(env)

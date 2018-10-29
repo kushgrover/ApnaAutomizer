@@ -1,0 +1,107 @@
+This is Ultimate 0.1.23-3204b74
+[2018-10-29 16:20:20,209 INFO  L170        SettingsManager]: Resetting all preferences to default values...
+[2018-10-29 16:20:20,210 INFO  L174        SettingsManager]: Resetting UltimateCore preferences to default values
+[2018-10-29 16:20:20,228 INFO  L177        SettingsManager]: Ultimate Commandline Interface provides no preferences, ignoring...
+[2018-10-29 16:20:20,228 INFO  L174        SettingsManager]: Resetting Boogie Preprocessor preferences to default values
+[2018-10-29 16:20:20,229 INFO  L174        SettingsManager]: Resetting Boogie Procedure Inliner preferences to default values
+[2018-10-29 16:20:20,231 INFO  L174        SettingsManager]: Resetting Abstract Interpretation preferences to default values
+[2018-10-29 16:20:20,235 INFO  L174        SettingsManager]: Resetting LassoRanker preferences to default values
+[2018-10-29 16:20:20,237 INFO  L174        SettingsManager]: Resetting Reaching Definitions preferences to default values
+[2018-10-29 16:20:20,239 INFO  L174        SettingsManager]: Resetting SyntaxChecker preferences to default values
+[2018-10-29 16:20:20,240 INFO  L177        SettingsManager]: Büchi Program Product provides no preferences, ignoring...
+[2018-10-29 16:20:20,241 INFO  L174        SettingsManager]: Resetting LTL2Aut preferences to default values
+[2018-10-29 16:20:20,242 INFO  L174        SettingsManager]: Resetting BlockEncodingV2 preferences to default values
+[2018-10-29 16:20:20,243 INFO  L174        SettingsManager]: Resetting AutomataScriptInterpreter preferences to default values
+[2018-10-29 16:20:20,244 INFO  L174        SettingsManager]: Resetting BuchiAutomizer preferences to default values
+[2018-10-29 16:20:20,245 INFO  L174        SettingsManager]: Resetting CACSL2BoogieTranslator preferences to default values
+[2018-10-29 16:20:20,246 INFO  L174        SettingsManager]: Resetting CodeCheck preferences to default values
+[2018-10-29 16:20:20,248 INFO  L174        SettingsManager]: Resetting InvariantSynthesis preferences to default values
+[2018-10-29 16:20:20,249 INFO  L174        SettingsManager]: Resetting RCFGBuilder preferences to default values
+[2018-10-29 16:20:20,251 INFO  L174        SettingsManager]: Resetting TraceAbstraction preferences to default values
+[2018-10-29 16:20:20,253 INFO  L177        SettingsManager]: TraceAbstractionConcurrent provides no preferences, ignoring...
+[2018-10-29 16:20:20,253 INFO  L177        SettingsManager]: TraceAbstractionWithAFAs provides no preferences, ignoring...
+[2018-10-29 16:20:20,254 INFO  L174        SettingsManager]: Resetting IcfgTransformer preferences to default values
+[2018-10-29 16:20:20,256 INFO  L174        SettingsManager]: Resetting Boogie Printer preferences to default values
+[2018-10-29 16:20:20,257 INFO  L174        SettingsManager]: Resetting Witness Printer preferences to default values
+[2018-10-29 16:20:20,260 INFO  L177        SettingsManager]: Boogie PL CUP Parser provides no preferences, ignoring...
+[2018-10-29 16:20:20,261 INFO  L174        SettingsManager]: Resetting CDTParser preferences to default values
+[2018-10-29 16:20:20,262 INFO  L177        SettingsManager]: PEA to Boogie provides no preferences, ignoring...
+[2018-10-29 16:20:20,263 INFO  L177        SettingsManager]: AutomataScriptParser provides no preferences, ignoring...
+[2018-10-29 16:20:20,264 INFO  L174        SettingsManager]: Resetting Witness Parser preferences to default values
+[2018-10-29 16:20:20,266 INFO  L181        SettingsManager]: Finished resetting all preferences to default values...
+[2018-10-29 16:20:20,287 INFO  L81    nceAwareModelManager]: Repository-Root is: /tmp
+[2018-10-29 16:20:20,296 INFO  L266   ainManager$Toolchain]: [Toolchain 1]: Parser(s) successfully initialized
+[2018-10-29 16:20:20,299 INFO  L222   ainManager$Toolchain]: [Toolchain 1]: Toolchain data selected.
+[2018-10-29 16:20:20,301 INFO  L271        PluginConnector]: Initializing AutomataScriptParser...
+[2018-10-29 16:20:20,302 INFO  L276        PluginConnector]: AutomataScriptParser initialized
+[2018-10-29 16:20:20,303 INFO  L431   ainManager$Toolchain]: [Toolchain 1]: Parsing single file: /home/hydra/Downloads/ApnaAutomizer/./temp/apna_ats.ats
+[2018-10-29 16:20:20,304 INFO  L88    AutomataScriptParser]: Parsing '/home/hydra/Downloads/ApnaAutomizer/./temp/apna_ats.ats'
+[2018-10-29 16:20:20,332 INFO  L304   ainManager$Toolchain]: ####################### [Toolchain 1] #######################
+[2018-10-29 16:20:20,334 INFO  L131        ToolchainWalker]: Walking toolchain with 1 elements.
+[2018-10-29 16:20:20,335 INFO  L113        PluginConnector]: ------------------------AutomataScriptInterpreter----------------------------
+[2018-10-29 16:20:20,336 INFO  L271        PluginConnector]: Initializing AutomataScriptInterpreter...
+[2018-10-29 16:20:20,336 INFO  L276        PluginConnector]: AutomataScriptInterpreter initialized
+[2018-10-29 16:20:20,340 INFO  L185        PluginConnector]: Executing the observer AutomataScriptInterpreterObserver from plugin AutomataScriptInterpreter for "apna_ats.ats de.uni_freiburg.informatik.ultimate.plugins.source.automatascriptparser AST 29.10 04:20:20" (1/1) ...
+[2018-10-29 16:20:20,700 INFO  L101             Complement]: Start complement. Operand 3 states.
+[2018-10-29 16:20:20,708 INFO  L145             Complement]: Operand was not deterministic. Recomputing result with determinization.
+[2018-10-29 16:20:20,720 INFO  L107             Complement]: Finished complement. Result 4 states and 44 transitions.
+[2018-10-29 16:20:20,720 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2018-10-29 16:20:20,723 INFO  L77               Intersect]: Start intersect. First operand 12 states. Second operand 4 states and 44 transitions.
+[2018-10-29 16:20:20,726 INFO  L84               Intersect]: Finished intersect. Result 17 states and 19 transitions.
+[2018-10-29 16:20:20,726 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2018-10-29 16:20:20,726 INFO  L101             Complement]: Start complement. Operand 4 states.
+[2018-10-29 16:20:20,727 INFO  L145             Complement]: Operand was not deterministic. Recomputing result with determinization.
+[2018-10-29 16:20:20,736 INFO  L107             Complement]: Finished complement. Result 8 states and 88 transitions.
+[2018-10-29 16:20:20,736 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2018-10-29 16:20:20,737 INFO  L77               Intersect]: Start intersect. First operand 17 states and 19 transitions. Second operand 8 states and 88 transitions.
+[2018-10-29 16:20:20,739 INFO  L84               Intersect]: Finished intersect. Result 24 states and 27 transitions.
+[2018-10-29 16:20:20,740 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2018-10-29 16:20:20,740 INFO  L101             Complement]: Start complement. Operand 5 states.
+[2018-10-29 16:20:20,740 INFO  L145             Complement]: Operand was not deterministic. Recomputing result with determinization.
+[2018-10-29 16:20:20,751 INFO  L107             Complement]: Finished complement. Result 16 states and 176 transitions.
+[2018-10-29 16:20:20,751 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2018-10-29 16:20:20,752 INFO  L77               Intersect]: Start intersect. First operand 24 states and 27 transitions. Second operand 16 states and 176 transitions.
+[2018-10-29 16:20:20,752 INFO  L84               Intersect]: Finished intersect. Result 31 states and 35 transitions.
+[2018-10-29 16:20:20,752 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2018-10-29 16:20:20,753 INFO  L68         GetAcceptedWord]: Start getAcceptedWord. Operand 31 states and 35 transitions.
+[2018-10-29 16:20:20,755 INFO  L276                IsEmpty]: Start isEmpty. Operand 31 states and 35 transitions.
+[2018-10-29 16:20:20,757 INFO  L282                IsEmpty]: Finished isEmpty. Found accepting run of length 18
+[2018-10-29 16:20:20,758 INFO  L78         GetAcceptedWord]: Finished getAcceptedWord. Found word of length 17
+[2018-10-29 16:20:20,758 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2018-10-29 16:20:20,760 INFO  L1008   TestFileInterpreter]: Printing getAcceptedWord(nfa_3)
+[2018-10-29 16:20:20,762 INFO  L1008   TestFileInterpreter]: "i = 0" "a = 0" "b = 0" "i < 3" "a = a + 1" "b = b + 2" "i = i + 1" "i < 3" "a = a + 1" "b = b + 2" "i = i + 1" "i < 3" "a = a + 1" "b = b + 2" "i = i + 1" "i >= 3" "a == 9 - b" 
+[2018-10-29 16:20:20,763 INFO  L918    TestFileInterpreter]: ----------------- Test Summary -----------------
+[2018-10-29 16:20:20,764 INFO  L1008   TestFileInterpreter]:  You have not used any assert statement in your automata script. Assert statements can be used to check Boolean results.
+[2018-10-29 16:20:20,769 INFO  L202        PluginConnector]: Adding new model apna_ats.ats de.uni_freiburg.informatik.ultimate.plugins.generator.automatascriptinterpreter AST 29.10 04:20:20 AutomatonState
+[2018-10-29 16:20:20,770 INFO  L132        PluginConnector]: ------------------------ END AutomataScriptInterpreter----------------------------
+[2018-10-29 16:20:20,774 INFO  L168              Benchmark]: Toolchain (without parser) took 438.75 ms. Allocated memory is still 514.9 MB. Free memory was 480.9 MB in the beginning and 443.2 MB in the end (delta: 37.7 MB). Peak memory consumption was 37.7 MB. Max. memory is 11.5 GB.
+[2018-10-29 16:20:20,779 INFO  L168              Benchmark]: AutomataScriptParser took 0.31 ms. Allocated memory is still 514.9 MB. Free memory is still 482.3 MB. There was no memory consumed. Max. memory is 11.5 GB.
+[2018-10-29 16:20:20,780 INFO  L168              Benchmark]: AutomataScriptInterpreter took 435.82 ms. Allocated memory is still 514.9 MB. Free memory was 480.9 MB in the beginning and 443.2 MB in the end (delta: 37.7 MB). Peak memory consumption was 37.7 MB. Max. memory is 11.5 GB.
+[2018-10-29 16:20:20,784 INFO  L344   ainManager$Toolchain]: #######################  End [Toolchain 1] #######################
+ --- Results ---
+ * Results from de.uni_freiburg.informatik.ultimate.core:
+  - StatisticsResult: Toolchain Benchmarks
+    Benchmark results are:
+ * AutomataScriptParser took 0.31 ms. Allocated memory is still 514.9 MB. Free memory is still 482.3 MB. There was no memory consumed. Max. memory is 11.5 GB.
+ * AutomataScriptInterpreter took 435.82 ms. Allocated memory is still 514.9 MB. Free memory was 480.9 MB in the beginning and 443.2 MB in the end (delta: 37.7 MB). Peak memory consumption was 37.7 MB. Max. memory is 11.5 GB.
+ * Results from de.uni_freiburg.informatik.ultimate.plugins.generator.automatascriptinterpreter:
+  - StatisticsResult: automata script interpreter benchmark results
+    {ATS_ID=complement(fha_1), OPERATION_NAME=complement, RUNTIME_TOTAL_MS=21}
+  - StatisticsResult: automata script interpreter benchmark results
+    {ATS_ID=intersect(nfa_0, complement(fha_1)), OPERATION_NAME=intersect, RUNTIME_TOTAL_MS=3}
+  - StatisticsResult: automata script interpreter benchmark results
+    {ATS_ID=complement(fha_2), OPERATION_NAME=complement, RUNTIME_TOTAL_MS=10}
+  - StatisticsResult: automata script interpreter benchmark results
+    {ATS_ID=intersect(nfa_1, complement(fha_2)), OPERATION_NAME=intersect, RUNTIME_TOTAL_MS=3}
+  - StatisticsResult: automata script interpreter benchmark results
+    {ATS_ID=complement(fha_3), OPERATION_NAME=complement, RUNTIME_TOTAL_MS=11}
+  - StatisticsResult: automata script interpreter benchmark results
+    {ATS_ID=intersect(nfa_2, complement(fha_3)), OPERATION_NAME=intersect, RUNTIME_TOTAL_MS=0}
+  - StatisticsResult: automata script interpreter benchmark results
+    {ATS_ID=getAcceptedWord(nfa_3), OPERATION_NAME=getAcceptedWord, RUNTIME_TOTAL_MS=6}
+  - GenericResultAtElement [Line: 218]: print(getAcceptedWord(nfa_3))
+    "i = 0" "a = 0" "b = 0" "i < 3" "a = a + 1" "b = b + 2" "i = i + 1" "i < 3" "a = a + 1" "b = b + 2" "i = i + 1" "i < 3" "a = a + 1" "b = b + 2" "i = i + 1" "i >= 3" "a == 9 - b" 
+  - AutomataScriptInterpreterOverallResult: Finished interpretation of automata script.
+     You have not used any assert statement in your automata script. Assert statements can be used to check Boolean results.
+RESULT: Ultimate could not prove your program:  You have not used any assert statement in your automata script. Assert statements can be used to check Boolean results.
+Received shutdown request...
