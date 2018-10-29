@@ -35,9 +35,13 @@ def find_var_with_time(formula, variable):
 
 # return formula with changed variable 
 # input should be given with time stamps
-def replace_with(formula, variable, new_variable):
+def replace_with(formula, variable, new_variable,x):
     formula=formula.replace(variable+" ",new_variable+" ")
     formula=formula.replace(variable+")",new_variable+")")
+    n=formula.find(variable)
+    if(not(n==-1) and x==1):
+        if(formula[n:len(formula)]==variable):
+            formula=formula[:n]+new_variable
     return formula
 # print replace_with("(= x_2 0)", "x_2", "x_1")
 
@@ -55,13 +59,14 @@ def remove_time_stamps(formula):
     for vars in find_vars(formula):
         n=vars.find("_")
         new_var=vars[:n]
-        formula=replace_with(formula,vars,new_var)
-        return formula
+        formula=replace_with(formula,vars,new_var,0)
+    return formula
 
 # return the list of all the variables in 'string'
 def find_vars(string):
     string=string.replace("(","")
     string=string.replace(")","")
+    string=string.replace("/ ","")
     string=string.replace("+ ","")
     string=string.replace("== ","")
     string=string.replace("- ","")
@@ -72,6 +77,7 @@ def find_vars(string):
     string=string.replace("= ","")
     string=string.replace("< ","")
     string=string.replace("> ","")
+    string=string.replace("  "," ")
     var=string.split(" ")
     x=0
     for j in range(len(var)):
@@ -109,14 +115,14 @@ def is_valid_hoare_triple(env,pre,statement,post):
                 assert(not(MSAT_ERROR_DECL(d)))
             else:
                 lhs=change_time(lhs_temp,1)
-                post=replace_with(post,lhs_temp,lhs)
+                post=replace_with(post,lhs_temp,lhs,0)
             for var in find_vars(rhs):
                 new_var=find_var_with_time(pre,var)
                 if(new_var=="error"):
                     d = msat_declare_function(env, var, int_tp)
                     assert(not(MSAT_ERROR_DECL(d)))
                 else:
-                    rhs=replace_with(rhs,var,new_var)
+                    rhs=replace_with(rhs,var,new_var,0)
         else:
             lhs_temp=find_var_with_time(pre,lhs)
             if(lhs_temp=="error"):
@@ -131,7 +137,7 @@ def is_valid_hoare_triple(env,pre,statement,post):
                             new=vars
                         new_var = find_var_with_time(pre,new)
                         if(not(new_var=="error")):
-                            post=replace_with(post,vars,new_var)
+                            post=replace_with(post,vars,new_var,0)
                     d = msat_declare_function(env, lhs, int_tp)
                     assert(not(MSAT_ERROR_DECL(d)))
                 else:
@@ -150,9 +156,9 @@ def is_valid_hoare_triple(env,pre,statement,post):
                         new_var=change_time(new_var,-1)
                         d = msat_declare_function(env, new_var, int_tp)
                         assert(not(MSAT_ERROR_DECL(d)))
-                        rhs=replace_with(rhs,var,new_var)
+                        rhs=replace_with(rhs,var,new_var,0)
                 else:
-                    rhs=replace_with(rhs,var,new_var)
+                    rhs=replace_with(rhs,var,new_var,1)
     else:
         pre=remove_time_stamps(pre)
         post=remove_time_stamps(post)

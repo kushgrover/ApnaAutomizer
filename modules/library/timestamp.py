@@ -13,6 +13,7 @@ def index_of(string,vars):
 def find_vars(string):
     string=string.replace("(","")
     string=string.replace(")","")
+    string=string.replace("/ ","")
     string=string.replace("+ ","")
     string=string.replace("== ","")
     string=string.replace("- ","")
@@ -23,6 +24,7 @@ def find_vars(string):
     string=string.replace("= ","")
     string=string.replace("< ","")
     string=string.replace("> ","")
+    string=string.replace("  "," ")
     var=string.split(" ")
     x=0
     for j in range(len(var)):
@@ -120,6 +122,8 @@ def time_stamp(string,vars,time):
         vars.append(lhs)
         time.append(1)
     if(kinky_stuff==1):
+        print rhs
+        print infix_to_prefix(rhs)
         return "(not ("+operator+" "+lhs+"_"+str(time[index_of(lhs,vars)])+" "+current_time(time,vars,infix_to_prefix(rhs),oper,lhs)+"))"
     else:
         return "("+operator+" "+lhs+"_"+str(time[index_of(lhs,vars)])+" "+current_time(time,vars,infix_to_prefix(rhs),oper,lhs)+")"

@@ -56,7 +56,8 @@ def get_interpolant(f):
     res=msat_solve(env)
     ga=[]
     itp=[]
-    if(res==MSAT_SAT):
+    if(not(res==MSAT_UNSAT)):
+        print "kush"
         return (env,itp,1)
     assert(res==MSAT_UNSAT)    
     itp.append(msat_from_string(env,"true"))
