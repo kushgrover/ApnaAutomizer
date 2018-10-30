@@ -1,0 +1,281 @@
+This is Ultimate 0.1.23-3204b74
+[2018-10-30 21:35:36,963 INFO  L170        SettingsManager]: Resetting all preferences to default values...
+[2018-10-30 21:35:36,966 INFO  L174        SettingsManager]: Resetting UltimateCore preferences to default values
+[2018-10-30 21:35:36,992 INFO  L177        SettingsManager]: Ultimate Commandline Interface provides no preferences, ignoring...
+[2018-10-30 21:35:36,993 INFO  L174        SettingsManager]: Resetting Boogie Preprocessor preferences to default values
+[2018-10-30 21:35:36,994 INFO  L174        SettingsManager]: Resetting Boogie Procedure Inliner preferences to default values
+[2018-10-30 21:35:36,997 INFO  L174        SettingsManager]: Resetting Abstract Interpretation preferences to default values
+[2018-10-30 21:35:37,000 INFO  L174        SettingsManager]: Resetting LassoRanker preferences to default values
+[2018-10-30 21:35:37,004 INFO  L174        SettingsManager]: Resetting Reaching Definitions preferences to default values
+[2018-10-30 21:35:37,005 INFO  L174        SettingsManager]: Resetting SyntaxChecker preferences to default values
+[2018-10-30 21:35:37,007 INFO  L177        SettingsManager]: Büchi Program Product provides no preferences, ignoring...
+[2018-10-30 21:35:37,007 INFO  L174        SettingsManager]: Resetting LTL2Aut preferences to default values
+[2018-10-30 21:35:37,009 INFO  L174        SettingsManager]: Resetting BlockEncodingV2 preferences to default values
+[2018-10-30 21:35:37,011 INFO  L174        SettingsManager]: Resetting AutomataScriptInterpreter preferences to default values
+[2018-10-30 21:35:37,012 INFO  L174        SettingsManager]: Resetting BuchiAutomizer preferences to default values
+[2018-10-30 21:35:37,016 INFO  L174        SettingsManager]: Resetting CACSL2BoogieTranslator preferences to default values
+[2018-10-30 21:35:37,021 INFO  L174        SettingsManager]: Resetting CodeCheck preferences to default values
+[2018-10-30 21:35:37,023 INFO  L174        SettingsManager]: Resetting InvariantSynthesis preferences to default values
+[2018-10-30 21:35:37,026 INFO  L174        SettingsManager]: Resetting RCFGBuilder preferences to default values
+[2018-10-30 21:35:37,028 INFO  L174        SettingsManager]: Resetting TraceAbstraction preferences to default values
+[2018-10-30 21:35:37,033 INFO  L177        SettingsManager]: TraceAbstractionConcurrent provides no preferences, ignoring...
+[2018-10-30 21:35:37,034 INFO  L177        SettingsManager]: TraceAbstractionWithAFAs provides no preferences, ignoring...
+[2018-10-30 21:35:37,035 INFO  L174        SettingsManager]: Resetting IcfgTransformer preferences to default values
+[2018-10-30 21:35:37,037 INFO  L174        SettingsManager]: Resetting Boogie Printer preferences to default values
+[2018-10-30 21:35:37,039 INFO  L174        SettingsManager]: Resetting Witness Printer preferences to default values
+[2018-10-30 21:35:37,041 INFO  L177        SettingsManager]: Boogie PL CUP Parser provides no preferences, ignoring...
+[2018-10-30 21:35:37,041 INFO  L174        SettingsManager]: Resetting CDTParser preferences to default values
+[2018-10-30 21:35:37,043 INFO  L177        SettingsManager]: PEA to Boogie provides no preferences, ignoring...
+[2018-10-30 21:35:37,043 INFO  L177        SettingsManager]: AutomataScriptParser provides no preferences, ignoring...
+[2018-10-30 21:35:37,043 INFO  L174        SettingsManager]: Resetting Witness Parser preferences to default values
+[2018-10-30 21:35:37,044 INFO  L181        SettingsManager]: Finished resetting all preferences to default values...
+[2018-10-30 21:35:37,097 INFO  L81    nceAwareModelManager]: Repository-Root is: /tmp
+[2018-10-30 21:35:37,143 INFO  L266   ainManager$Toolchain]: [Toolchain 1]: Parser(s) successfully initialized
+[2018-10-30 21:35:37,155 INFO  L222   ainManager$Toolchain]: [Toolchain 1]: Toolchain data selected.
+[2018-10-30 21:35:37,158 INFO  L271        PluginConnector]: Initializing AutomataScriptParser...
+[2018-10-30 21:35:37,158 INFO  L276        PluginConnector]: AutomataScriptParser initialized
+[2018-10-30 21:35:37,165 INFO  L431   ainManager$Toolchain]: [Toolchain 1]: Parsing single file: /home/arijit/verification/ApnaAutomizer/./temp/apna_ats.ats
+[2018-10-30 21:35:37,170 INFO  L88    AutomataScriptParser]: Parsing '/home/arijit/verification/ApnaAutomizer/./temp/apna_ats.ats'
+[2018-10-30 21:35:37,423 INFO  L304   ainManager$Toolchain]: ####################### [Toolchain 1] #######################
+[2018-10-30 21:35:37,426 INFO  L131        ToolchainWalker]: Walking toolchain with 1 elements.
+[2018-10-30 21:35:37,427 INFO  L113        PluginConnector]: ------------------------AutomataScriptInterpreter----------------------------
+[2018-10-30 21:35:37,428 INFO  L271        PluginConnector]: Initializing AutomataScriptInterpreter...
+[2018-10-30 21:35:37,428 INFO  L276        PluginConnector]: AutomataScriptInterpreter initialized
+[2018-10-30 21:35:37,434 INFO  L185        PluginConnector]: Executing the observer AutomataScriptInterpreterObserver from plugin AutomataScriptInterpreter for "apna_ats.ats de.uni_freiburg.informatik.ultimate.plugins.source.automatascriptparser AST 30.10 09:35:37" (1/1) ...
+[2018-10-30 21:35:38,226 INFO  L101             Complement]: Start complement. Operand 8 states.
+[2018-10-30 21:35:38,242 INFO  L145             Complement]: Operand was not deterministic. Recomputing result with determinization.
+[2018-10-30 21:35:38,289 INFO  L107             Complement]: Finished complement. Result 17 states and 391 transitions.
+[2018-10-30 21:35:38,290 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2018-10-30 21:35:38,301 INFO  L77               Intersect]: Start intersect. First operand 19 states. Second operand 17 states and 391 transitions.
+[2018-10-30 21:35:38,309 INFO  L84               Intersect]: Finished intersect. Result 33 states and 37 transitions.
+[2018-10-30 21:35:38,310 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2018-10-30 21:35:38,310 INFO  L101             Complement]: Start complement. Operand 3 states.
+[2018-10-30 21:35:38,312 INFO  L145             Complement]: Operand was not deterministic. Recomputing result with determinization.
+[2018-10-30 21:35:38,323 INFO  L107             Complement]: Finished complement. Result 4 states and 92 transitions.
+[2018-10-30 21:35:38,324 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2018-10-30 21:35:38,324 INFO  L77               Intersect]: Start intersect. First operand 33 states and 37 transitions. Second operand 4 states and 92 transitions.
+[2018-10-30 21:35:38,333 INFO  L84               Intersect]: Finished intersect. Result 58 states and 66 transitions.
+[2018-10-30 21:35:38,335 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2018-10-30 21:35:38,336 INFO  L101             Complement]: Start complement. Operand 3 states.
+[2018-10-30 21:35:38,336 INFO  L145             Complement]: Operand was not deterministic. Recomputing result with determinization.
+[2018-10-30 21:35:38,341 INFO  L107             Complement]: Finished complement. Result 4 states and 92 transitions.
+[2018-10-30 21:35:38,342 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2018-10-30 21:35:38,342 INFO  L77               Intersect]: Start intersect. First operand 58 states and 66 transitions. Second operand 4 states and 92 transitions.
+[2018-10-30 21:35:38,348 INFO  L84               Intersect]: Finished intersect. Result 81 states and 91 transitions.
+[2018-10-30 21:35:38,349 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2018-10-30 21:35:38,350 INFO  L101             Complement]: Start complement. Operand 12 states.
+[2018-10-30 21:35:38,350 INFO  L145             Complement]: Operand was not deterministic. Recomputing result with determinization.
+[2018-10-30 21:35:38,389 INFO  L107             Complement]: Finished complement. Result 71 states and 1633 transitions.
+[2018-10-30 21:35:38,390 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2018-10-30 21:35:38,390 INFO  L77               Intersect]: Start intersect. First operand 81 states and 91 transitions. Second operand 71 states and 1633 transitions.
+[2018-10-30 21:35:38,403 INFO  L84               Intersect]: Finished intersect. Result 113 states and 125 transitions.
+[2018-10-30 21:35:38,404 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2018-10-30 21:35:38,404 INFO  L101             Complement]: Start complement. Operand 12 states.
+[2018-10-30 21:35:38,405 INFO  L145             Complement]: Operand was not deterministic. Recomputing result with determinization.
+[2018-10-30 21:35:38,434 INFO  L107             Complement]: Finished complement. Result 71 states and 1633 transitions.
+[2018-10-30 21:35:38,435 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2018-10-30 21:35:38,436 INFO  L77               Intersect]: Start intersect. First operand 113 states and 125 transitions. Second operand 71 states and 1633 transitions.
+[2018-10-30 21:35:38,442 INFO  L84               Intersect]: Finished intersect. Result 133 states and 147 transitions.
+[2018-10-30 21:35:38,443 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2018-10-30 21:35:38,445 INFO  L101             Complement]: Start complement. Operand 16 states.
+[2018-10-30 21:35:38,445 INFO  L145             Complement]: Operand was not deterministic. Recomputing result with determinization.
+[2018-10-30 21:35:38,505 INFO  L107             Complement]: Finished complement. Result 125 states and 2875 transitions.
+[2018-10-30 21:35:38,505 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2018-10-30 21:35:38,506 INFO  L77               Intersect]: Start intersect. First operand 133 states and 147 transitions. Second operand 125 states and 2875 transitions.
+[2018-10-30 21:35:38,512 INFO  L84               Intersect]: Finished intersect. Result 165 states and 181 transitions.
+[2018-10-30 21:35:38,513 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2018-10-30 21:35:38,513 INFO  L101             Complement]: Start complement. Operand 16 states.
+[2018-10-30 21:35:38,514 INFO  L145             Complement]: Operand was not deterministic. Recomputing result with determinization.
+[2018-10-30 21:35:38,562 INFO  L107             Complement]: Finished complement. Result 125 states and 2875 transitions.
+[2018-10-30 21:35:38,563 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2018-10-30 21:35:38,563 INFO  L77               Intersect]: Start intersect. First operand 165 states and 181 transitions. Second operand 125 states and 2875 transitions.
+[2018-10-30 21:35:38,565 INFO  L84               Intersect]: Finished intersect. Result 185 states and 203 transitions.
+[2018-10-30 21:35:38,566 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2018-10-30 21:35:38,566 INFO  L101             Complement]: Start complement. Operand 16 states.
+[2018-10-30 21:35:38,567 INFO  L145             Complement]: Operand was not deterministic. Recomputing result with determinization.
+[2018-10-30 21:35:38,606 INFO  L107             Complement]: Finished complement. Result 125 states and 2875 transitions.
+[2018-10-30 21:35:38,607 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2018-10-30 21:35:38,608 INFO  L77               Intersect]: Start intersect. First operand 185 states and 203 transitions. Second operand 125 states and 2875 transitions.
+[2018-10-30 21:35:38,610 INFO  L84               Intersect]: Finished intersect. Result 217 states and 237 transitions.
+[2018-10-30 21:35:38,611 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2018-10-30 21:35:38,612 INFO  L101             Complement]: Start complement. Operand 4 states.
+[2018-10-30 21:35:38,612 INFO  L145             Complement]: Operand was not deterministic. Recomputing result with determinization.
+[2018-10-30 21:35:38,615 INFO  L107             Complement]: Finished complement. Result 6 states and 138 transitions.
+[2018-10-30 21:35:38,615 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2018-10-30 21:35:38,616 INFO  L77               Intersect]: Start intersect. First operand 217 states and 237 transitions. Second operand 6 states and 138 transitions.
+[2018-10-30 21:35:38,623 INFO  L84               Intersect]: Finished intersect. Result 351 states and 382 transitions.
+[2018-10-30 21:35:38,623 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2018-10-30 21:35:38,624 INFO  L101             Complement]: Start complement. Operand 20 states.
+[2018-10-30 21:35:38,625 INFO  L145             Complement]: Operand was not deterministic. Recomputing result with determinization.
+[2018-10-30 21:35:38,682 INFO  L107             Complement]: Finished complement. Result 173 states and 3979 transitions.
+[2018-10-30 21:35:38,683 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2018-10-30 21:35:38,683 INFO  L77               Intersect]: Start intersect. First operand 351 states and 382 transitions. Second operand 173 states and 3979 transitions.
+[2018-10-30 21:35:38,688 INFO  L84               Intersect]: Finished intersect. Result 383 states and 416 transitions.
+[2018-10-30 21:35:38,688 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2018-10-30 21:35:38,688 INFO  L101             Complement]: Start complement. Operand 20 states.
+[2018-10-30 21:35:38,691 INFO  L145             Complement]: Operand was not deterministic. Recomputing result with determinization.
+[2018-10-30 21:35:38,745 INFO  L107             Complement]: Finished complement. Result 173 states and 3979 transitions.
+[2018-10-30 21:35:38,745 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2018-10-30 21:35:38,746 INFO  L77               Intersect]: Start intersect. First operand 383 states and 416 transitions. Second operand 173 states and 3979 transitions.
+[2018-10-30 21:35:38,752 INFO  L84               Intersect]: Finished intersect. Result 415 states and 450 transitions.
+[2018-10-30 21:35:38,752 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2018-10-30 21:35:38,754 INFO  L101             Complement]: Start complement. Operand 20 states.
+[2018-10-30 21:35:38,754 INFO  L145             Complement]: Operand was not deterministic. Recomputing result with determinization.
+[2018-10-30 21:35:38,864 INFO  L107             Complement]: Finished complement. Result 173 states and 3979 transitions.
+[2018-10-30 21:35:38,864 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2018-10-30 21:35:38,865 INFO  L77               Intersect]: Start intersect. First operand 415 states and 450 transitions. Second operand 173 states and 3979 transitions.
+[2018-10-30 21:35:38,869 INFO  L84               Intersect]: Finished intersect. Result 447 states and 484 transitions.
+[2018-10-30 21:35:38,869 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2018-10-30 21:35:38,871 INFO  L101             Complement]: Start complement. Operand 20 states.
+[2018-10-30 21:35:38,873 INFO  L145             Complement]: Operand was not deterministic. Recomputing result with determinization.
+[2018-10-30 21:35:38,947 INFO  L107             Complement]: Finished complement. Result 266 states and 6118 transitions.
+[2018-10-30 21:35:38,947 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2018-10-30 21:35:38,948 INFO  L77               Intersect]: Start intersect. First operand 447 states and 484 transitions. Second operand 266 states and 6118 transitions.
+[2018-10-30 21:35:38,951 INFO  L84               Intersect]: Finished intersect. Result 479 states and 518 transitions.
+[2018-10-30 21:35:38,952 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2018-10-30 21:35:38,953 INFO  L101             Complement]: Start complement. Operand 24 states.
+[2018-10-30 21:35:38,953 INFO  L145             Complement]: Operand was not deterministic. Recomputing result with determinization.
+[2018-10-30 21:35:39,053 INFO  L107             Complement]: Finished complement. Result 338 states and 7774 transitions.
+[2018-10-30 21:35:39,053 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2018-10-30 21:35:39,053 INFO  L77               Intersect]: Start intersect. First operand 479 states and 518 transitions. Second operand 338 states and 7774 transitions.
+[2018-10-30 21:35:39,068 INFO  L84               Intersect]: Finished intersect. Result 511 states and 552 transitions.
+[2018-10-30 21:35:39,068 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2018-10-30 21:35:39,069 INFO  L101             Complement]: Start complement. Operand 24 states.
+[2018-10-30 21:35:39,069 INFO  L145             Complement]: Operand was not deterministic. Recomputing result with determinization.
+[2018-10-30 21:35:39,202 INFO  L107             Complement]: Finished complement. Result 338 states and 7774 transitions.
+[2018-10-30 21:35:39,202 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2018-10-30 21:35:39,203 INFO  L77               Intersect]: Start intersect. First operand 511 states and 552 transitions. Second operand 338 states and 7774 transitions.
+[2018-10-30 21:35:39,208 INFO  L84               Intersect]: Finished intersect. Result 543 states and 586 transitions.
+[2018-10-30 21:35:39,208 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2018-10-30 21:35:39,209 INFO  L101             Complement]: Start complement. Operand 24 states.
+[2018-10-30 21:35:39,210 INFO  L145             Complement]: Operand was not deterministic. Recomputing result with determinization.
+[2018-10-30 21:35:39,284 INFO  L107             Complement]: Finished complement. Result 344 states and 7912 transitions.
+[2018-10-30 21:35:39,284 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2018-10-30 21:35:39,285 INFO  L77               Intersect]: Start intersect. First operand 543 states and 586 transitions. Second operand 344 states and 7912 transitions.
+[2018-10-30 21:35:39,295 INFO  L84               Intersect]: Finished intersect. Result 575 states and 620 transitions.
+[2018-10-30 21:35:39,295 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2018-10-30 21:35:39,296 INFO  L101             Complement]: Start complement. Operand 24 states.
+[2018-10-30 21:35:39,296 INFO  L145             Complement]: Operand was not deterministic. Recomputing result with determinization.
+[2018-10-30 21:35:39,371 INFO  L107             Complement]: Finished complement. Result 394 states and 9062 transitions.
+[2018-10-30 21:35:39,371 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2018-10-30 21:35:39,372 INFO  L77               Intersect]: Start intersect. First operand 575 states and 620 transitions. Second operand 394 states and 9062 transitions.
+[2018-10-30 21:35:39,377 INFO  L84               Intersect]: Finished intersect. Result 607 states and 654 transitions.
+[2018-10-30 21:35:39,377 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2018-10-30 21:35:39,378 INFO  L101             Complement]: Start complement. Operand 24 states.
+[2018-10-30 21:35:39,378 INFO  L145             Complement]: Operand was not deterministic. Recomputing result with determinization.
+[2018-10-30 21:35:39,540 INFO  L107             Complement]: Finished complement. Result 340 states and 7820 transitions.
+[2018-10-30 21:35:39,541 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2018-10-30 21:35:39,541 INFO  L77               Intersect]: Start intersect. First operand 607 states and 654 transitions. Second operand 340 states and 7820 transitions.
+[2018-10-30 21:35:39,547 INFO  L84               Intersect]: Finished intersect. Result 639 states and 688 transitions.
+[2018-10-30 21:35:39,547 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2018-10-30 21:35:39,548 INFO  L101             Complement]: Start complement. Operand 8 states.
+[2018-10-30 21:35:39,548 INFO  L145             Complement]: Operand was not deterministic. Recomputing result with determinization.
+[2018-10-30 21:35:39,550 INFO  L107             Complement]: Finished complement. Result 13 states and 299 transitions.
+[2018-10-30 21:35:39,551 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2018-10-30 21:35:39,551 INFO  L77               Intersect]: Start intersect. First operand 639 states and 688 transitions. Second operand 13 states and 299 transitions.
+[2018-10-30 21:35:39,560 INFO  L84               Intersect]: Finished intersect. Result 985 states and 1067 transitions.
+[2018-10-30 21:35:39,560 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2018-10-30 21:35:39,563 INFO  L276                IsEmpty]: Start isEmpty. Operand 985 states and 1067 transitions.
+[2018-10-30 21:35:39,573 INFO  L282                IsEmpty]: Finished isEmpty. No accepting run.
+[2018-10-30 21:35:39,574 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2018-10-30 21:35:39,574 INFO  L1008   TestFileInterpreter]: Printing isEmpty(nfa_19)
+[2018-10-30 21:35:39,578 INFO  L1008   TestFileInterpreter]: true
+[2018-10-30 21:35:39,579 INFO  L918    TestFileInterpreter]: ----------------- Test Summary -----------------
+[2018-10-30 21:35:39,580 INFO  L1008   TestFileInterpreter]:  You have not used any assert statement in your automata script. Assert statements can be used to check Boolean results.
+[2018-10-30 21:35:39,590 INFO  L202        PluginConnector]: Adding new model apna_ats.ats de.uni_freiburg.informatik.ultimate.plugins.generator.automatascriptinterpreter AST 30.10 09:35:39 AutomatonState
+[2018-10-30 21:35:39,591 INFO  L132        PluginConnector]: ------------------------ END AutomataScriptInterpreter----------------------------
+[2018-10-30 21:35:39,593 INFO  L168              Benchmark]: Toolchain (without parser) took 2168.63 ms. Allocated memory is still 514.9 MB. Free memory was 465.2 MB in the beginning and 403.0 MB in the end (delta: 62.2 MB). Peak memory consumption was 171.8 MB. Max. memory is 11.5 GB.
+[2018-10-30 21:35:39,600 INFO  L168              Benchmark]: AutomataScriptParser took 4.37 ms. Allocated memory is still 514.9 MB. Free memory is still 480.0 MB. There was no memory consumed. Max. memory is 11.5 GB.
+[2018-10-30 21:35:39,602 INFO  L168              Benchmark]: AutomataScriptInterpreter took 2164.95 ms. Allocated memory is still 514.9 MB. Free memory was 465.2 MB in the beginning and 403.0 MB in the end (delta: 62.2 MB). Peak memory consumption was 171.8 MB. Max. memory is 11.5 GB.
+[2018-10-30 21:35:39,605 INFO  L344   ainManager$Toolchain]: #######################  End [Toolchain 1] #######################
+ --- Results ---
+ * Results from de.uni_freiburg.informatik.ultimate.core:
+  - StatisticsResult: Toolchain Benchmarks
+    Benchmark results are:
+ * AutomataScriptParser took 4.37 ms. Allocated memory is still 514.9 MB. Free memory is still 480.0 MB. There was no memory consumed. Max. memory is 11.5 GB.
+ * AutomataScriptInterpreter took 2164.95 ms. Allocated memory is still 514.9 MB. Free memory was 465.2 MB in the beginning and 403.0 MB in the end (delta: 62.2 MB). Peak memory consumption was 171.8 MB. Max. memory is 11.5 GB.
+ * Results from de.uni_freiburg.informatik.ultimate.plugins.generator.automatascriptinterpreter:
+  - StatisticsResult: automata script interpreter benchmark results
+    {ATS_ID=complement(fha_1), OPERATION_NAME=complement, RUNTIME_TOTAL_MS=66}
+  - StatisticsResult: automata script interpreter benchmark results
+    {ATS_ID=intersect(nfa_0, complement(fha_1)), OPERATION_NAME=intersect, RUNTIME_TOTAL_MS=8}
+  - StatisticsResult: automata script interpreter benchmark results
+    {ATS_ID=complement(fha_2), OPERATION_NAME=complement, RUNTIME_TOTAL_MS=14}
+  - StatisticsResult: automata script interpreter benchmark results
+    {ATS_ID=intersect(nfa_1, complement(fha_2)), OPERATION_NAME=intersect, RUNTIME_TOTAL_MS=11}
+  - StatisticsResult: automata script interpreter benchmark results
+    {ATS_ID=complement(fha_3), OPERATION_NAME=complement, RUNTIME_TOTAL_MS=6}
+  - StatisticsResult: automata script interpreter benchmark results
+    {ATS_ID=intersect(nfa_2, complement(fha_3)), OPERATION_NAME=intersect, RUNTIME_TOTAL_MS=7}
+  - StatisticsResult: automata script interpreter benchmark results
+    {ATS_ID=complement(fha_4), OPERATION_NAME=complement, RUNTIME_TOTAL_MS=40}
+  - StatisticsResult: automata script interpreter benchmark results
+    {ATS_ID=intersect(nfa_3, complement(fha_4)), OPERATION_NAME=intersect, RUNTIME_TOTAL_MS=14}
+  - StatisticsResult: automata script interpreter benchmark results
+    {ATS_ID=complement(fha_5), OPERATION_NAME=complement, RUNTIME_TOTAL_MS=31}
+  - StatisticsResult: automata script interpreter benchmark results
+    {ATS_ID=intersect(nfa_4, complement(fha_5)), OPERATION_NAME=intersect, RUNTIME_TOTAL_MS=8}
+  - StatisticsResult: automata script interpreter benchmark results
+    {ATS_ID=complement(fha_6), OPERATION_NAME=complement, RUNTIME_TOTAL_MS=61}
+  - StatisticsResult: automata script interpreter benchmark results
+    {ATS_ID=intersect(nfa_5, complement(fha_6)), OPERATION_NAME=intersect, RUNTIME_TOTAL_MS=7}
+  - StatisticsResult: automata script interpreter benchmark results
+    {ATS_ID=complement(fha_7), OPERATION_NAME=complement, RUNTIME_TOTAL_MS=49}
+  - StatisticsResult: automata script interpreter benchmark results
+    {ATS_ID=intersect(nfa_6, complement(fha_7)), OPERATION_NAME=intersect, RUNTIME_TOTAL_MS=2}
+  - StatisticsResult: automata script interpreter benchmark results
+    {ATS_ID=complement(fha_8), OPERATION_NAME=complement, RUNTIME_TOTAL_MS=41}
+  - StatisticsResult: automata script interpreter benchmark results
+    {ATS_ID=intersect(nfa_7, complement(fha_8)), OPERATION_NAME=intersect, RUNTIME_TOTAL_MS=3}
+  - StatisticsResult: automata script interpreter benchmark results
+    {ATS_ID=complement(fha_9), OPERATION_NAME=complement, RUNTIME_TOTAL_MS=4}
+  - StatisticsResult: automata script interpreter benchmark results
+    {ATS_ID=intersect(nfa_8, complement(fha_9)), OPERATION_NAME=intersect, RUNTIME_TOTAL_MS=8}
+  - StatisticsResult: automata script interpreter benchmark results
+    {ATS_ID=complement(fha_10), OPERATION_NAME=complement, RUNTIME_TOTAL_MS=58}
+  - StatisticsResult: automata script interpreter benchmark results
+    {ATS_ID=intersect(nfa_9, complement(fha_10)), OPERATION_NAME=intersect, RUNTIME_TOTAL_MS=5}
+  - StatisticsResult: automata script interpreter benchmark results
+    {ATS_ID=complement(fha_11), OPERATION_NAME=complement, RUNTIME_TOTAL_MS=57}
+  - StatisticsResult: automata script interpreter benchmark results
+    {ATS_ID=intersect(nfa_10, complement(fha_11)), OPERATION_NAME=intersect, RUNTIME_TOTAL_MS=6}
+  - StatisticsResult: automata script interpreter benchmark results
+    {ATS_ID=complement(fha_12), OPERATION_NAME=complement, RUNTIME_TOTAL_MS=111}
+  - StatisticsResult: automata script interpreter benchmark results
+    {ATS_ID=intersect(nfa_11, complement(fha_12)), OPERATION_NAME=intersect, RUNTIME_TOTAL_MS=5}
+  - StatisticsResult: automata script interpreter benchmark results
+    {ATS_ID=complement(fha_13), OPERATION_NAME=complement, RUNTIME_TOTAL_MS=76}
+  - StatisticsResult: automata script interpreter benchmark results
+    {ATS_ID=intersect(nfa_12, complement(fha_13)), OPERATION_NAME=intersect, RUNTIME_TOTAL_MS=5}
+  - StatisticsResult: automata script interpreter benchmark results
+    {ATS_ID=complement(fha_14), OPERATION_NAME=complement, RUNTIME_TOTAL_MS=100}
+  - StatisticsResult: automata script interpreter benchmark results
+    {ATS_ID=intersect(nfa_13, complement(fha_14)), OPERATION_NAME=intersect, RUNTIME_TOTAL_MS=15}
+  - StatisticsResult: automata script interpreter benchmark results
+    {ATS_ID=complement(fha_15), OPERATION_NAME=complement, RUNTIME_TOTAL_MS=134}
+  - StatisticsResult: automata script interpreter benchmark results
+    {ATS_ID=intersect(nfa_14, complement(fha_15)), OPERATION_NAME=intersect, RUNTIME_TOTAL_MS=5}
+  - StatisticsResult: automata script interpreter benchmark results
+    {ATS_ID=complement(fha_16), OPERATION_NAME=complement, RUNTIME_TOTAL_MS=75}
+  - StatisticsResult: automata script interpreter benchmark results
+    {ATS_ID=intersect(nfa_15, complement(fha_16)), OPERATION_NAME=intersect, RUNTIME_TOTAL_MS=11}
+  - StatisticsResult: automata script interpreter benchmark results
+    {ATS_ID=complement(fha_17), OPERATION_NAME=complement, RUNTIME_TOTAL_MS=75}
+  - StatisticsResult: automata script interpreter benchmark results
+    {ATS_ID=intersect(nfa_16, complement(fha_17)), OPERATION_NAME=intersect, RUNTIME_TOTAL_MS=5}
+  - StatisticsResult: automata script interpreter benchmark results
+    {ATS_ID=complement(fha_18), OPERATION_NAME=complement, RUNTIME_TOTAL_MS=163}
+  - StatisticsResult: automata script interpreter benchmark results
+    {ATS_ID=intersect(nfa_17, complement(fha_18)), OPERATION_NAME=intersect, RUNTIME_TOTAL_MS=6}
+  - StatisticsResult: automata script interpreter benchmark results
+    {ATS_ID=complement(fha_19), OPERATION_NAME=complement, RUNTIME_TOTAL_MS=3}
+  - StatisticsResult: automata script interpreter benchmark results
+    {ATS_ID=intersect(nfa_18, complement(fha_19)), OPERATION_NAME=intersect, RUNTIME_TOTAL_MS=9}
+  - StatisticsResult: automata script interpreter benchmark results
+    {ATS_ID=isEmpty(nfa_19), OPERATION_NAME=isEmpty, RUNTIME_TOTAL_MS=13}
+  - GenericResultAtElement [Line: 6586]: print(isEmpty(nfa_19))
+    true
+  - AutomataScriptInterpreterOverallResult: Finished interpretation of automata script.
+     You have not used any assert statement in your automata script. Assert statements can be used to check Boolean results.
+RESULT: Ultimate could not prove your program:  You have not used any assert statement in your automata script. Assert statements can be used to check Boolean results.
+Received shutdown request...

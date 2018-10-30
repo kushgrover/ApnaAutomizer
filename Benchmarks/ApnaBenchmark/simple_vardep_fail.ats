@@ -1,0 +1,17 @@
+FiniteAutomaton nfa_0 = (
+    alphabet = {"i = 0" "j = 0" "k = 0" "k < 16" "i = i + 1" "j = j + 2" "k = k + 3" "k == 3 * i" "j == 2 * i"},
+    states = {"q0" "q1" "q2" "q3" "q4" "q5" "q6" "q7" "qerr"},
+    initialStates = {"q0"},
+    finalStates = {"qerr"},
+    transitions = {
+        ("q0" "i = 0" "q1")
+        ("q1" "j = 0" "q2")
+        ("q2" "k = 0" "q3")
+        ("q3" "k < 16" "q4")
+        ("q4" "i = i + 1" "q5")
+        ("q5" "j = j + 2" "q6")
+        ("q6" "k = k + 3" "q3")
+        ("q3" "k == 3 * i" "q7")
+        ("q7" "j == 2 * i" "qerr")
+    }
+);
