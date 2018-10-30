@@ -29,7 +29,7 @@ def find_vars(string1):
     var=string.split(" ")
     x=0
     for j in range(len(var)):
-        if(var[j-x][0]=="0" or var[j-x][0]=="1" or var[j-x][0]=="2" or var[j-x][0]=="3" or var[j-x][0]=="4" or var[j-x][0]=="5" or var[j-x][0]=="6" or var[j-x][0]=="7" or var[j-x][0]=="8" or var[j-x][0]=="9"):
+        if(var[j-x]=="" or var[j-x][0]=="0" or var[j-x][0]=="1" or var[j-x][0]=="2" or var[j-x][0]=="3" or var[j-x][0]=="4" or var[j-x][0]=="5" or var[j-x][0]=="6" or var[j-x][0]=="7" or var[j-x][0]=="8" or var[j-x][0]=="9"):
             var.pop(j-x)
             x+=1
     return var
@@ -123,8 +123,6 @@ def time_stamp(string,vars,time):
         vars.append(lhs)
         time.append(1)
     if(kinky_stuff==1):
-        print rhs
-        print infix_to_prefix(rhs)
         return "(not ("+operator+" "+lhs+"_"+str(time[index_of(lhs,vars)])+" "+current_time(time,vars,infix_to_prefix(rhs),oper,lhs)+"))"
     else:
         return "("+operator+" "+lhs+"_"+str(time[index_of(lhs,vars)])+" "+current_time(time,vars,infix_to_prefix(rhs),oper,lhs)+")"

@@ -58,7 +58,7 @@ def change_time(variable,change):
 def remove_time_stamps(formula):
     for vars in find_vars(formula):
         n=vars.find("_")
-        if(not(n==-1)):
+        if(not(n==-1) and not(vars[n+1:]=="real")):
             new_var=vars[:n]
             formula=replace_with(formula,vars,new_var,0)
     return formula
@@ -83,7 +83,7 @@ def find_vars(string1):
     var=string.split(" ")
     x=0
     for j in range(len(var)):
-        if(var[j-x][0]=="0" or var[j-x][0]=="1" or var[j-x][0]=="2" or var[j-x][0]=="3" or var[j-x][0]=="4" or var[j-x][0]=="5" or var[j-x][0]=="6" or var[j-x][0]=="7" or var[j-x][0]=="8" or var[j-x][0]=="9"):
+        if(var[j-x]=="" or var[j-x][0]=="0" or var[j-x][0]=="1" or var[j-x][0]=="2" or var[j-x][0]=="3" or var[j-x][0]=="4" or var[j-x][0]=="5" or var[j-x][0]=="6" or var[j-x][0]=="7" or var[j-x][0]=="8" or var[j-x][0]=="9"):
             var.pop(j-x)
             x+=1
     return var

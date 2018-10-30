@@ -1,6 +1,6 @@
 FiniteAutomaton nfa_0 = (
-    alphabet = {"i = 0" "a = 0" "b = 0" "i >= 3" "a == 9 - b" "i < 3" "a = a + 1" "b = b + 2" "a = a + 2" "b = b + 1" "i = i + 1"},
-    states = {"q0" "q1" "q2" "q4" "q5" "q6" "q7" "q8" "q9" "q10" "q11" "qerr"},
+    alphabet = {"i = 0" "a = 0" "b = 0" "i >= 3" "a != 9 - b" "i < 3" "a = a + 1" "b = b + 2" "a = a + 2" "b = b + 1" "i = i + 1" "i = ( a + b ) / 3"},
+    states = {"q0" "q1" "q2" "q4" "q5" "q6" "q7" "q8" "q9" "q10" "qerr"},
     initialStates = {"q0"},
     finalStates = {"qerr"},
     transitions = {
@@ -8,12 +8,13 @@ FiniteAutomaton nfa_0 = (
         ("q1" "a = 0" "q2")
         ("q2" "b = 0" "q4")
         ("q4" "i >= 3" "q5")
-        ("q4" "i < 3" "q6")
+        ("q4" "i < 3" "q10")
+        ("q10" "i = ( a + b ) / 3" "q6")
         ("q6" "a = a + 1" "q7")
         ("q6" "a = a + 2" "q9")
         ("q7" "b = b + 2" "q8")
         ("q9" "b = b + 1" "q8")
         ("q8" "i = i + 1" "q4")
-        ("q5" "a == 9 - b" "qerr")
+        ("q5" "a != 9 - b" "qerr")
     }
 );
