@@ -1,6 +1,8 @@
 import os
 import sys
 import time
+import argparse
+
 import modules.gentrace as gentrace 
 import modules.geninterpolants as geninterpolants
 import modules.hoare_automaton as hoare_automaton
@@ -10,16 +12,17 @@ import modules.automata_operations as automata_operations
 #automaton must be named "nfa" ()
 #result is result of verification
 
-#run as : python runner.py <filename.ats> [OPTIONS]
-#OPTIONS : -t to show time involved
+# for usage instructions : python runner.py -h
 
 
-def runner(program_ats,arguments):
+
+
+def runner(args):
     # fha = "floyd_hoare.ats"
     iteration = 0
     verification_done = False
     input_file = "temp/input.ats"
-    os.system("cp "+program_ats+" ./"+input_file)
+    os.system("cp "+args.filename+" ./"+input_file)
     alp = automata_operations.getalphabet(input_file)
     lib_automata_time = 0
     mathsat_time = 0
@@ -54,7 +57,7 @@ def runner(program_ats,arguments):
                     print "\nVerification Successful.\n"
                         
             #slice_automaton(input_file)   #Do we need this?
-        if "-t" in arguments:
+        if args.time:
             print "[TIME] Generating traces took       : "+ str(time_1 - time_0)+" sec"
             print "[TIME] Generating interpolants took : "+ str(time_3 - time_2)+" sec"
             print "[TIME] Creating Floyd Hoare took    : "+ str(time_5 - time_4)+" sec"
@@ -63,13 +66,42 @@ def runner(program_ats,arguments):
             lib_automata_time += time_6 - time_5 + time_1 - time_0
             print "[TIME] MathSAT took total           : "+ str(time_5 - time_4 + time_3 - time_2)+" sec"
             mathsat_time += time_5 - time_4 + time_3 - time_2
-    if "-t" in arguments:
-        print "[TIME] Automata Library took finally : "+ str(lib_automata_time)+" sec"
+        
+        if args.pause:
+            raw_input('\n\nPress enter to continue: ')
+    if args.time:
+        print "\n\n[TIME] Automata Library took finally : "+ str(lib_automata_time)+" sec"
         print "[TIME] MathSAT took finally          : "+ str(mathsat_time)+" sec"
 
 
 
+def running_options():
 
+    parser = argparse.ArgumentParser(description='Verify Programs! Sorry, Program Automatons :(')
 
+    parser.add_argument("-t", dest="time", action='store_true',
+                        help="Show time required by different processes.")
 
-runner(sys.argv[1],sys.argv) 
+    parser.add_argument('-i', dest='interpol', action='store_true',
+                        help='Show the interpolants')
+
+    parser.add_argument('-ht', dest='hoare', action='store_true',
+                        help='Show the Hoare triple being checked')
+
+    parser.add_argument('-s', dest='smart', action='store_true',
+                        help='Use smart hoare triple checking procedure')
+
+    parser.add_argument('-p', dest='pause', action='store_true',
+                        help='Pause program after each iteration')
+
+    parser.add_argument('-m', dest='manual', action='store_true',
+                        help='Use manual invariant addition')
+    parser.add_argument('filename', 
+                        help='.ats Filename')
+
+    args = parser.parse_args()
+    
+    return args
+
+args = running_options()
+runner(args) 
