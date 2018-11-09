@@ -16,7 +16,7 @@ def getalphabet(ats_file):		#what is this doing exactly? seems more complicated 
 			m=k.find("}")
 			alphabet=k[n+2:m-1]
 			alphabet=alphabet.split('" "')
-			print "[DEBUG] Alphabet : "+str(alphabet)
+			# print "[DEBUG] Alphabet : "+str(alphabet)
 			return alphabet
 
 # automata library execution is hardcoded. need to install and change properly.

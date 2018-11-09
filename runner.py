@@ -39,7 +39,10 @@ def runner(args):
             print "\nVerification Successful.\n"
         else:
             time_2 = time.time()
-            (env,itp,jeez) = geninterpolants.get_interpolant(tr) #itp of msat type. env is the environment
+            if args.manual:
+                (env,itp,jeez) = geninterpolants.get_interpolant_put_invariant(tr,args.interpol) #itp of msat type. env is the environment
+            else:
+                (env,itp,jeez) = geninterpolants.get_interpolant(tr,args.interpol) #itp of msat type. env is the environment
             time_3 = time.time()
 
             if(jeez==1):    # Program is incorrect
@@ -48,7 +51,10 @@ def runner(args):
                 verification_done = True
             else:
                 time_4 = time.time()
-                hoare_automaton.floyd_hoare(env,alp,itp,input_file,iteration)
+                # if args.manual:
+                    # hoare_automaton.floyd_hoare_with_breaks(env,alp,itp,input_file,iteration,args.hoare)
+                # else:
+                hoare_automaton.floyd_hoare(env,alp,itp,input_file,iteration,args.hoare)
                 time_5 = time.time()
                 res = automata_operations.cover_check(input_file, iteration) #this modifies input_file too, as input \ floyd_hoare
                 time_6 = time.time()

@@ -90,7 +90,7 @@ def find_vars(string1):
 
 
 # def is_valid_hoare_triple(pre,statement,post):
-def is_valid_hoare_triple(env,pre,statement,post):
+def is_valid_hoare_triple(env,pre,statement,post,verbose):
 
     int_tp = msat_get_integer_type(env)
 
@@ -218,7 +218,8 @@ def is_valid_hoare_triple(env,pre,statement,post):
     # print statement
 
     # for Debugging
-    # print "[DEBUG] check Hoare Triple : {"+pre+"} "+statement+" {"+post+"}"
+    if verbose:
+        print "[DEBUG] check Hoare Triple : {"+pre+"} "+statement+" {"+post+"}"
 
     
 
@@ -254,13 +255,15 @@ def is_valid_hoare_triple(env,pre,statement,post):
     # if env is SAT then return False else return True
     res=msat_solve(env)
     if(res==MSAT_SAT):
-        # print "[DEBUG] Hoare Triple is NOT valid."
+        if verbose:
+            print "[DEBUG] Hoare Triple is NOT valid."
 
         # pop
         msat_pop_backtrack_point(env)
     	return False
     else:
-        # print "[DEBUG] Hoare Triple is valid."
+        if verbose:
+            print "[DEBUG] Hoare Triple is valid."
 
         #pop
         msat_pop_backtrack_point(env)

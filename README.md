@@ -10,4 +10,5 @@ Toy version of Ultimate Automizer
 ## Running
 
 - Put program automaton as LibraryAutomaton `ats` format in source directory.
-- run `pyhton runner.py filename.ats` 
+- run `python runner.py filename.ats`  for simplest way to run
+- for more options look `python runner.py -h`
