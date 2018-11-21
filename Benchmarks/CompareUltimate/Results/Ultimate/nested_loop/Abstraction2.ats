@@ -1,0 +1,34 @@
+// Testfile dumped by Ultimate at 2018/11/19 14:33:56
+//
+// 
+
+NestedWordAutomaton nwa = (
+	callAlphabet = {"call ULTIMATE.init();" "call #t~ret2 := main();" },
+	internalAlphabet = {"assume !(~k~1 % 4294967296 == 36);" "assume true;" "assume ~k~1 % 4294967296 == 36;" "assume true;" "assume true;" "~i~1 := 0;~j~1 := 0;~k~1 := 0;~i~1 := 1;" "assume true;" "assume !(~i~1 % 4294967296 <= 3);" "assume !!(~i~1 % 4294967296 <= 3);~j~1 := 1;" "assume true;" "assume !(~j~1 % 4294967296 <= 3);" "assume !!(~j~1 % 4294967296 <= 3);~k~1 := ~i~1 + ~j~1 + ~k~1;" "#t~post1 := ~j~1;~j~1 := #t~post1 + 1;havoc #t~post1;" "assume !true;" "#t~post0 := ~i~1;~i~1 := #t~post0 + 1;havoc #t~post0;" "assume !true;" },
+	returnAlphabet = {"return;" "return;" },
+	states = {"113#L1" "114#mainENTRY" "115#L9''" "116#L9'''" "117#L10''" "118#L10'''" "119#L9'''" "120#L9" "121#mainErr0AssertViolation" "122#ULTIMATE.initEXIT" "123#ULTIMATE.startENTRY" "124#L9''''" "125#L10" "126#ULTIMATE.initFINAL" "127#L9" },
+	initialStates = {"123#ULTIMATE.startENTRY" },
+	finalStates = {"121#mainErr0AssertViolation" },
+	callTransitions = {
+		("113#L1" "call #t~ret2 := main();" "114#mainENTRY")
+		("123#ULTIMATE.startENTRY" "call ULTIMATE.init();" "126#ULTIMATE.initFINAL")
+	},
+	internalTransitions = {
+		("114#mainENTRY" "~i~1 := 0;~j~1 := 0;~k~1 := 0;~i~1 := 1;" "119#L9'''")
+		("115#L9''" "#t~post0 := ~i~1;~i~1 := #t~post0 + 1;havoc #t~post0;" "116#L9'''")
+		("116#L9'''" "assume true;" "127#L9")
+		("117#L10''" "#t~post1 := ~j~1;~j~1 := #t~post1 + 1;havoc #t~post1;" "118#L10'''")
+		("118#L10'''" "assume true;" "125#L10")
+		("119#L9'''" "assume true;" "120#L9")
+		("120#L9" "assume !!(~i~1 % 4294967296 <= 3);~j~1 := 1;" "118#L10'''")
+		("124#L9''''" "assume !(~k~1 % 4294967296 == 36);" "121#mainErr0AssertViolation")
+		("125#L10" "assume !(~j~1 % 4294967296 <= 3);" "115#L9''")
+		("125#L10" "assume !!(~j~1 % 4294967296 <= 3);~k~1 := ~i~1 + ~j~1 + ~k~1;" "117#L10''")
+		("126#ULTIMATE.initFINAL" "assume true;" "122#ULTIMATE.initEXIT")
+		("127#L9" "assume !(~i~1 % 4294967296 <= 3);" "124#L9''''")
+		("127#L9" "assume !!(~i~1 % 4294967296 <= 3);~j~1 := 1;" "118#L10'''")
+	},
+	returnTransitions = {
+		("122#ULTIMATE.initEXIT" "123#ULTIMATE.startENTRY" "return;" "113#L1")
+	}
+);

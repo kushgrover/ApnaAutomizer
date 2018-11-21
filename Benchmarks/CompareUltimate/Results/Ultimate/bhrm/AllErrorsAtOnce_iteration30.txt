@@ -1,0 +1,110 @@
+===============Run of potential Counterexample==========
+Location0: ULTIMATE.startENTRY
+    Statement0: call ULTIMATE.init();
+    Location1: ULTIMATE.initFINAL
+    Statement1: assume true;
+    Location2: ULTIMATE.initEXIT
+    Statement2: Return - Corresponding call: call ULTIMATE.init();
+Location3: L1
+    Statement3: call #t~ret1 := main();
+    Location4: mainENTRY
+    Statement4: havoc ~i~2;havoc ~n~2;havoc ~a~2;havoc ~b~2;~i~2 := 0;~a~2 := 0;~b~2 := 0;~n~2 := 5;
+    Location5: L12''
+    Statement5: assume true;
+    Location6: L12
+    Statement6: assume !!(~i~2 < ~n~2);
+    Location7: L13
+        Statement7: call #t~ret0 := rand();
+        Location8: randENTRY
+        Statement8: havoc ~x~1;#res := (if ~x~1 < 0 && ~x~1 % 2 != 0 then ~x~1 % 2 - 2 else ~x~1 % 2);
+        Location9: randFINAL
+        Statement9: assume true;
+        Location10: randEXIT
+        Statement10: Return - Corresponding call: call #t~ret0 := rand();
+    Location11: L13'
+    Statement11: assume -2147483648 <= #t~ret0 && #t~ret0 <= 2147483647;
+    Location12: L13''
+    Statement12: assume !(#t~ret0 != 0);havoc #t~ret0;~a~2 := ~a~2 + 2;~b~2 := ~b~2 + 1;
+    Location13: L13''''
+    Statement13: ~i~2 := ~i~2 + 1;
+    Location14: L12''
+    Statement14: assume true;
+    Location15: L12
+    Statement15: assume !!(~i~2 < ~n~2);
+    Location16: L13
+        Statement16: call #t~ret0 := rand();
+        Location17: randENTRY
+        Statement17: havoc ~x~1;#res := (if ~x~1 < 0 && ~x~1 % 2 != 0 then ~x~1 % 2 - 2 else ~x~1 % 2);
+        Location18: randFINAL
+        Statement18: assume true;
+        Location19: randEXIT
+        Statement19: Return - Corresponding call: call #t~ret0 := rand();
+    Location20: L13'
+    Statement20: assume -2147483648 <= #t~ret0 && #t~ret0 <= 2147483647;
+    Location21: L13''
+    Statement21: assume !(#t~ret0 != 0);havoc #t~ret0;~a~2 := ~a~2 + 2;~b~2 := ~b~2 + 1;
+    Location22: L13''''
+    Statement22: ~i~2 := ~i~2 + 1;
+    Location23: L12''
+    Statement23: assume true;
+    Location24: L12
+    Statement24: assume !!(~i~2 < ~n~2);
+    Location25: L13
+        Statement25: call #t~ret0 := rand();
+        Location26: randENTRY
+        Statement26: havoc ~x~1;#res := (if ~x~1 < 0 && ~x~1 % 2 != 0 then ~x~1 % 2 - 2 else ~x~1 % 2);
+        Location27: randFINAL
+        Statement27: assume true;
+        Location28: randEXIT
+        Statement28: Return - Corresponding call: call #t~ret0 := rand();
+    Location29: L13'
+    Statement29: assume -2147483648 <= #t~ret0 && #t~ret0 <= 2147483647;
+    Location30: L13''
+    Statement30: assume #t~ret0 != 0;havoc #t~ret0;~a~2 := ~a~2 + 1;~b~2 := ~b~2 + 2;
+    Location31: L13''''
+    Statement31: ~i~2 := ~i~2 + 1;
+    Location32: L12''
+    Statement32: assume true;
+    Location33: L12
+    Statement33: assume !!(~i~2 < ~n~2);
+    Location34: L13
+        Statement34: call #t~ret0 := rand();
+        Location35: randENTRY
+        Statement35: havoc ~x~1;#res := (if ~x~1 < 0 && ~x~1 % 2 != 0 then ~x~1 % 2 - 2 else ~x~1 % 2);
+        Location36: randFINAL
+        Statement36: assume true;
+        Location37: randEXIT
+        Statement37: Return - Corresponding call: call #t~ret0 := rand();
+    Location38: L13'
+    Statement38: assume -2147483648 <= #t~ret0 && #t~ret0 <= 2147483647;
+    Location39: L13''
+    Statement39: assume #t~ret0 != 0;havoc #t~ret0;~a~2 := ~a~2 + 1;~b~2 := ~b~2 + 2;
+    Location40: L13''''
+    Statement40: ~i~2 := ~i~2 + 1;
+    Location41: L12''
+    Statement41: assume true;
+    Location42: L12
+    Statement42: assume !!(~i~2 < ~n~2);
+    Location43: L13
+        Statement43: call #t~ret0 := rand();
+        Location44: randENTRY
+        Statement44: havoc ~x~1;#res := (if ~x~1 < 0 && ~x~1 % 2 != 0 then ~x~1 % 2 - 2 else ~x~1 % 2);
+        Location45: randFINAL
+        Statement45: assume true;
+        Location46: randEXIT
+        Statement46: Return - Corresponding call: call #t~ret0 := rand();
+    Location47: L13'
+    Statement47: assume -2147483648 <= #t~ret0 && #t~ret0 <= 2147483647;
+    Location48: L13''
+    Statement48: assume #t~ret0 != 0;havoc #t~ret0;~a~2 := ~a~2 + 1;~b~2 := ~b~2 + 2;
+    Location49: L13''''
+    Statement49: ~i~2 := ~i~2 + 1;
+    Location50: L12''
+    Statement50: assume true;
+    Location51: L12
+    Statement51: assume !(~i~2 < ~n~2);
+    Location52: L12'''
+    Statement52: assume !(~a~2 + ~b~2 == 3 * ~n~2);
+ErrorLocation
+
+

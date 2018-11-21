@@ -1,0 +1,18 @@
+===============Run of potential Counterexample==========
+Location0: ULTIMATE.startENTRY
+    Statement0: call ULTIMATE.init();
+    Location1: ULTIMATE.initFINAL
+    Statement1: assume true;
+    Location2: ULTIMATE.initEXIT
+    Statement2: Return - Corresponding call: call ULTIMATE.init();
+Location3: L1
+    Statement3: call #t~ret1 := main();
+    Location4: mainENTRY
+    Statement4: havoc ~i~2;havoc ~n~2;havoc ~a~2;havoc ~b~2;~i~2 := 0;~a~2 := 0;~b~2 := 0;~n~2 := 5;
+    Location5: L12''
+    Statement5: assume !true;
+    Location6: L12'''
+    Statement6: assume !(~a~2 + ~b~2 == 3 * ~n~2);
+ErrorLocation
+
+

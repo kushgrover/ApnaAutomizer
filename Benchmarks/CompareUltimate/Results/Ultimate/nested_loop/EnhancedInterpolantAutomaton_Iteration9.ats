@@ -1,0 +1,62 @@
+// Testfile dumped by Ultimate at 2018/11/19 14:34:02
+//
+// 
+
+NestedWordAutomaton nwa = (
+	callAlphabet = {"call ULTIMATE.init();" "call #t~ret2 := main();" },
+	internalAlphabet = {"assume !(~k~1 % 4294967296 == 36);" "assume true;" "assume ~k~1 % 4294967296 == 36;" "assume true;" "assume true;" "~i~1 := 0;~j~1 := 0;~k~1 := 0;~i~1 := 1;" "assume true;" "assume !(~i~1 % 4294967296 <= 3);" "assume !!(~i~1 % 4294967296 <= 3);~j~1 := 1;" "assume true;" "assume !(~j~1 % 4294967296 <= 3);" "assume !!(~j~1 % 4294967296 <= 3);~k~1 := ~i~1 + ~j~1 + ~k~1;" "#t~post1 := ~j~1;~j~1 := #t~post1 + 1;havoc #t~post1;" "assume !true;" "#t~post0 := ~i~1;~i~1 := #t~post0 + 1;havoc #t~post0;" "assume !true;" },
+	returnAlphabet = {"return;" "return;" },
+	states = {"1280#(= main_~j~1 3)" "1153#true" "1154#false" "1270#(= main_~j~1 2)" "1290#(= main_~j~1 4)" "1260#(= main_~j~1 1)" },
+	initialStates = {"1153#true" },
+	finalStates = {"1154#false" },
+	callTransitions = {
+		("1153#true" "call ULTIMATE.init();" "1153#true")
+		("1153#true" "call #t~ret2 := main();" "1153#true")
+		("1154#false" "call ULTIMATE.init();" "1154#false")
+		("1154#false" "call #t~ret2 := main();" "1154#false")
+	},
+	internalTransitions = {
+		("1280#(= main_~j~1 3)" "assume true;" "1280#(= main_~j~1 3)")
+		("1280#(= main_~j~1 3)" "assume !!(~j~1 % 4294967296 <= 3);~k~1 := ~i~1 + ~j~1 + ~k~1;" "1280#(= main_~j~1 3)")
+		("1280#(= main_~j~1 3)" "#t~post1 := ~j~1;~j~1 := #t~post1 + 1;havoc #t~post1;" "1290#(= main_~j~1 4)")
+		("1153#true" "assume true;" "1153#true")
+		("1153#true" "assume true;" "1153#true")
+		("1153#true" "~i~1 := 0;~j~1 := 0;~k~1 := 0;~i~1 := 1;" "1153#true")
+		("1153#true" "assume !(~j~1 % 4294967296 <= 3);" "1153#true")
+		("1153#true" "assume !!(~j~1 % 4294967296 <= 3);~k~1 := ~i~1 + ~j~1 + ~k~1;" "1153#true")
+		("1153#true" "assume true;" "1153#true")
+		("1153#true" "#t~post1 := ~j~1;~j~1 := #t~post1 + 1;havoc #t~post1;" "1153#true")
+		("1153#true" "#t~post0 := ~i~1;~i~1 := #t~post0 + 1;havoc #t~post0;" "1153#true")
+		("1153#true" "assume !!(~i~1 % 4294967296 <= 3);~j~1 := 1;" "1153#true")
+		("1153#true" "assume !!(~i~1 % 4294967296 <= 3);~j~1 := 1;" "1260#(= main_~j~1 1)")
+		("1154#false" "assume !(~k~1 % 4294967296 == 36);" "1154#false")
+		("1154#false" "assume true;" "1154#false")
+		("1154#false" "assume ~k~1 % 4294967296 == 36;" "1154#false")
+		("1154#false" "assume true;" "1154#false")
+		("1154#false" "assume true;" "1154#false")
+		("1154#false" "~i~1 := 0;~j~1 := 0;~k~1 := 0;~i~1 := 1;" "1154#false")
+		("1154#false" "assume true;" "1154#false")
+		("1154#false" "assume !(~i~1 % 4294967296 <= 3);" "1154#false")
+		("1154#false" "assume !!(~i~1 % 4294967296 <= 3);~j~1 := 1;" "1154#false")
+		("1154#false" "assume true;" "1154#false")
+		("1154#false" "assume !(~j~1 % 4294967296 <= 3);" "1154#false")
+		("1154#false" "assume !!(~j~1 % 4294967296 <= 3);~k~1 := ~i~1 + ~j~1 + ~k~1;" "1154#false")
+		("1154#false" "#t~post1 := ~j~1;~j~1 := #t~post1 + 1;havoc #t~post1;" "1154#false")
+		("1154#false" "assume !true;" "1154#false")
+		("1154#false" "#t~post0 := ~i~1;~i~1 := #t~post0 + 1;havoc #t~post0;" "1154#false")
+		("1154#false" "assume !true;" "1154#false")
+		("1270#(= main_~j~1 2)" "assume true;" "1270#(= main_~j~1 2)")
+		("1270#(= main_~j~1 2)" "assume !!(~j~1 % 4294967296 <= 3);~k~1 := ~i~1 + ~j~1 + ~k~1;" "1270#(= main_~j~1 2)")
+		("1270#(= main_~j~1 2)" "#t~post1 := ~j~1;~j~1 := #t~post1 + 1;havoc #t~post1;" "1280#(= main_~j~1 3)")
+		("1290#(= main_~j~1 4)" "assume true;" "1290#(= main_~j~1 4)")
+		("1290#(= main_~j~1 4)" "assume !!(~j~1 % 4294967296 <= 3);~k~1 := ~i~1 + ~j~1 + ~k~1;" "1154#false")
+		("1260#(= main_~j~1 1)" "assume true;" "1260#(= main_~j~1 1)")
+		("1260#(= main_~j~1 1)" "assume !!(~j~1 % 4294967296 <= 3);~k~1 := ~i~1 + ~j~1 + ~k~1;" "1260#(= main_~j~1 1)")
+		("1260#(= main_~j~1 1)" "#t~post1 := ~j~1;~j~1 := #t~post1 + 1;havoc #t~post1;" "1270#(= main_~j~1 2)")
+	},
+	returnTransitions = {
+		("1153#true" "1153#true" "return;" "1153#true")
+		("1154#false" "1154#false" "return;" "1154#false")
+		("1154#false" "1154#false" "return;" "1154#false")
+	}
+);

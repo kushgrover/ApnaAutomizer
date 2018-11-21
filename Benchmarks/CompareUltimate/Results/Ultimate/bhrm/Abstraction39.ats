@@ -1,0 +1,18 @@
+// Testfile dumped by Ultimate at 2018/11/19 14:19:27
+//
+// 
+
+NestedWordAutomaton nwa = (
+	callAlphabet = {"call ULTIMATE.init();" "call #t~ret1 := main();" "call #t~ret0 := rand();" },
+	internalAlphabet = {"havoc ~x~1;#res := (if ~x~1 < 0 && ~x~1 % 2 != 0 then ~x~1 % 2 - 2 else ~x~1 % 2);" "assume true;" "assume true;" "assume true;" "havoc ~i~2;havoc ~n~2;havoc ~a~2;havoc ~b~2;~i~2 := 0;~a~2 := 0;~b~2 := 0;~n~2 := 5;" "assume true;" "assume !(~i~2 < ~n~2);" "assume !!(~i~2 < ~n~2);" "assume -2147483648 <= #t~ret0 && #t~ret0 <= 2147483647;" "assume #t~ret0 != 0;havoc #t~ret0;~a~2 := ~a~2 + 1;~b~2 := ~b~2 + 2;" "assume !(#t~ret0 != 0);havoc #t~ret0;~a~2 := ~a~2 + 2;~b~2 := ~b~2 + 1;" "~i~2 := ~i~2 + 1;" "assume !true;" "assume !(~a~2 + ~b~2 == 3 * ~n~2);" "assume ~a~2 + ~b~2 == 3 * ~n~2;#res := 0;" "assume true;" },
+	returnAlphabet = {"return;" "return;" "return;" },
+	states = {},
+	initialStates = {},
+	finalStates = {},
+	callTransitions = {
+	},
+	internalTransitions = {
+	},
+	returnTransitions = {
+	}
+);

@@ -1,0 +1,56 @@
+===============Run of potential Counterexample==========
+Location0: ULTIMATE.startENTRY
+    Statement0: call ULTIMATE.init();
+    Location1: ULTIMATE.initFINAL
+    Statement1: assume true;
+    Location2: ULTIMATE.initEXIT
+    Statement2: Return - Corresponding call: call ULTIMATE.init();
+Location3: L1
+    Statement3: call #t~ret1 := main();
+    Location4: mainENTRY
+    Statement4: havoc ~i~2;havoc ~n~2;havoc ~a~2;havoc ~b~2;~i~2 := 0;~a~2 := 0;~b~2 := 0;~n~2 := 5;
+    Location5: L12''
+    Statement5: assume true;
+    Location6: L12
+    Statement6: assume !!(~i~2 < ~n~2);
+    Location7: L13
+        Statement7: call #t~ret0 := rand();
+        Location8: randENTRY
+        Statement8: havoc ~x~1;#res := (if ~x~1 < 0 && ~x~1 % 2 != 0 then ~x~1 % 2 - 2 else ~x~1 % 2);
+        Location9: randFINAL
+        Statement9: assume true;
+        Location10: randEXIT
+        Statement10: Return - Corresponding call: call #t~ret0 := rand();
+    Location11: L13'
+    Statement11: assume -2147483648 <= #t~ret0 && #t~ret0 <= 2147483647;
+    Location12: L13''
+    Statement12: assume #t~ret0 != 0;havoc #t~ret0;~a~2 := ~a~2 + 1;~b~2 := ~b~2 + 2;
+    Location13: L13''''
+    Statement13: ~i~2 := ~i~2 + 1;
+    Location14: L12''
+    Statement14: assume true;
+    Location15: L12
+    Statement15: assume !!(~i~2 < ~n~2);
+    Location16: L13
+        Statement16: call #t~ret0 := rand();
+        Location17: randENTRY
+        Statement17: havoc ~x~1;#res := (if ~x~1 < 0 && ~x~1 % 2 != 0 then ~x~1 % 2 - 2 else ~x~1 % 2);
+        Location18: randFINAL
+        Statement18: assume true;
+        Location19: randEXIT
+        Statement19: Return - Corresponding call: call #t~ret0 := rand();
+    Location20: L13'
+    Statement20: assume -2147483648 <= #t~ret0 && #t~ret0 <= 2147483647;
+    Location21: L13''
+    Statement21: assume #t~ret0 != 0;havoc #t~ret0;~a~2 := ~a~2 + 1;~b~2 := ~b~2 + 2;
+    Location22: L13''''
+    Statement22: ~i~2 := ~i~2 + 1;
+    Location23: L12''
+    Statement23: assume true;
+    Location24: L12
+    Statement24: assume !(~i~2 < ~n~2);
+    Location25: L12'''
+    Statement25: assume !(~a~2 + ~b~2 == 3 * ~n~2);
+ErrorLocation
+
+

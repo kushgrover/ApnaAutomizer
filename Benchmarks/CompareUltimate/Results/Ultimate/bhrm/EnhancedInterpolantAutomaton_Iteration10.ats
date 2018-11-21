@@ -1,0 +1,85 @@
+// Testfile dumped by Ultimate at 2018/11/19 14:19:06
+//
+// 
+
+NestedWordAutomaton nwa = (
+	callAlphabet = {"call ULTIMATE.init();" "call #t~ret1 := main();" "call #t~ret0 := rand();" },
+	internalAlphabet = {"havoc ~x~1;#res := (if ~x~1 < 0 && ~x~1 % 2 != 0 then ~x~1 % 2 - 2 else ~x~1 % 2);" "assume true;" "assume true;" "assume true;" "havoc ~i~2;havoc ~n~2;havoc ~a~2;havoc ~b~2;~i~2 := 0;~a~2 := 0;~b~2 := 0;~n~2 := 5;" "assume true;" "assume !(~i~2 < ~n~2);" "assume !!(~i~2 < ~n~2);" "assume -2147483648 <= #t~ret0 && #t~ret0 <= 2147483647;" "assume #t~ret0 != 0;havoc #t~ret0;~a~2 := ~a~2 + 1;~b~2 := ~b~2 + 2;" "assume !(#t~ret0 != 0);havoc #t~ret0;~a~2 := ~a~2 + 2;~b~2 := ~b~2 + 1;" "~i~2 := ~i~2 + 1;" "assume !true;" "assume !(~a~2 + ~b~2 == 3 * ~n~2);" "assume ~a~2 + ~b~2 == 3 * ~n~2;#res := 0;" "assume true;" },
+	returnAlphabet = {"return;" "return;" "return;" },
+	states = {"1744#(and (= main_~b~2 2) (= main_~n~2 5) (= main_~a~2 1))" "1856#(and (= main_~a~2 7) (= main_~n~2 5) (= main_~b~2 8))" "1828#(and (= main_~a~2 5) (= main_~b~2 7) (= main_~n~2 5))" "1702#true" "1703#false" "1719#(and (= main_~b~2 0) (= main_~a~2 0) (= main_~n~2 5))" "1800#(and (= main_~b~2 6) (= main_~a~2 3) (= main_~n~2 5))" "1772#(and (= main_~b~2 4) (= main_~a~2 2) (= main_~n~2 5))" },
+	initialStates = {"1702#true" },
+	finalStates = {"1703#false" },
+	callTransitions = {
+		("1744#(and (= main_~b~2 2) (= main_~n~2 5) (= main_~a~2 1))" "call #t~ret0 := rand();" "1702#true")
+		("1828#(and (= main_~a~2 5) (= main_~b~2 7) (= main_~n~2 5))" "call #t~ret0 := rand();" "1702#true")
+		("1702#true" "call ULTIMATE.init();" "1702#true")
+		("1702#true" "call #t~ret1 := main();" "1702#true")
+		("1703#false" "call ULTIMATE.init();" "1703#false")
+		("1703#false" "call #t~ret1 := main();" "1703#false")
+		("1703#false" "call #t~ret0 := rand();" "1703#false")
+		("1719#(and (= main_~b~2 0) (= main_~a~2 0) (= main_~n~2 5))" "call #t~ret0 := rand();" "1702#true")
+		("1800#(and (= main_~b~2 6) (= main_~a~2 3) (= main_~n~2 5))" "call #t~ret0 := rand();" "1702#true")
+		("1772#(and (= main_~b~2 4) (= main_~a~2 2) (= main_~n~2 5))" "call #t~ret0 := rand();" "1702#true")
+	},
+	internalTransitions = {
+		("1744#(and (= main_~b~2 2) (= main_~n~2 5) (= main_~a~2 1))" "assume !!(~i~2 < ~n~2);" "1744#(and (= main_~b~2 2) (= main_~n~2 5) (= main_~a~2 1))")
+		("1744#(and (= main_~b~2 2) (= main_~n~2 5) (= main_~a~2 1))" "assume -2147483648 <= #t~ret0 && #t~ret0 <= 2147483647;" "1744#(and (= main_~b~2 2) (= main_~n~2 5) (= main_~a~2 1))")
+		("1744#(and (= main_~b~2 2) (= main_~n~2 5) (= main_~a~2 1))" "assume #t~ret0 != 0;havoc #t~ret0;~a~2 := ~a~2 + 1;~b~2 := ~b~2 + 2;" "1772#(and (= main_~b~2 4) (= main_~a~2 2) (= main_~n~2 5))")
+		("1744#(and (= main_~b~2 2) (= main_~n~2 5) (= main_~a~2 1))" "~i~2 := ~i~2 + 1;" "1744#(and (= main_~b~2 2) (= main_~n~2 5) (= main_~a~2 1))")
+		("1744#(and (= main_~b~2 2) (= main_~n~2 5) (= main_~a~2 1))" "assume true;" "1744#(and (= main_~b~2 2) (= main_~n~2 5) (= main_~a~2 1))")
+		("1856#(and (= main_~a~2 7) (= main_~n~2 5) (= main_~b~2 8))" "~i~2 := ~i~2 + 1;" "1856#(and (= main_~a~2 7) (= main_~n~2 5) (= main_~b~2 8))")
+		("1856#(and (= main_~a~2 7) (= main_~n~2 5) (= main_~b~2 8))" "assume true;" "1856#(and (= main_~a~2 7) (= main_~n~2 5) (= main_~b~2 8))")
+		("1856#(and (= main_~a~2 7) (= main_~n~2 5) (= main_~b~2 8))" "assume !(~a~2 + ~b~2 == 3 * ~n~2);" "1703#false")
+		("1856#(and (= main_~a~2 7) (= main_~n~2 5) (= main_~b~2 8))" "assume !(~i~2 < ~n~2);" "1856#(and (= main_~a~2 7) (= main_~n~2 5) (= main_~b~2 8))")
+		("1828#(and (= main_~a~2 5) (= main_~b~2 7) (= main_~n~2 5))" "assume !!(~i~2 < ~n~2);" "1828#(and (= main_~a~2 5) (= main_~b~2 7) (= main_~n~2 5))")
+		("1828#(and (= main_~a~2 5) (= main_~b~2 7) (= main_~n~2 5))" "assume -2147483648 <= #t~ret0 && #t~ret0 <= 2147483647;" "1828#(and (= main_~a~2 5) (= main_~b~2 7) (= main_~n~2 5))")
+		("1828#(and (= main_~a~2 5) (= main_~b~2 7) (= main_~n~2 5))" "assume !(#t~ret0 != 0);havoc #t~ret0;~a~2 := ~a~2 + 2;~b~2 := ~b~2 + 1;" "1856#(and (= main_~a~2 7) (= main_~n~2 5) (= main_~b~2 8))")
+		("1828#(and (= main_~a~2 5) (= main_~b~2 7) (= main_~n~2 5))" "~i~2 := ~i~2 + 1;" "1828#(and (= main_~a~2 5) (= main_~b~2 7) (= main_~n~2 5))")
+		("1828#(and (= main_~a~2 5) (= main_~b~2 7) (= main_~n~2 5))" "assume true;" "1828#(and (= main_~a~2 5) (= main_~b~2 7) (= main_~n~2 5))")
+		("1702#true" "havoc ~x~1;#res := (if ~x~1 < 0 && ~x~1 % 2 != 0 then ~x~1 % 2 - 2 else ~x~1 % 2);" "1702#true")
+		("1702#true" "assume true;" "1702#true")
+		("1702#true" "assume true;" "1702#true")
+		("1702#true" "havoc ~i~2;havoc ~n~2;havoc ~a~2;havoc ~b~2;~i~2 := 0;~a~2 := 0;~b~2 := 0;~n~2 := 5;" "1719#(and (= main_~b~2 0) (= main_~a~2 0) (= main_~n~2 5))")
+		("1703#false" "havoc ~x~1;#res := (if ~x~1 < 0 && ~x~1 % 2 != 0 then ~x~1 % 2 - 2 else ~x~1 % 2);" "1703#false")
+		("1703#false" "assume true;" "1703#false")
+		("1703#false" "assume true;" "1703#false")
+		("1703#false" "assume true;" "1703#false")
+		("1703#false" "havoc ~i~2;havoc ~n~2;havoc ~a~2;havoc ~b~2;~i~2 := 0;~a~2 := 0;~b~2 := 0;~n~2 := 5;" "1703#false")
+		("1703#false" "assume true;" "1703#false")
+		("1703#false" "assume !(~i~2 < ~n~2);" "1703#false")
+		("1703#false" "assume !!(~i~2 < ~n~2);" "1703#false")
+		("1703#false" "assume -2147483648 <= #t~ret0 && #t~ret0 <= 2147483647;" "1703#false")
+		("1703#false" "assume #t~ret0 != 0;havoc #t~ret0;~a~2 := ~a~2 + 1;~b~2 := ~b~2 + 2;" "1703#false")
+		("1703#false" "assume !(#t~ret0 != 0);havoc #t~ret0;~a~2 := ~a~2 + 2;~b~2 := ~b~2 + 1;" "1703#false")
+		("1703#false" "~i~2 := ~i~2 + 1;" "1703#false")
+		("1703#false" "assume !true;" "1703#false")
+		("1703#false" "assume !(~a~2 + ~b~2 == 3 * ~n~2);" "1703#false")
+		("1703#false" "assume ~a~2 + ~b~2 == 3 * ~n~2;#res := 0;" "1703#false")
+		("1703#false" "assume true;" "1703#false")
+		("1719#(and (= main_~b~2 0) (= main_~a~2 0) (= main_~n~2 5))" "assume !!(~i~2 < ~n~2);" "1719#(and (= main_~b~2 0) (= main_~a~2 0) (= main_~n~2 5))")
+		("1719#(and (= main_~b~2 0) (= main_~a~2 0) (= main_~n~2 5))" "assume -2147483648 <= #t~ret0 && #t~ret0 <= 2147483647;" "1719#(and (= main_~b~2 0) (= main_~a~2 0) (= main_~n~2 5))")
+		("1719#(and (= main_~b~2 0) (= main_~a~2 0) (= main_~n~2 5))" "assume #t~ret0 != 0;havoc #t~ret0;~a~2 := ~a~2 + 1;~b~2 := ~b~2 + 2;" "1744#(and (= main_~b~2 2) (= main_~n~2 5) (= main_~a~2 1))")
+		("1719#(and (= main_~b~2 0) (= main_~a~2 0) (= main_~n~2 5))" "assume true;" "1719#(and (= main_~b~2 0) (= main_~a~2 0) (= main_~n~2 5))")
+		("1800#(and (= main_~b~2 6) (= main_~a~2 3) (= main_~n~2 5))" "assume !!(~i~2 < ~n~2);" "1800#(and (= main_~b~2 6) (= main_~a~2 3) (= main_~n~2 5))")
+		("1800#(and (= main_~b~2 6) (= main_~a~2 3) (= main_~n~2 5))" "assume -2147483648 <= #t~ret0 && #t~ret0 <= 2147483647;" "1800#(and (= main_~b~2 6) (= main_~a~2 3) (= main_~n~2 5))")
+		("1800#(and (= main_~b~2 6) (= main_~a~2 3) (= main_~n~2 5))" "assume !(#t~ret0 != 0);havoc #t~ret0;~a~2 := ~a~2 + 2;~b~2 := ~b~2 + 1;" "1828#(and (= main_~a~2 5) (= main_~b~2 7) (= main_~n~2 5))")
+		("1800#(and (= main_~b~2 6) (= main_~a~2 3) (= main_~n~2 5))" "~i~2 := ~i~2 + 1;" "1800#(and (= main_~b~2 6) (= main_~a~2 3) (= main_~n~2 5))")
+		("1800#(and (= main_~b~2 6) (= main_~a~2 3) (= main_~n~2 5))" "assume true;" "1800#(and (= main_~b~2 6) (= main_~a~2 3) (= main_~n~2 5))")
+		("1772#(and (= main_~b~2 4) (= main_~a~2 2) (= main_~n~2 5))" "assume !!(~i~2 < ~n~2);" "1772#(and (= main_~b~2 4) (= main_~a~2 2) (= main_~n~2 5))")
+		("1772#(and (= main_~b~2 4) (= main_~a~2 2) (= main_~n~2 5))" "assume -2147483648 <= #t~ret0 && #t~ret0 <= 2147483647;" "1772#(and (= main_~b~2 4) (= main_~a~2 2) (= main_~n~2 5))")
+		("1772#(and (= main_~b~2 4) (= main_~a~2 2) (= main_~n~2 5))" "assume #t~ret0 != 0;havoc #t~ret0;~a~2 := ~a~2 + 1;~b~2 := ~b~2 + 2;" "1800#(and (= main_~b~2 6) (= main_~a~2 3) (= main_~n~2 5))")
+		("1772#(and (= main_~b~2 4) (= main_~a~2 2) (= main_~n~2 5))" "~i~2 := ~i~2 + 1;" "1772#(and (= main_~b~2 4) (= main_~a~2 2) (= main_~n~2 5))")
+		("1772#(and (= main_~b~2 4) (= main_~a~2 2) (= main_~n~2 5))" "assume true;" "1772#(and (= main_~b~2 4) (= main_~a~2 2) (= main_~n~2 5))")
+	},
+	returnTransitions = {
+		("1702#true" "1744#(and (= main_~b~2 2) (= main_~n~2 5) (= main_~a~2 1))" "return;" "1744#(and (= main_~b~2 2) (= main_~n~2 5) (= main_~a~2 1))")
+		("1702#true" "1828#(and (= main_~a~2 5) (= main_~b~2 7) (= main_~n~2 5))" "return;" "1828#(and (= main_~a~2 5) (= main_~b~2 7) (= main_~n~2 5))")
+		("1702#true" "1702#true" "return;" "1702#true")
+		("1702#true" "1719#(and (= main_~b~2 0) (= main_~a~2 0) (= main_~n~2 5))" "return;" "1719#(and (= main_~b~2 0) (= main_~a~2 0) (= main_~n~2 5))")
+		("1702#true" "1800#(and (= main_~b~2 6) (= main_~a~2 3) (= main_~n~2 5))" "return;" "1800#(and (= main_~b~2 6) (= main_~a~2 3) (= main_~n~2 5))")
+		("1702#true" "1772#(and (= main_~b~2 4) (= main_~a~2 2) (= main_~n~2 5))" "return;" "1772#(and (= main_~b~2 4) (= main_~a~2 2) (= main_~n~2 5))")
+		("1703#false" "1703#false" "return;" "1703#false")
+		("1703#false" "1703#false" "return;" "1703#false")
+		("1703#false" "1703#false" "return;" "1703#false")
+	}
+);

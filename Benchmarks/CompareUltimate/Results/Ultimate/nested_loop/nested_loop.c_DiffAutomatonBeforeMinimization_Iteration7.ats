@@ -1,0 +1,85 @@
+// Testfile dumped by Ultimate at 2018/11/19 14:33:58
+//
+// 
+
+NestedWordAutomaton nwa = (
+	callAlphabet = {"call ULTIMATE.init();" "call #t~ret2 := main();" },
+	internalAlphabet = {"assume !(~k~1 % 4294967296 == 36);" "assume true;" "assume ~k~1 % 4294967296 == 36;" "assume true;" "assume true;" "~i~1 := 0;~j~1 := 0;~k~1 := 0;~i~1 := 1;" "assume true;" "assume !(~i~1 % 4294967296 <= 3);" "assume !!(~i~1 % 4294967296 <= 3);~j~1 := 1;" "assume true;" "assume !(~j~1 % 4294967296 <= 3);" "assume !!(~j~1 % 4294967296 <= 3);~k~1 := ~i~1 + ~j~1 + ~k~1;" "#t~post1 := ~j~1;~j~1 := #t~post1 + 1;havoc #t~post1;" "assume !true;" "#t~post0 := ~i~1;~i~1 := #t~post0 + 1;havoc #t~post0;" "assume !true;" },
+	returnAlphabet = {"return;" "return;" },
+	states = {"699#ULTIMATE.startENTRY" "700#ULTIMATE.initFINAL" "701#ULTIMATE.initEXIT" "702#L1" "703#mainENTRY" "704#L9'''" "705#L9" "706#L10'''" "707#L10" "708#L10''" "709#L10'''" "710#L10" "711#L10''" "712#L10'''" "713#L10" "714#L10''" "715#L10'''" "716#L10" "717#L9''" "718#L9'''" "719#L9" "720#L10'''" "721#L10" "722#L10''" "723#L10'''" "724#L10" "725#L10''" "726#L10'''" "727#L10" "728#L10''" "729#L10'''" "730#L10" "731#L9''" "732#L9'''" "733#L9" "734#L10'''" "735#L10" "736#L10''" "737#L10'''" "738#L10" "739#L10''" "740#L10'''" "741#L10" "742#L10''" "743#L10'''" "744#L10" "745#L9''" "746#L9'''" "747#L9" "748#L9''''" "749#L10'''" "750#mainErr0AssertViolation" "751#L10" "752#L10''" "753#L10'''" "754#L10" "755#L10''" "756#L10'''" "757#L10" "758#L10''" "759#L10'''" "760#L10" "761#L9''" },
+	initialStates = {"699#ULTIMATE.startENTRY" },
+	finalStates = {"750#mainErr0AssertViolation" },
+	callTransitions = {
+		("699#ULTIMATE.startENTRY" "call ULTIMATE.init();" "700#ULTIMATE.initFINAL")
+		("702#L1" "call #t~ret2 := main();" "703#mainENTRY")
+	},
+	internalTransitions = {
+		("700#ULTIMATE.initFINAL" "assume true;" "701#ULTIMATE.initEXIT")
+		("703#mainENTRY" "~i~1 := 0;~j~1 := 0;~k~1 := 0;~i~1 := 1;" "704#L9'''")
+		("704#L9'''" "assume true;" "705#L9")
+		("705#L9" "assume !!(~i~1 % 4294967296 <= 3);~j~1 := 1;" "706#L10'''")
+		("706#L10'''" "assume true;" "707#L10")
+		("707#L10" "assume !!(~j~1 % 4294967296 <= 3);~k~1 := ~i~1 + ~j~1 + ~k~1;" "708#L10''")
+		("708#L10''" "#t~post1 := ~j~1;~j~1 := #t~post1 + 1;havoc #t~post1;" "709#L10'''")
+		("709#L10'''" "assume true;" "710#L10")
+		("710#L10" "assume !!(~j~1 % 4294967296 <= 3);~k~1 := ~i~1 + ~j~1 + ~k~1;" "711#L10''")
+		("711#L10''" "#t~post1 := ~j~1;~j~1 := #t~post1 + 1;havoc #t~post1;" "712#L10'''")
+		("712#L10'''" "assume true;" "713#L10")
+		("713#L10" "assume !!(~j~1 % 4294967296 <= 3);~k~1 := ~i~1 + ~j~1 + ~k~1;" "714#L10''")
+		("714#L10''" "#t~post1 := ~j~1;~j~1 := #t~post1 + 1;havoc #t~post1;" "715#L10'''")
+		("715#L10'''" "assume true;" "716#L10")
+		("716#L10" "assume !(~j~1 % 4294967296 <= 3);" "717#L9''")
+		("716#L10" "assume !!(~j~1 % 4294967296 <= 3);~k~1 := ~i~1 + ~j~1 + ~k~1;" "714#L10''")
+		("717#L9''" "#t~post0 := ~i~1;~i~1 := #t~post0 + 1;havoc #t~post0;" "718#L9'''")
+		("718#L9'''" "assume true;" "719#L9")
+		("719#L9" "assume !!(~i~1 % 4294967296 <= 3);~j~1 := 1;" "720#L10'''")
+		("720#L10'''" "assume true;" "721#L10")
+		("721#L10" "assume !!(~j~1 % 4294967296 <= 3);~k~1 := ~i~1 + ~j~1 + ~k~1;" "722#L10''")
+		("722#L10''" "#t~post1 := ~j~1;~j~1 := #t~post1 + 1;havoc #t~post1;" "723#L10'''")
+		("723#L10'''" "assume true;" "724#L10")
+		("724#L10" "assume !!(~j~1 % 4294967296 <= 3);~k~1 := ~i~1 + ~j~1 + ~k~1;" "725#L10''")
+		("725#L10''" "#t~post1 := ~j~1;~j~1 := #t~post1 + 1;havoc #t~post1;" "726#L10'''")
+		("726#L10'''" "assume true;" "727#L10")
+		("727#L10" "assume !!(~j~1 % 4294967296 <= 3);~k~1 := ~i~1 + ~j~1 + ~k~1;" "728#L10''")
+		("728#L10''" "#t~post1 := ~j~1;~j~1 := #t~post1 + 1;havoc #t~post1;" "729#L10'''")
+		("729#L10'''" "assume true;" "730#L10")
+		("730#L10" "assume !(~j~1 % 4294967296 <= 3);" "731#L9''")
+		("730#L10" "assume !!(~j~1 % 4294967296 <= 3);~k~1 := ~i~1 + ~j~1 + ~k~1;" "728#L10''")
+		("731#L9''" "#t~post0 := ~i~1;~i~1 := #t~post0 + 1;havoc #t~post0;" "732#L9'''")
+		("732#L9'''" "assume true;" "733#L9")
+		("733#L9" "assume !!(~i~1 % 4294967296 <= 3);~j~1 := 1;" "734#L10'''")
+		("734#L10'''" "assume true;" "735#L10")
+		("735#L10" "assume !!(~j~1 % 4294967296 <= 3);~k~1 := ~i~1 + ~j~1 + ~k~1;" "736#L10''")
+		("736#L10''" "#t~post1 := ~j~1;~j~1 := #t~post1 + 1;havoc #t~post1;" "737#L10'''")
+		("737#L10'''" "assume true;" "738#L10")
+		("738#L10" "assume !!(~j~1 % 4294967296 <= 3);~k~1 := ~i~1 + ~j~1 + ~k~1;" "739#L10''")
+		("739#L10''" "#t~post1 := ~j~1;~j~1 := #t~post1 + 1;havoc #t~post1;" "740#L10'''")
+		("740#L10'''" "assume true;" "741#L10")
+		("741#L10" "assume !!(~j~1 % 4294967296 <= 3);~k~1 := ~i~1 + ~j~1 + ~k~1;" "742#L10''")
+		("742#L10''" "#t~post1 := ~j~1;~j~1 := #t~post1 + 1;havoc #t~post1;" "743#L10'''")
+		("743#L10'''" "assume true;" "744#L10")
+		("744#L10" "assume !(~j~1 % 4294967296 <= 3);" "745#L9''")
+		("744#L10" "assume !!(~j~1 % 4294967296 <= 3);~k~1 := ~i~1 + ~j~1 + ~k~1;" "742#L10''")
+		("745#L9''" "#t~post0 := ~i~1;~i~1 := #t~post0 + 1;havoc #t~post0;" "746#L9'''")
+		("746#L9'''" "assume true;" "747#L9")
+		("747#L9" "assume !(~i~1 % 4294967296 <= 3);" "748#L9''''")
+		("747#L9" "assume !!(~i~1 % 4294967296 <= 3);~j~1 := 1;" "749#L10'''")
+		("748#L9''''" "assume !(~k~1 % 4294967296 == 36);" "750#mainErr0AssertViolation")
+		("749#L10'''" "assume true;" "751#L10")
+		("751#L10" "assume !!(~j~1 % 4294967296 <= 3);~k~1 := ~i~1 + ~j~1 + ~k~1;" "752#L10''")
+		("752#L10''" "#t~post1 := ~j~1;~j~1 := #t~post1 + 1;havoc #t~post1;" "753#L10'''")
+		("753#L10'''" "assume true;" "754#L10")
+		("754#L10" "assume !!(~j~1 % 4294967296 <= 3);~k~1 := ~i~1 + ~j~1 + ~k~1;" "755#L10''")
+		("755#L10''" "#t~post1 := ~j~1;~j~1 := #t~post1 + 1;havoc #t~post1;" "756#L10'''")
+		("756#L10'''" "assume true;" "757#L10")
+		("757#L10" "assume !!(~j~1 % 4294967296 <= 3);~k~1 := ~i~1 + ~j~1 + ~k~1;" "758#L10''")
+		("758#L10''" "#t~post1 := ~j~1;~j~1 := #t~post1 + 1;havoc #t~post1;" "759#L10'''")
+		("759#L10'''" "assume true;" "760#L10")
+		("760#L10" "assume !(~j~1 % 4294967296 <= 3);" "761#L9''")
+		("760#L10" "assume !!(~j~1 % 4294967296 <= 3);~k~1 := ~i~1 + ~j~1 + ~k~1;" "758#L10''")
+		("761#L9''" "#t~post0 := ~i~1;~i~1 := #t~post0 + 1;havoc #t~post0;" "746#L9'''")
+	},
+	returnTransitions = {
+		("701#ULTIMATE.initEXIT" "699#ULTIMATE.startENTRY" "return;" "702#L1")
+	}
+);

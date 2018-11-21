@@ -1,0 +1,36 @@
+// Testfile dumped by Ultimate at 2018/11/19 14:33:56
+//
+// 
+
+NestedWordAutomaton nwa = (
+	callAlphabet = {"call ULTIMATE.init();" "call #t~ret2 := main();" },
+	internalAlphabet = {"assume !(~k~1 % 4294967296 == 36);" "assume true;" "assume ~k~1 % 4294967296 == 36;" "assume true;" "assume true;" "~i~1 := 0;~j~1 := 0;~k~1 := 0;~i~1 := 1;" "assume true;" "assume !(~i~1 % 4294967296 <= 3);" "assume !!(~i~1 % 4294967296 <= 3);~j~1 := 1;" "assume true;" "assume !(~j~1 % 4294967296 <= 3);" "assume !!(~j~1 % 4294967296 <= 3);~k~1 := ~i~1 + ~j~1 + ~k~1;" "#t~post1 := ~j~1;~j~1 := #t~post1 + 1;havoc #t~post1;" "assume !true;" "#t~post0 := ~i~1;~i~1 := #t~post0 + 1;havoc #t~post0;" "assume !true;" },
+	returnAlphabet = {"return;" "return;" },
+	states = {"192#L9" "193#mainErr0AssertViolation" "194#ULTIMATE.initEXIT" "195#ULTIMATE.startENTRY" "196#L9''''" "197#ULTIMATE.initFINAL" "198#L10'''" "199#L10" "200#L10" "201#L9" "185#L1" "186#mainENTRY" "187#L9''" "188#L9'''" "189#L10''" "190#L10'''" "191#L9'''" },
+	initialStates = {"195#ULTIMATE.startENTRY" },
+	finalStates = {"193#mainErr0AssertViolation" },
+	callTransitions = {
+		("195#ULTIMATE.startENTRY" "call ULTIMATE.init();" "197#ULTIMATE.initFINAL")
+		("185#L1" "call #t~ret2 := main();" "186#mainENTRY")
+	},
+	internalTransitions = {
+		("192#L9" "assume !!(~i~1 % 4294967296 <= 3);~j~1 := 1;" "198#L10'''")
+		("196#L9''''" "assume !(~k~1 % 4294967296 == 36);" "193#mainErr0AssertViolation")
+		("197#ULTIMATE.initFINAL" "assume true;" "194#ULTIMATE.initEXIT")
+		("198#L10'''" "assume true;" "199#L10")
+		("199#L10" "assume !!(~j~1 % 4294967296 <= 3);~k~1 := ~i~1 + ~j~1 + ~k~1;" "189#L10''")
+		("200#L10" "assume !(~j~1 % 4294967296 <= 3);" "187#L9''")
+		("200#L10" "assume !!(~j~1 % 4294967296 <= 3);~k~1 := ~i~1 + ~j~1 + ~k~1;" "189#L10''")
+		("201#L9" "assume !(~i~1 % 4294967296 <= 3);" "196#L9''''")
+		("201#L9" "assume !!(~i~1 % 4294967296 <= 3);~j~1 := 1;" "198#L10'''")
+		("186#mainENTRY" "~i~1 := 0;~j~1 := 0;~k~1 := 0;~i~1 := 1;" "191#L9'''")
+		("187#L9''" "#t~post0 := ~i~1;~i~1 := #t~post0 + 1;havoc #t~post0;" "188#L9'''")
+		("188#L9'''" "assume true;" "201#L9")
+		("189#L10''" "#t~post1 := ~j~1;~j~1 := #t~post1 + 1;havoc #t~post1;" "190#L10'''")
+		("190#L10'''" "assume true;" "200#L10")
+		("191#L9'''" "assume true;" "192#L9")
+	},
+	returnTransitions = {
+		("194#ULTIMATE.initEXIT" "195#ULTIMATE.startENTRY" "return;" "185#L1")
+	}
+);

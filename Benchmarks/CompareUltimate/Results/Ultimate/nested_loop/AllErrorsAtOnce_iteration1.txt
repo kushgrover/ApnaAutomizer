@@ -1,0 +1,20 @@
+===============Run of potential Counterexample==========
+Location0: ULTIMATE.startENTRY
+    Statement0: call ULTIMATE.init();
+    Location1: ULTIMATE.initFINAL
+    Statement1: assume true;
+    Location2: ULTIMATE.initEXIT
+    Statement2: Return - Corresponding call: call ULTIMATE.init();
+Location3: L1
+    Statement3: call #t~ret2 := main();
+    Location4: mainENTRY
+    Statement4: ~i~1 := 0;~j~1 := 0;~k~1 := 0;~i~1 := 1;
+    Location5: L9'''
+    Statement5: assume true;
+    Location6: L9
+    Statement6: assume !(~i~1 % 4294967296 <= 3);
+    Location7: L9''''
+    Statement7: assume !(~k~1 % 4294967296 == 36);
+ErrorLocation
+
+

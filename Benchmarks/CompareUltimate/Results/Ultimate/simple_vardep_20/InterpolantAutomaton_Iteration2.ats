@@ -1,0 +1,36 @@
+// Testfile dumped by Ultimate at 2018/11/19 14:41:54
+//
+// 
+
+NestedWordAutomaton nwa = (
+	callAlphabet = {"call ULTIMATE.init();" "call #t~ret0 := ();" },
+	internalAlphabet = {"assume ~k~1  == 3 * ~i~1  && ~j~1  == 2 * ~i~1 ;" "assume true;" "assume !true;" "assume true;" "assume true;" "~i~1 := 0;~j~1 := 0;~k~1 := 0;" "assume true;" "assume !(~k~1  < 60);" "assume !!(~k~1  < 60);~i~1 := ~i~1 + 1;~j~1 := ~j~1 + 2;~k~1 := ~k~1 + 3;" "assume !(~k~1  == 3 * ~i~1  && ~j~1  == 2 * ~i~1 );" },
+	returnAlphabet = {"return;" "return;" },
+	states = {"71#true" "88#(and (= _~j~1 0) (= _~k~1 0) (= _~i~1 0))" "72#false" "105#(and (= _~i~1 2) (= _~k~1 6) (= _~j~1 4))" "95#(and (= _~i~1 1) (= _~k~1 3) (= _~j~1 2))" },
+	initialStates = {"71#true" },
+	finalStates = {"72#false" },
+	callTransitions = {
+		("71#true" "call ULTIMATE.init();" "71#true")
+		("71#true" "call #t~ret0 := ();" "71#true")
+	},
+	internalTransitions = {
+		("71#true" "assume true;" "71#true")
+		("71#true" "assume ~k~1  == 3 * ~i~1  && ~j~1  == 2 * ~i~1 ;" "71#true")
+		("71#true" "~i~1 := 0;~j~1 := 0;~k~1 := 0;" "88#(and (= _~j~1 0) (= _~k~1 0) (= _~i~1 0))")
+		("71#true" "assume true;" "71#true")
+		("71#true" "assume !!(~k~1  < 60);~i~1 := ~i~1 + 1;~j~1 := ~j~1 + 2;~k~1 := ~k~1 + 3;" "71#true")
+		("71#true" "assume !(~k~1  == 3 * ~i~1  && ~j~1  == 2 * ~i~1 );" "71#true")
+		("88#(and (= _~j~1 0) (= _~k~1 0) (= _~i~1 0))" "assume true;" "88#(and (= _~j~1 0) (= _~k~1 0) (= _~i~1 0))")
+		("88#(and (= _~j~1 0) (= _~k~1 0) (= _~i~1 0))" "assume !!(~k~1  < 60);~i~1 := ~i~1 + 1;~j~1 := ~j~1 + 2;~k~1 := ~k~1 + 3;" "95#(and (= _~i~1 1) (= _~k~1 3) (= _~j~1 2))")
+		("105#(and (= _~i~1 2) (= _~k~1 6) (= _~j~1 4))" "assume ~k~1  == 3 * ~i~1  && ~j~1  == 2 * ~i~1 ;" "105#(and (= _~i~1 2) (= _~k~1 6) (= _~j~1 4))")
+		("105#(and (= _~i~1 2) (= _~k~1 6) (= _~j~1 4))" "assume true;" "105#(and (= _~i~1 2) (= _~k~1 6) (= _~j~1 4))")
+		("105#(and (= _~i~1 2) (= _~k~1 6) (= _~j~1 4))" "assume !!(~k~1  < 60);~i~1 := ~i~1 + 1;~j~1 := ~j~1 + 2;~k~1 := ~k~1 + 3;" "71#true")
+		("105#(and (= _~i~1 2) (= _~k~1 6) (= _~j~1 4))" "assume !(~k~1  == 3 * ~i~1  && ~j~1  == 2 * ~i~1 );" "72#false")
+		("95#(and (= _~i~1 1) (= _~k~1 3) (= _~j~1 2))" "assume ~k~1  == 3 * ~i~1  && ~j~1  == 2 * ~i~1 ;" "95#(and (= _~i~1 1) (= _~k~1 3) (= _~j~1 2))")
+		("95#(and (= _~i~1 1) (= _~k~1 3) (= _~j~1 2))" "assume true;" "95#(and (= _~i~1 1) (= _~k~1 3) (= _~j~1 2))")
+		("95#(and (= _~i~1 1) (= _~k~1 3) (= _~j~1 2))" "assume !!(~k~1  < 60);~i~1 := ~i~1 + 1;~j~1 := ~j~1 + 2;~k~1 := ~k~1 + 3;" "105#(and (= _~i~1 2) (= _~k~1 6) (= _~j~1 4))")
+	},
+	returnTransitions = {
+		("71#true" "71#true" "return;" "71#true")
+	}
+);

@@ -1,0 +1,67 @@
+// Testfile dumped by Ultimate at 2018/11/19 14:19:02
+//
+// 
+
+NestedWordAutomaton nwa = (
+	callAlphabet = {"call ULTIMATE.init();" "call #t~ret1 := main();" "call #t~ret0 := rand();" },
+	internalAlphabet = {"havoc ~x~1;#res := (if ~x~1 < 0 && ~x~1 % 2 != 0 then ~x~1 % 2 - 2 else ~x~1 % 2);" "assume true;" "assume true;" "assume true;" "havoc ~i~2;havoc ~n~2;havoc ~a~2;havoc ~b~2;~i~2 := 0;~a~2 := 0;~b~2 := 0;~n~2 := 5;" "assume true;" "assume !(~i~2 < ~n~2);" "assume !!(~i~2 < ~n~2);" "assume -2147483648 <= #t~ret0 && #t~ret0 <= 2147483647;" "assume #t~ret0 != 0;havoc #t~ret0;~a~2 := ~a~2 + 1;~b~2 := ~b~2 + 2;" "assume !(#t~ret0 != 0);havoc #t~ret0;~a~2 := ~a~2 + 2;~b~2 := ~b~2 + 1;" "~i~2 := ~i~2 + 1;" "assume !true;" "assume !(~a~2 + ~b~2 == 3 * ~n~2);" "assume ~a~2 + ~b~2 == 3 * ~n~2;#res := 0;" "assume true;" },
+	returnAlphabet = {"return;" "return;" "return;" },
+	states = {"512#L13''''" "513#L12''" "514#L12" "515#L13" "516#L13'" "517#L13''" "518#L13''''" "519#L12''" "520#L12" "521#L13" "522#L13'" "523#L13''" "524#L13''''" "525#L12''" "526#L12" "527#L13" "528#L13'" "529#L13''" "530#L13''''" "531#L12''" "532#L12" "533#L13" "534#L12'''" "535#mainErr0AssertViolation" "536#L13'" "537#L13''" "538#L13''''" "499#ULTIMATE.startENTRY" "500#ULTIMATE.initFINAL" "501#ULTIMATE.initEXIT" "502#L1" "503#mainENTRY" "504#L12''" "505#L12" "506#L13" "507#randENTRY" "508#randFINAL" "509#randEXIT" "510#L13'" "511#L13''" },
+	initialStates = {"499#ULTIMATE.startENTRY" },
+	finalStates = {"535#mainErr0AssertViolation" },
+	callTransitions = {
+		("515#L13" "call #t~ret0 := rand();" "507#randENTRY")
+		("521#L13" "call #t~ret0 := rand();" "507#randENTRY")
+		("527#L13" "call #t~ret0 := rand();" "507#randENTRY")
+		("533#L13" "call #t~ret0 := rand();" "507#randENTRY")
+		("499#ULTIMATE.startENTRY" "call ULTIMATE.init();" "500#ULTIMATE.initFINAL")
+		("502#L1" "call #t~ret1 := main();" "503#mainENTRY")
+		("506#L13" "call #t~ret0 := rand();" "507#randENTRY")
+	},
+	internalTransitions = {
+		("512#L13''''" "~i~2 := ~i~2 + 1;" "513#L12''")
+		("513#L12''" "assume true;" "514#L12")
+		("514#L12" "assume !!(~i~2 < ~n~2);" "515#L13")
+		("516#L13'" "assume -2147483648 <= #t~ret0 && #t~ret0 <= 2147483647;" "517#L13''")
+		("517#L13''" "assume #t~ret0 != 0;havoc #t~ret0;~a~2 := ~a~2 + 1;~b~2 := ~b~2 + 2;" "518#L13''''")
+		("517#L13''" "assume !(#t~ret0 != 0);havoc #t~ret0;~a~2 := ~a~2 + 2;~b~2 := ~b~2 + 1;" "518#L13''''")
+		("518#L13''''" "~i~2 := ~i~2 + 1;" "519#L12''")
+		("519#L12''" "assume true;" "520#L12")
+		("520#L12" "assume !!(~i~2 < ~n~2);" "521#L13")
+		("522#L13'" "assume -2147483648 <= #t~ret0 && #t~ret0 <= 2147483647;" "523#L13''")
+		("523#L13''" "assume #t~ret0 != 0;havoc #t~ret0;~a~2 := ~a~2 + 1;~b~2 := ~b~2 + 2;" "524#L13''''")
+		("523#L13''" "assume !(#t~ret0 != 0);havoc #t~ret0;~a~2 := ~a~2 + 2;~b~2 := ~b~2 + 1;" "524#L13''''")
+		("524#L13''''" "~i~2 := ~i~2 + 1;" "525#L12''")
+		("525#L12''" "assume true;" "526#L12")
+		("526#L12" "assume !!(~i~2 < ~n~2);" "527#L13")
+		("528#L13'" "assume -2147483648 <= #t~ret0 && #t~ret0 <= 2147483647;" "529#L13''")
+		("529#L13''" "assume #t~ret0 != 0;havoc #t~ret0;~a~2 := ~a~2 + 1;~b~2 := ~b~2 + 2;" "530#L13''''")
+		("529#L13''" "assume !(#t~ret0 != 0);havoc #t~ret0;~a~2 := ~a~2 + 2;~b~2 := ~b~2 + 1;" "530#L13''''")
+		("530#L13''''" "~i~2 := ~i~2 + 1;" "531#L12''")
+		("531#L12''" "assume true;" "532#L12")
+		("532#L12" "assume !!(~i~2 < ~n~2);" "533#L13")
+		("532#L12" "assume !(~i~2 < ~n~2);" "534#L12'''")
+		("534#L12'''" "assume !(~a~2 + ~b~2 == 3 * ~n~2);" "535#mainErr0AssertViolation")
+		("536#L13'" "assume -2147483648 <= #t~ret0 && #t~ret0 <= 2147483647;" "537#L13''")
+		("537#L13''" "assume #t~ret0 != 0;havoc #t~ret0;~a~2 := ~a~2 + 1;~b~2 := ~b~2 + 2;" "538#L13''''")
+		("537#L13''" "assume !(#t~ret0 != 0);havoc #t~ret0;~a~2 := ~a~2 + 2;~b~2 := ~b~2 + 1;" "538#L13''''")
+		("538#L13''''" "~i~2 := ~i~2 + 1;" "531#L12''")
+		("500#ULTIMATE.initFINAL" "assume true;" "501#ULTIMATE.initEXIT")
+		("503#mainENTRY" "havoc ~i~2;havoc ~n~2;havoc ~a~2;havoc ~b~2;~i~2 := 0;~a~2 := 0;~b~2 := 0;~n~2 := 5;" "504#L12''")
+		("504#L12''" "assume true;" "505#L12")
+		("505#L12" "assume !!(~i~2 < ~n~2);" "506#L13")
+		("507#randENTRY" "havoc ~x~1;#res := (if ~x~1 < 0 && ~x~1 % 2 != 0 then ~x~1 % 2 - 2 else ~x~1 % 2);" "508#randFINAL")
+		("508#randFINAL" "assume true;" "509#randEXIT")
+		("510#L13'" "assume -2147483648 <= #t~ret0 && #t~ret0 <= 2147483647;" "511#L13''")
+		("511#L13''" "assume #t~ret0 != 0;havoc #t~ret0;~a~2 := ~a~2 + 1;~b~2 := ~b~2 + 2;" "512#L13''''")
+		("511#L13''" "assume !(#t~ret0 != 0);havoc #t~ret0;~a~2 := ~a~2 + 2;~b~2 := ~b~2 + 1;" "512#L13''''")
+	},
+	returnTransitions = {
+		("501#ULTIMATE.initEXIT" "499#ULTIMATE.startENTRY" "return;" "502#L1")
+		("509#randEXIT" "515#L13" "return;" "516#L13'")
+		("509#randEXIT" "533#L13" "return;" "536#L13'")
+		("509#randEXIT" "521#L13" "return;" "522#L13'")
+		("509#randEXIT" "506#L13" "return;" "510#L13'")
+		("509#randEXIT" "527#L13" "return;" "528#L13'")
+	}
+);

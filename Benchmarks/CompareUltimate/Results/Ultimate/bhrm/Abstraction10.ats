@@ -1,0 +1,85 @@
+// Testfile dumped by Ultimate at 2018/11/19 14:19:06
+//
+// 
+
+NestedWordAutomaton nwa = (
+	callAlphabet = {"call ULTIMATE.init();" "call #t~ret1 := main();" "call #t~ret0 := rand();" },
+	internalAlphabet = {"havoc ~x~1;#res := (if ~x~1 < 0 && ~x~1 % 2 != 0 then ~x~1 % 2 - 2 else ~x~1 % 2);" "assume true;" "assume true;" "assume true;" "havoc ~i~2;havoc ~n~2;havoc ~a~2;havoc ~b~2;~i~2 := 0;~a~2 := 0;~b~2 := 0;~n~2 := 5;" "assume true;" "assume !(~i~2 < ~n~2);" "assume !!(~i~2 < ~n~2);" "assume -2147483648 <= #t~ret0 && #t~ret0 <= 2147483647;" "assume #t~ret0 != 0;havoc #t~ret0;~a~2 := ~a~2 + 1;~b~2 := ~b~2 + 2;" "assume !(#t~ret0 != 0);havoc #t~ret0;~a~2 := ~a~2 + 2;~b~2 := ~b~2 + 1;" "~i~2 := ~i~2 + 1;" "assume !true;" "assume !(~a~2 + ~b~2 == 3 * ~n~2);" "assume ~a~2 + ~b~2 == 3 * ~n~2;#res := 0;" "assume true;" },
+	returnAlphabet = {"return;" "return;" "return;" },
+	states = {"1939#L13'" "1940#L1" "1941#L13''" "1942#L13''''" "1943#L12''" "1944#L13" "1945#randENTRY" "1946#L12" "1947#L12'''" "1948#mainErr0AssertViolation" "1949#mainENTRY" "1950#ULTIMATE.initEXIT" "1951#ULTIMATE.startENTRY" "1952#L12''" "1953#randEXIT" "1954#L13" "1955#L13" "1956#L13" "1957#L13" "1958#L13" "1959#L13" "1960#L13'" "1961#L13'" "1962#L13'" "1963#L13'" "1964#L13'" "1965#L13'" "1966#randFINAL" "1967#L13''" "1968#ULTIMATE.initFINAL" "1969#L12" "1970#L12''" "1971#L13''''" "1972#L13''" "1973#L12" "1974#L12''" "1975#L13''''" "1976#L13''" "1977#L12" "1978#L12''" "1979#L13''''" "1980#L13''" "1981#L12" "1982#L12''" "1983#L13''''" "1984#L13''" "1985#L12" "1986#L12''" "1987#L13''''" "1988#L13''" "1989#L13''''" "1990#L12" "1991#L12" "1992#L12''" },
+	initialStates = {"1951#ULTIMATE.startENTRY" },
+	finalStates = {"1948#mainErr0AssertViolation" },
+	callTransitions = {
+		("1940#L1" "call #t~ret1 := main();" "1949#mainENTRY")
+		("1944#L13" "call #t~ret0 := rand();" "1945#randENTRY")
+		("1951#ULTIMATE.startENTRY" "call ULTIMATE.init();" "1968#ULTIMATE.initFINAL")
+		("1954#L13" "call #t~ret0 := rand();" "1945#randENTRY")
+		("1955#L13" "call #t~ret0 := rand();" "1945#randENTRY")
+		("1956#L13" "call #t~ret0 := rand();" "1945#randENTRY")
+		("1957#L13" "call #t~ret0 := rand();" "1945#randENTRY")
+		("1958#L13" "call #t~ret0 := rand();" "1945#randENTRY")
+		("1959#L13" "call #t~ret0 := rand();" "1945#randENTRY")
+	},
+	internalTransitions = {
+		("1939#L13'" "assume -2147483648 <= #t~ret0 && #t~ret0 <= 2147483647;" "1941#L13''")
+		("1941#L13''" "assume #t~ret0 != 0;havoc #t~ret0;~a~2 := ~a~2 + 1;~b~2 := ~b~2 + 2;" "1979#L13''''")
+		("1941#L13''" "assume !(#t~ret0 != 0);havoc #t~ret0;~a~2 := ~a~2 + 2;~b~2 := ~b~2 + 1;" "1979#L13''''")
+		("1942#L13''''" "~i~2 := ~i~2 + 1;" "1943#L12''")
+		("1943#L12''" "assume true;" "1946#L12")
+		("1945#randENTRY" "havoc ~x~1;#res := (if ~x~1 < 0 && ~x~1 % 2 != 0 then ~x~1 % 2 - 2 else ~x~1 % 2);" "1966#randFINAL")
+		("1946#L12" "assume !!(~i~2 < ~n~2);" "1944#L13")
+		("1947#L12'''" "assume !(~a~2 + ~b~2 == 3 * ~n~2);" "1948#mainErr0AssertViolation")
+		("1949#mainENTRY" "havoc ~i~2;havoc ~n~2;havoc ~a~2;havoc ~b~2;~i~2 := 0;~a~2 := 0;~b~2 := 0;~n~2 := 5;" "1952#L12''")
+		("1952#L12''" "assume true;" "1990#L12")
+		("1960#L13'" "assume -2147483648 <= #t~ret0 && #t~ret0 <= 2147483647;" "1988#L13''")
+		("1961#L13'" "assume -2147483648 <= #t~ret0 && #t~ret0 <= 2147483647;" "1976#L13''")
+		("1962#L13'" "assume -2147483648 <= #t~ret0 && #t~ret0 <= 2147483647;" "1972#L13''")
+		("1963#L13'" "assume -2147483648 <= #t~ret0 && #t~ret0 <= 2147483647;" "1980#L13''")
+		("1964#L13'" "assume -2147483648 <= #t~ret0 && #t~ret0 <= 2147483647;" "1984#L13''")
+		("1965#L13'" "assume -2147483648 <= #t~ret0 && #t~ret0 <= 2147483647;" "1967#L13''")
+		("1966#randFINAL" "assume true;" "1953#randEXIT")
+		("1967#L13''" "assume #t~ret0 != 0;havoc #t~ret0;~a~2 := ~a~2 + 1;~b~2 := ~b~2 + 2;" "1942#L13''''")
+		("1967#L13''" "assume !(#t~ret0 != 0);havoc #t~ret0;~a~2 := ~a~2 + 2;~b~2 := ~b~2 + 1;" "1942#L13''''")
+		("1968#ULTIMATE.initFINAL" "assume true;" "1950#ULTIMATE.initEXIT")
+		("1969#L12" "assume !!(~i~2 < ~n~2);" "1956#L13")
+		("1969#L12" "assume !(~i~2 < ~n~2);" "1947#L12'''")
+		("1970#L12''" "assume true;" "1969#L12")
+		("1971#L13''''" "~i~2 := ~i~2 + 1;" "1970#L12''")
+		("1972#L13''" "assume #t~ret0 != 0;havoc #t~ret0;~a~2 := ~a~2 + 1;~b~2 := ~b~2 + 2;" "1971#L13''''")
+		("1972#L13''" "assume !(#t~ret0 != 0);havoc #t~ret0;~a~2 := ~a~2 + 2;~b~2 := ~b~2 + 1;" "1971#L13''''")
+		("1973#L12" "assume !!(~i~2 < ~n~2);" "1956#L13")
+		("1974#L12''" "assume true;" "1973#L12")
+		("1975#L13''''" "~i~2 := ~i~2 + 1;" "1974#L12''")
+		("1976#L13''" "assume #t~ret0 != 0;havoc #t~ret0;~a~2 := ~a~2 + 1;~b~2 := ~b~2 + 2;" "1975#L13''''")
+		("1976#L13''" "assume !(#t~ret0 != 0);havoc #t~ret0;~a~2 := ~a~2 + 2;~b~2 := ~b~2 + 1;" "1975#L13''''")
+		("1977#L12" "assume !!(~i~2 < ~n~2);" "1955#L13")
+		("1978#L12''" "assume true;" "1977#L12")
+		("1979#L13''''" "~i~2 := ~i~2 + 1;" "1978#L12''")
+		("1980#L13''" "assume #t~ret0 != 0;havoc #t~ret0;~a~2 := ~a~2 + 1;~b~2 := ~b~2 + 2;" "1942#L13''''")
+		("1980#L13''" "assume !(#t~ret0 != 0);havoc #t~ret0;~a~2 := ~a~2 + 2;~b~2 := ~b~2 + 1;" "1979#L13''''")
+		("1981#L12" "assume !!(~i~2 < ~n~2);" "1957#L13")
+		("1982#L12''" "assume true;" "1981#L12")
+		("1983#L13''''" "~i~2 := ~i~2 + 1;" "1982#L12''")
+		("1984#L13''" "assume #t~ret0 != 0;havoc #t~ret0;~a~2 := ~a~2 + 1;~b~2 := ~b~2 + 2;" "1983#L13''''")
+		("1984#L13''" "assume !(#t~ret0 != 0);havoc #t~ret0;~a~2 := ~a~2 + 2;~b~2 := ~b~2 + 1;" "1942#L13''''")
+		("1985#L12" "assume !!(~i~2 < ~n~2);" "1958#L13")
+		("1986#L12''" "assume true;" "1985#L12")
+		("1987#L13''''" "~i~2 := ~i~2 + 1;" "1986#L12''")
+		("1988#L13''" "assume #t~ret0 != 0;havoc #t~ret0;~a~2 := ~a~2 + 1;~b~2 := ~b~2 + 2;" "1987#L13''''")
+		("1988#L13''" "assume !(#t~ret0 != 0);havoc #t~ret0;~a~2 := ~a~2 + 2;~b~2 := ~b~2 + 1;" "1989#L13''''")
+		("1989#L13''''" "~i~2 := ~i~2 + 1;" "1992#L12''")
+		("1990#L12" "assume !!(~i~2 < ~n~2);" "1954#L13")
+		("1991#L12" "assume !!(~i~2 < ~n~2);" "1959#L13")
+		("1992#L12''" "assume true;" "1991#L12")
+	},
+	returnTransitions = {
+		("1950#ULTIMATE.initEXIT" "1951#ULTIMATE.startENTRY" "return;" "1940#L1")
+		("1953#randEXIT" "1954#L13" "return;" "1960#L13'")
+		("1953#randEXIT" "1955#L13" "return;" "1961#L13'")
+		("1953#randEXIT" "1956#L13" "return;" "1962#L13'")
+		("1953#randEXIT" "1957#L13" "return;" "1963#L13'")
+		("1953#randEXIT" "1958#L13" "return;" "1964#L13'")
+		("1953#randEXIT" "1959#L13" "return;" "1965#L13'")
+		("1953#randEXIT" "1944#L13" "return;" "1939#L13'")
+	}
+);

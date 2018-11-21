@@ -1,0 +1,40 @@
+// Testfile dumped by Ultimate at 2018/11/19 14:33:56
+//
+// 
+
+NestedWordAutomaton nwa = (
+	callAlphabet = {"call ULTIMATE.init();" "call #t~ret2 := main();" },
+	internalAlphabet = {"assume !(~k~1 % 4294967296 == 36);" "assume true;" "assume ~k~1 % 4294967296 == 36;" "assume true;" "assume true;" "~i~1 := 0;~j~1 := 0;~k~1 := 0;~i~1 := 1;" "assume true;" "assume !(~i~1 % 4294967296 <= 3);" "assume !!(~i~1 % 4294967296 <= 3);~j~1 := 1;" "assume true;" "assume !(~j~1 % 4294967296 <= 3);" "assume !!(~j~1 % 4294967296 <= 3);~k~1 := ~i~1 + ~j~1 + ~k~1;" "#t~post1 := ~j~1;~j~1 := #t~post1 + 1;havoc #t~post1;" "assume !true;" "#t~post0 := ~i~1;~i~1 := #t~post0 + 1;havoc #t~post0;" "assume !true;" },
+	returnAlphabet = {"return;" "return;" },
+	states = {"70#true" "87#(= main_~i~1 1)" "71#false" },
+	initialStates = {"70#true" },
+	finalStates = {"71#false" },
+	callTransitions = {
+		("70#true" "call ULTIMATE.init();" "70#true")
+		("70#true" "call #t~ret2 := main();" "70#true")
+	},
+	internalTransitions = {
+		("70#true" "assume true;" "70#true")
+		("70#true" "assume !(~k~1 % 4294967296 == 36);" "70#true")
+		("70#true" "assume true;" "70#true")
+		("70#true" "~i~1 := 0;~j~1 := 0;~k~1 := 0;~i~1 := 1;" "87#(= main_~i~1 1)")
+		("70#true" "assume !(~j~1 % 4294967296 <= 3);" "70#true")
+		("70#true" "assume !!(~j~1 % 4294967296 <= 3);~k~1 := ~i~1 + ~j~1 + ~k~1;" "70#true")
+		("70#true" "assume true;" "70#true")
+		("70#true" "#t~post1 := ~j~1;~j~1 := #t~post1 + 1;havoc #t~post1;" "70#true")
+		("70#true" "assume !(~i~1 % 4294967296 <= 3);" "70#true")
+		("70#true" "#t~post0 := ~i~1;~i~1 := #t~post0 + 1;havoc #t~post0;" "70#true")
+		("70#true" "assume !!(~i~1 % 4294967296 <= 3);~j~1 := 1;" "70#true")
+		("87#(= main_~i~1 1)" "assume true;" "87#(= main_~i~1 1)")
+		("87#(= main_~i~1 1)" "assume !(~j~1 % 4294967296 <= 3);" "87#(= main_~i~1 1)")
+		("87#(= main_~i~1 1)" "assume !!(~j~1 % 4294967296 <= 3);~k~1 := ~i~1 + ~j~1 + ~k~1;" "87#(= main_~i~1 1)")
+		("87#(= main_~i~1 1)" "assume true;" "87#(= main_~i~1 1)")
+		("87#(= main_~i~1 1)" "#t~post1 := ~j~1;~j~1 := #t~post1 + 1;havoc #t~post1;" "87#(= main_~i~1 1)")
+		("87#(= main_~i~1 1)" "assume !(~i~1 % 4294967296 <= 3);" "71#false")
+		("87#(= main_~i~1 1)" "#t~post0 := ~i~1;~i~1 := #t~post0 + 1;havoc #t~post0;" "70#true")
+		("87#(= main_~i~1 1)" "assume !!(~i~1 % 4294967296 <= 3);~j~1 := 1;" "87#(= main_~i~1 1)")
+	},
+	returnTransitions = {
+		("70#true" "70#true" "return;" "70#true")
+	}
+);

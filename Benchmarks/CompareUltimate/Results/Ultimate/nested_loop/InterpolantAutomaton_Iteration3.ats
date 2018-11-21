@@ -1,0 +1,36 @@
+// Testfile dumped by Ultimate at 2018/11/19 14:33:56
+//
+// 
+
+NestedWordAutomaton nwa = (
+	callAlphabet = {"call ULTIMATE.init();" "call #t~ret2 := main();" },
+	internalAlphabet = {"assume !(~k~1 % 4294967296 == 36);" "assume true;" "assume ~k~1 % 4294967296 == 36;" "assume true;" "assume true;" "~i~1 := 0;~j~1 := 0;~k~1 := 0;~i~1 := 1;" "assume true;" "assume !(~i~1 % 4294967296 <= 3);" "assume !!(~i~1 % 4294967296 <= 3);~j~1 := 1;" "assume true;" "assume !(~j~1 % 4294967296 <= 3);" "assume !!(~j~1 % 4294967296 <= 3);~k~1 := ~i~1 + ~j~1 + ~k~1;" "#t~post1 := ~j~1;~j~1 := #t~post1 + 1;havoc #t~post1;" "assume !true;" "#t~post0 := ~i~1;~i~1 := #t~post0 + 1;havoc #t~post0;" "assume !true;" },
+	returnAlphabet = {"return;" "return;" },
+	states = {"128#true" "129#false" "151#(= main_~j~1 1)" },
+	initialStates = {"128#true" },
+	finalStates = {"129#false" },
+	callTransitions = {
+		("128#true" "call ULTIMATE.init();" "128#true")
+		("128#true" "call #t~ret2 := main();" "128#true")
+	},
+	internalTransitions = {
+		("128#true" "assume true;" "128#true")
+		("128#true" "assume !(~k~1 % 4294967296 == 36);" "128#true")
+		("128#true" "assume true;" "128#true")
+		("128#true" "~i~1 := 0;~j~1 := 0;~k~1 := 0;~i~1 := 1;" "128#true")
+		("128#true" "assume !(~j~1 % 4294967296 <= 3);" "128#true")
+		("128#true" "assume !!(~j~1 % 4294967296 <= 3);~k~1 := ~i~1 + ~j~1 + ~k~1;" "128#true")
+		("128#true" "assume true;" "128#true")
+		("128#true" "#t~post1 := ~j~1;~j~1 := #t~post1 + 1;havoc #t~post1;" "128#true")
+		("128#true" "assume !(~i~1 % 4294967296 <= 3);" "128#true")
+		("128#true" "#t~post0 := ~i~1;~i~1 := #t~post0 + 1;havoc #t~post0;" "128#true")
+		("128#true" "assume !!(~i~1 % 4294967296 <= 3);~j~1 := 1;" "151#(= main_~j~1 1)")
+		("151#(= main_~j~1 1)" "assume true;" "151#(= main_~j~1 1)")
+		("151#(= main_~j~1 1)" "assume !(~j~1 % 4294967296 <= 3);" "129#false")
+		("151#(= main_~j~1 1)" "assume !!(~j~1 % 4294967296 <= 3);~k~1 := ~i~1 + ~j~1 + ~k~1;" "151#(= main_~j~1 1)")
+		("151#(= main_~j~1 1)" "#t~post1 := ~j~1;~j~1 := #t~post1 + 1;havoc #t~post1;" "128#true")
+	},
+	returnTransitions = {
+		("128#true" "128#true" "return;" "128#true")
+	}
+);

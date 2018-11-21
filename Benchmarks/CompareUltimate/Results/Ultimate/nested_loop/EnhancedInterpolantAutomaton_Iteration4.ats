@@ -1,0 +1,50 @@
+// Testfile dumped by Ultimate at 2018/11/19 14:33:57
+//
+// 
+
+NestedWordAutomaton nwa = (
+	callAlphabet = {"call ULTIMATE.init();" "call #t~ret2 := main();" },
+	internalAlphabet = {"assume !(~k~1 % 4294967296 == 36);" "assume true;" "assume ~k~1 % 4294967296 == 36;" "assume true;" "assume true;" "~i~1 := 0;~j~1 := 0;~k~1 := 0;~i~1 := 1;" "assume true;" "assume !(~i~1 % 4294967296 <= 3);" "assume !!(~i~1 % 4294967296 <= 3);~j~1 := 1;" "assume true;" "assume !(~j~1 % 4294967296 <= 3);" "assume !!(~j~1 % 4294967296 <= 3);~k~1 := ~i~1 + ~j~1 + ~k~1;" "#t~post1 := ~j~1;~j~1 := #t~post1 + 1;havoc #t~post1;" "assume !true;" "#t~post0 := ~i~1;~i~1 := #t~post0 + 1;havoc #t~post0;" "assume !true;" },
+	returnAlphabet = {"return;" "return;" },
+	states = {"225#(= main_~j~1 1)" "202#true" "203#false" "235#(= main_~j~1 2)" },
+	initialStates = {"202#true" },
+	finalStates = {"203#false" },
+	callTransitions = {
+		("202#true" "call ULTIMATE.init();" "202#true")
+		("202#true" "call #t~ret2 := main();" "202#true")
+		("203#false" "call ULTIMATE.init();" "203#false")
+		("203#false" "call #t~ret2 := main();" "203#false")
+	},
+	internalTransitions = {
+		("225#(= main_~j~1 1)" "assume true;" "225#(= main_~j~1 1)")
+		("225#(= main_~j~1 1)" "assume !!(~j~1 % 4294967296 <= 3);~k~1 := ~i~1 + ~j~1 + ~k~1;" "225#(= main_~j~1 1)")
+		("225#(= main_~j~1 1)" "#t~post1 := ~j~1;~j~1 := #t~post1 + 1;havoc #t~post1;" "235#(= main_~j~1 2)")
+		("202#true" "assume true;" "202#true")
+		("202#true" "~i~1 := 0;~j~1 := 0;~k~1 := 0;~i~1 := 1;" "202#true")
+		("202#true" "assume true;" "202#true")
+		("202#true" "assume !!(~i~1 % 4294967296 <= 3);~j~1 := 1;" "225#(= main_~j~1 1)")
+		("203#false" "assume !(~k~1 % 4294967296 == 36);" "203#false")
+		("203#false" "assume true;" "203#false")
+		("203#false" "assume ~k~1 % 4294967296 == 36;" "203#false")
+		("203#false" "assume true;" "203#false")
+		("203#false" "assume true;" "203#false")
+		("203#false" "~i~1 := 0;~j~1 := 0;~k~1 := 0;~i~1 := 1;" "203#false")
+		("203#false" "assume true;" "203#false")
+		("203#false" "assume !(~i~1 % 4294967296 <= 3);" "203#false")
+		("203#false" "assume !!(~i~1 % 4294967296 <= 3);~j~1 := 1;" "203#false")
+		("203#false" "assume true;" "203#false")
+		("203#false" "assume !(~j~1 % 4294967296 <= 3);" "203#false")
+		("203#false" "assume !!(~j~1 % 4294967296 <= 3);~k~1 := ~i~1 + ~j~1 + ~k~1;" "203#false")
+		("203#false" "#t~post1 := ~j~1;~j~1 := #t~post1 + 1;havoc #t~post1;" "203#false")
+		("203#false" "assume !true;" "203#false")
+		("203#false" "#t~post0 := ~i~1;~i~1 := #t~post0 + 1;havoc #t~post0;" "203#false")
+		("203#false" "assume !true;" "203#false")
+		("235#(= main_~j~1 2)" "assume true;" "235#(= main_~j~1 2)")
+		("235#(= main_~j~1 2)" "assume !(~j~1 % 4294967296 <= 3);" "203#false")
+	},
+	returnTransitions = {
+		("202#true" "202#true" "return;" "202#true")
+		("203#false" "203#false" "return;" "203#false")
+		("203#false" "203#false" "return;" "203#false")
+	}
+);

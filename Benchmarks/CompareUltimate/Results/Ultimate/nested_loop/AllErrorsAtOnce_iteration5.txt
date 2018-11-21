@@ -1,0 +1,64 @@
+===============Run of potential Counterexample==========
+Location0: ULTIMATE.startENTRY
+    Statement0: call ULTIMATE.init();
+    Location1: ULTIMATE.initFINAL
+    Statement1: assume true;
+    Location2: ULTIMATE.initEXIT
+    Statement2: Return - Corresponding call: call ULTIMATE.init();
+Location3: L1
+    Statement3: call #t~ret2 := main();
+    Location4: mainENTRY
+    Statement4: ~i~1 := 0;~j~1 := 0;~k~1 := 0;~i~1 := 1;
+    Location5: L9'''
+    Statement5: assume true;
+    Location6: L9
+    Statement6: assume !!(~i~1 % 4294967296 <= 3);~j~1 := 1;
+    Location7: L10'''
+    Statement7: assume true;
+    Location8: L10
+    Statement8: assume !!(~j~1 % 4294967296 <= 3);~k~1 := ~i~1 + ~j~1 + ~k~1;
+    Location9: L10''
+    Statement9: #t~post1 := ~j~1;~j~1 := #t~post1 + 1;havoc #t~post1;
+    Location10: L10'''
+    Statement10: assume true;
+    Location11: L10
+    Statement11: assume !!(~j~1 % 4294967296 <= 3);~k~1 := ~i~1 + ~j~1 + ~k~1;
+    Location12: L10''
+    Statement12: #t~post1 := ~j~1;~j~1 := #t~post1 + 1;havoc #t~post1;
+    Location13: L10'''
+    Statement13: assume true;
+    Location14: L10
+    Statement14: assume !(~j~1 % 4294967296 <= 3);
+    Location15: L9''
+    Statement15: #t~post0 := ~i~1;~i~1 := #t~post0 + 1;havoc #t~post0;
+    Location16: L9'''
+    Statement16: assume true;
+    Location17: L9
+    Statement17: assume !!(~i~1 % 4294967296 <= 3);~j~1 := 1;
+    Location18: L10'''
+    Statement18: assume true;
+    Location19: L10
+    Statement19: assume !!(~j~1 % 4294967296 <= 3);~k~1 := ~i~1 + ~j~1 + ~k~1;
+    Location20: L10''
+    Statement20: #t~post1 := ~j~1;~j~1 := #t~post1 + 1;havoc #t~post1;
+    Location21: L10'''
+    Statement21: assume true;
+    Location22: L10
+    Statement22: assume !!(~j~1 % 4294967296 <= 3);~k~1 := ~i~1 + ~j~1 + ~k~1;
+    Location23: L10''
+    Statement23: #t~post1 := ~j~1;~j~1 := #t~post1 + 1;havoc #t~post1;
+    Location24: L10'''
+    Statement24: assume true;
+    Location25: L10
+    Statement25: assume !(~j~1 % 4294967296 <= 3);
+    Location26: L9''
+    Statement26: #t~post0 := ~i~1;~i~1 := #t~post0 + 1;havoc #t~post0;
+    Location27: L9'''
+    Statement27: assume true;
+    Location28: L9
+    Statement28: assume !(~i~1 % 4294967296 <= 3);
+    Location29: L9''''
+    Statement29: assume !(~k~1 % 4294967296 == 36);
+ErrorLocation
+
+

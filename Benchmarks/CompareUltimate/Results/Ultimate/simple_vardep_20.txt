@@ -1,0 +1,966 @@
+This is Ultimate 0.1.23-3204b74
+[2018-11-19 14:41:51,995 INFO  L170        SettingsManager]: Resetting all preferences to default values...
+[2018-11-19 14:41:51,997 INFO  L174        SettingsManager]: Resetting UltimateCore preferences to default values
+[2018-11-19 14:41:52,019 INFO  L177        SettingsManager]: Ultimate Commandline Interface provides no preferences, ignoring...
+[2018-11-19 14:41:52,019 INFO  L174        SettingsManager]: Resetting Boogie Preprocessor preferences to default values
+[2018-11-19 14:41:52,020 INFO  L174        SettingsManager]: Resetting Boogie Procedure Inliner preferences to default values
+[2018-11-19 14:41:52,023 INFO  L174        SettingsManager]: Resetting Abstract Interpretation preferences to default values
+[2018-11-19 14:41:52,025 INFO  L174        SettingsManager]: Resetting LassoRanker preferences to default values
+[2018-11-19 14:41:52,028 INFO  L174        SettingsManager]: Resetting Reaching Definitions preferences to default values
+[2018-11-19 14:41:52,029 INFO  L174        SettingsManager]: Resetting SyntaxChecker preferences to default values
+[2018-11-19 14:41:52,031 INFO  L177        SettingsManager]: Büchi Program Product provides no preferences, ignoring...
+[2018-11-19 14:41:52,031 INFO  L174        SettingsManager]: Resetting LTL2Aut preferences to default values
+[2018-11-19 14:41:52,033 INFO  L174        SettingsManager]: Resetting BlockEncodingV2 preferences to default values
+[2018-11-19 14:41:52,034 INFO  L174        SettingsManager]: Resetting AutomataScriptInterpreter preferences to default values
+[2018-11-19 14:41:52,036 INFO  L174        SettingsManager]: Resetting BuchiAutomizer preferences to default values
+[2018-11-19 14:41:52,039 INFO  L174        SettingsManager]: Resetting CACSL2BoogieTranslator preferences to default values
+[2018-11-19 14:41:52,042 INFO  L174        SettingsManager]: Resetting CodeCheck preferences to default values
+[2018-11-19 14:41:52,044 INFO  L174        SettingsManager]: Resetting InvariantSynthesis preferences to default values
+[2018-11-19 14:41:52,046 INFO  L174        SettingsManager]: Resetting RCFGBuilder preferences to default values
+[2018-11-19 14:41:52,048 INFO  L174        SettingsManager]: Resetting TraceAbstraction preferences to default values
+[2018-11-19 14:41:52,055 INFO  L177        SettingsManager]: TraceAbstractionConcurrent provides no preferences, ignoring...
+[2018-11-19 14:41:52,055 INFO  L177        SettingsManager]: TraceAbstractionWithAFAs provides no preferences, ignoring...
+[2018-11-19 14:41:52,056 INFO  L174        SettingsManager]: Resetting IcfgTransformer preferences to default values
+[2018-11-19 14:41:52,057 INFO  L174        SettingsManager]: Resetting Boogie Printer preferences to default values
+[2018-11-19 14:41:52,058 INFO  L174        SettingsManager]: Resetting Witness Printer preferences to default values
+[2018-11-19 14:41:52,064 INFO  L177        SettingsManager]: Boogie PL CUP Parser provides no preferences, ignoring...
+[2018-11-19 14:41:52,065 INFO  L174        SettingsManager]: Resetting CDTParser preferences to default values
+[2018-11-19 14:41:52,067 INFO  L177        SettingsManager]: PEA to Boogie provides no preferences, ignoring...
+[2018-11-19 14:41:52,068 INFO  L177        SettingsManager]: AutomataScriptParser provides no preferences, ignoring...
+[2018-11-19 14:41:52,068 INFO  L174        SettingsManager]: Resetting Witness Parser preferences to default values
+[2018-11-19 14:41:52,070 INFO  L181        SettingsManager]: Finished resetting all preferences to default values...
+[2018-11-19 14:41:52,070 INFO  L98         SettingsManager]: Beginning loading settings from /home/arijit/verification/UAutomizer-linux/Default.epf
+[2018-11-19 14:41:52,083 INFO  L110        SettingsManager]: Loading preferences was successful
+[2018-11-19 14:41:52,084 INFO  L112        SettingsManager]: Preferences different from defaults after loading the file:
+[2018-11-19 14:41:52,085 INFO  L131        SettingsManager]: Preferences of CACSL2BoogieTranslator differ from their defaults:
+[2018-11-19 14:41:52,086 INFO  L133        SettingsManager]:  * Check division by zero=IGNORE
+[2018-11-19 14:41:52,087 INFO  L133        SettingsManager]:  * Pointer to allocated memory at dereference=IGNORE
+[2018-11-19 14:41:52,091 INFO  L133        SettingsManager]:  * If two pointers are subtracted or compared they have the same base address=IGNORE
+[2018-11-19 14:41:52,091 INFO  L133        SettingsManager]:  * Check array bounds for arrays that are off heap=IGNORE
+[2018-11-19 14:41:52,092 INFO  L133        SettingsManager]:  * Check if freed pointer was valid=false
+[2018-11-19 14:41:52,092 INFO  L133        SettingsManager]:  * Pointer base address is valid at dereference=IGNORE
+[2018-11-19 14:41:52,092 INFO  L131        SettingsManager]: Preferences of RCFGBuilder differ from their defaults:
+[2018-11-19 14:41:52,093 INFO  L133        SettingsManager]:  * Size of a code block=SequenceOfStatements
+Applying setting for plugin de.uni_freiburg.informatik.ultimate.plugins.generator.traceabstraction: Dump automata to files -> true
+Applying setting for plugin de.uni_freiburg.informatik.ultimate.plugins.generator.traceabstraction: Output format of dumped automata -> ATS
+Applying setting for plugin de.uni_freiburg.informatik.ultimate.plugins.generator.traceabstraction: Dump automata to the following directory -> interm
+Applying setting for plugin de.uni_freiburg.informatik.ultimate.plugins.generator.rcfgbuilder: Dump SMT script to file -> true
+Applying setting for plugin de.uni_freiburg.informatik.ultimate.plugins.generator.rcfgbuilder: To the following directory -> interm
+Applying setting for plugin de.uni_freiburg.informatik.ultimate.plugins.generator.traceabstraction: Dump SMT script to file -> true
+Applying setting for plugin de.uni_freiburg.informatik.ultimate.plugins.generator.traceabstraction: To the following directory -> interm
+[2018-11-19 14:41:52,177 INFO  L81    nceAwareModelManager]: Repository-Root is: /tmp
+[2018-11-19 14:41:52,195 INFO  L266   ainManager$Toolchain]: [Toolchain 1]: Parser(s) successfully initialized
+[2018-11-19 14:41:52,200 INFO  L222   ainManager$Toolchain]: [Toolchain 1]: Toolchain data selected.
+[2018-11-19 14:41:52,203 INFO  L271        PluginConnector]: Initializing CDTParser...
+[2018-11-19 14:41:52,203 INFO  L276        PluginConnector]: CDTParser initialized
+[2018-11-19 14:41:52,204 INFO  L431   ainManager$Toolchain]: [Toolchain 1]: Parsing single file: /home/arijit/verification/UAutomizer-linux/simple_vardep.c
+[2018-11-19 14:41:52,367 INFO  L304   ainManager$Toolchain]: ####################### [Toolchain 1] #######################
+[2018-11-19 14:41:52,372 INFO  L131        ToolchainWalker]: Walking toolchain with 4 elements.
+[2018-11-19 14:41:52,378 INFO  L113        PluginConnector]: ------------------------CACSL2BoogieTranslator----------------------------
+[2018-11-19 14:41:52,378 INFO  L271        PluginConnector]: Initializing CACSL2BoogieTranslator...
+[2018-11-19 14:41:52,388 INFO  L276        PluginConnector]: CACSL2BoogieTranslator initialized
+[2018-11-19 14:41:52,390 INFO  L185        PluginConnector]: Executing the observer ACSLObjectContainerObserver from plugin CACSL2BoogieTranslator for "CDTParser AST 19.11 02:41:52" (1/1) ...
+[2018-11-19 14:41:52,395 INFO  L205        PluginConnector]: Invalid model from CACSL2BoogieTranslator for observer de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator.ACSLObjectContainerObserver@6537246f and model type de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator AST 19.11 02:41:52, skipping insertion in model container
+[2018-11-19 14:41:52,395 INFO  L185        PluginConnector]: Executing the observer CACSL2BoogieTranslatorObserver from plugin CACSL2BoogieTranslator for "CDTParser AST 19.11 02:41:52" (1/1) ...
+[2018-11-19 14:41:52,420 INFO  L153             Dispatcher]: Using SV-COMP mode
+[2018-11-19 14:41:52,486 INFO  L153             Dispatcher]: Using SV-COMP mode
+[2018-11-19 14:41:52,720 INFO  L450          PostProcessor]: Settings: Checked method=main
+[2018-11-19 14:41:52,757 INFO  L450          PostProcessor]: Settings: Checked method=main
+[2018-11-19 14:41:52,767 INFO  L202        PluginConnector]: Adding new model de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator AST 19.11 02:41:52 WrapperNode
+[2018-11-19 14:41:52,767 INFO  L132        PluginConnector]: ------------------------ END CACSL2BoogieTranslator----------------------------
+[2018-11-19 14:41:52,768 INFO  L113        PluginConnector]: ------------------------Boogie Preprocessor----------------------------
+[2018-11-19 14:41:52,769 INFO  L271        PluginConnector]: Initializing Boogie Preprocessor...
+[2018-11-19 14:41:52,769 INFO  L276        PluginConnector]: Boogie Preprocessor initialized
+[2018-11-19 14:41:52,792 INFO  L185        PluginConnector]: Executing the observer EnsureBoogieModelObserver from plugin Boogie Preprocessor for "de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator AST 19.11 02:41:52" (1/1) ...
+[2018-11-19 14:41:52,793 INFO  L185        PluginConnector]: Executing the observer TypeChecker from plugin Boogie Preprocessor for "de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator AST 19.11 02:41:52" (1/1) ...
+[2018-11-19 14:41:52,806 INFO  L185        PluginConnector]: Executing the observer ConstExpander from plugin Boogie Preprocessor for "de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator AST 19.11 02:41:52" (1/1) ...
+[2018-11-19 14:41:52,806 INFO  L185        PluginConnector]: Executing the observer StructExpander from plugin Boogie Preprocessor for "de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator AST 19.11 02:41:52" (1/1) ...
+[2018-11-19 14:41:52,819 INFO  L185        PluginConnector]: Executing the observer UnstructureCode from plugin Boogie Preprocessor for "de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator AST 19.11 02:41:52" (1/1) ...
+[2018-11-19 14:41:52,823 INFO  L185        PluginConnector]: Executing the observer FunctionInliner from plugin Boogie Preprocessor for "de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator AST 19.11 02:41:52" (1/1) ...
+[2018-11-19 14:41:52,825 INFO  L185        PluginConnector]: Executing the observer BoogieSymbolTableConstructor from plugin Boogie Preprocessor for "de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator AST 19.11 02:41:52" (1/1) ...
+[2018-11-19 14:41:52,826 INFO  L132        PluginConnector]: ------------------------ END Boogie Preprocessor----------------------------
+[2018-11-19 14:41:52,827 INFO  L113        PluginConnector]: ------------------------RCFGBuilder----------------------------
+[2018-11-19 14:41:52,828 INFO  L271        PluginConnector]: Initializing RCFGBuilder...
+[2018-11-19 14:41:52,828 INFO  L276        PluginConnector]: RCFGBuilder initialized
+[2018-11-19 14:41:52,829 INFO  L185        PluginConnector]: Executing the observer RCFGBuilderObserver from plugin RCFGBuilder for "de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator AST 19.11 02:41:52" (1/1) ...
+[2018-11-19 14:41:52,863 INFO  L211       MonitoredProcess]: Starting monitored process 1 with z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000 (exit command is (exit), workingDir is null)
+[2018-11-19 14:41:52,869 INFO  L302       MonitoredProcess]: Waiting until toolchain timeout for monitored process 1 with z3 SMTLIB2_COMPLIANT=true -memory:1024 -smt2 -in -t:12000
+[2018-11-19 14:41:52,913 INFO  L136     BoogieDeclarations]: Found implementation of procedure ULTIMATE.init
+[2018-11-19 14:41:52,914 INFO  L136     BoogieDeclarations]: Found implementation of procedure ULTIMATE.start
+[2018-11-19 14:41:52,914 INFO  L136     BoogieDeclarations]: Found implementation of procedure main
+[2018-11-19 14:41:52,914 INFO  L128     BoogieDeclarations]: Found specification of procedure main
+[2018-11-19 14:41:52,914 INFO  L128     BoogieDeclarations]: Found specification of procedure ULTIMATE.init
+[2018-11-19 14:41:52,915 INFO  L128     BoogieDeclarations]: Found specification of procedure ULTIMATE.start
+[2018-11-19 14:41:53,117 INFO  L261             CfgBuilder]: Using the 1 location(s) as analysis (start of procedure ULTIMATE.start)
+[2018-11-19 14:41:53,117 INFO  L202        PluginConnector]: Adding new model de.uni_freiburg.informatik.ultimate.plugins.generator.rcfgbuilder CFG 19.11 02:41:53 BoogieIcfgContainer
+[2018-11-19 14:41:53,118 INFO  L132        PluginConnector]: ------------------------ END RCFGBuilder----------------------------
+[2018-11-19 14:41:53,119 INFO  L113        PluginConnector]: ------------------------TraceAbstraction----------------------------
+[2018-11-19 14:41:53,119 INFO  L271        PluginConnector]: Initializing TraceAbstraction...
+[2018-11-19 14:41:53,123 INFO  L276        PluginConnector]: TraceAbstraction initialized
+[2018-11-19 14:41:53,123 INFO  L185        PluginConnector]: Executing the observer TraceAbstractionObserver from plugin TraceAbstraction for "CDTParser AST 19.11 02:41:52" (1/3) ...
+[2018-11-19 14:41:53,125 INFO  L205        PluginConnector]: Invalid model from TraceAbstraction for observer de.uni_freiburg.informatik.ultimate.plugins.generator.traceabstraction.TraceAbstractionObserver@20bb5526 and model type de.uni_freiburg.informatik.ultimate.plugins.generator.traceabstraction AST 19.11 02:41:53, skipping insertion in model container
+[2018-11-19 14:41:53,125 INFO  L185        PluginConnector]: Executing the observer TraceAbstractionObserver from plugin TraceAbstraction for "de.uni_freiburg.informatik.ultimate.plugins.generator.cacsl2boogietranslator AST 19.11 02:41:52" (2/3) ...
+[2018-11-19 14:41:53,126 INFO  L205        PluginConnector]: Invalid model from TraceAbstraction for observer de.uni_freiburg.informatik.ultimate.plugins.generator.traceabstraction.TraceAbstractionObserver@20bb5526 and model type de.uni_freiburg.informatik.ultimate.plugins.generator.traceabstraction AST 19.11 02:41:53, skipping insertion in model container
+[2018-11-19 14:41:53,126 INFO  L185        PluginConnector]: Executing the observer TraceAbstractionObserver from plugin TraceAbstraction for "de.uni_freiburg.informatik.ultimate.plugins.generator.rcfgbuilder CFG 19.11 02:41:53" (3/3) ...
+[2018-11-19 14:41:53,129 INFO  L105   eAbstractionObserver]: Analyzing ICFG simple_vardep.c
+[2018-11-19 14:41:53,140 INFO  L128   ceAbstractionStarter]: Automizer settings: Hoare:false NWA Interpolation:ForwardPredicates Determinization: PREDICATE_ABSTRACTION
+[2018-11-19 14:41:53,150 INFO  L140   ceAbstractionStarter]: Appying trace abstraction to program that has 1 error locations.
+[2018-11-19 14:41:53,202 INFO  L322      AbstractCegarLoop]: Interprodecural is true
+[2018-11-19 14:41:53,203 INFO  L323      AbstractCegarLoop]: Hoare is false
+[2018-11-19 14:41:53,203 INFO  L324      AbstractCegarLoop]: Compute interpolants for ForwardPredicates
+[2018-11-19 14:41:53,203 INFO  L325      AbstractCegarLoop]: Backedges is CANONICAL
+[2018-11-19 14:41:53,203 INFO  L326      AbstractCegarLoop]: Determinization is PREDICATE_ABSTRACTION
+[2018-11-19 14:41:53,203 INFO  L327      AbstractCegarLoop]: Difference is false
+[2018-11-19 14:41:53,204 INFO  L328      AbstractCegarLoop]: Minimize is MINIMIZE_SEVPA
+[2018-11-19 14:41:53,204 INFO  L333      AbstractCegarLoop]: ======== Iteration 0==of CEGAR loop == AllErrorsAtOnce========
+[2018-11-19 14:41:53,206 INFO  L87    2NestedWordAutomaton]: Mode: main mode - execution starts in main procedure
+[2018-11-19 14:41:53,223 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:41:53,251 INFO  L276                IsEmpty]: Start isEmpty. Operand 13 states.
+[2018-11-19 14:41:53,255 INFO  L282                IsEmpty]: Finished isEmpty. Found accepting run of length 9
+[2018-11-19 14:41:53,256 INFO  L312         BasicCegarLoop]: Found error trace
+[2018-11-19 14:41:53,258 INFO  L320         BasicCegarLoop]: trace histogram [1, 1, 1, 1, 1, 1, 1, 1]
+[2018-11-19 14:41:53,258 INFO  L371      AbstractCegarLoop]: === Iteration 1 === [mainErr0AssertViolation]===
+[2018-11-19 14:41:53,265 INFO  L82        PathProgramCache]: Analyzing trace with hash 1083033810, now seen corresponding path program 1 times
+[2018-11-19 14:41:53,347 INFO  L91    tionRefinementEngine]: Using refinement strategy FixedTraceAbstractionRefinementStrategy
+[2018-11-19 14:41:53,532 INFO  L136    AnnotateAndAsserter]: Conjunction of SSA is unsat
+[2018-11-19 14:41:53,547 INFO  L270         TraceCheckSpWp]: Computing forward predicates...
+[2018-11-19 14:41:53,748 INFO  L134       CoverageAnalysis]: Checked inductivity of 0 backedges. 0 proven. 0 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:41:53,752 INFO  L372   tionRefinementEngine]: Constructing automaton from 1 perfect and 0 imperfect interpolant sequences.
+[2018-11-19 14:41:53,753 INFO  L387   tionRefinementEngine]: Number of different interpolants: perfect sequences [3] imperfect sequences [] total 3
+[2018-11-19 14:41:53,755 INFO  L142   lantAutomatonBuilder]: Constructing canonical interpolant automaton, with selfloop in false state
+[2018-11-19 14:41:53,755 INFO  L134       CoverageAnalysis]: Checked inductivity of 0 backedges. 0 proven. 0 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:41:53,756 INFO  L182   omatonBuilderFactory]: Interpolants [16#true, 17#false, 33#(and (= main_~j~1 0) (= main_~k~1 0) (= main_~i~1 0)), 40#(and (= main_~i~1 1) (= main_~k~1 3) (= main_~j~1 2))]
+[2018-11-19 14:41:53,756 INFO  L134       CoverageAnalysis]: Checked inductivity of 0 backedges. 0 proven. 0 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:41:53,758 INFO  L409      AbstractCegarLoop]: Interpolant automaton has 4 states
+[2018-11-19 14:41:53,759 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:41:53,781 INFO  L132   InterpolantAutomaton]: Constructing interpolant automaton starting with 4 interpolants.
+[2018-11-19 14:41:53,782 INFO  L133   InterpolantAutomaton]: CoverageRelationStatistics Valid=5, Invalid=7, Unknown=0, NotChecked=0, Total=12
+[2018-11-19 14:41:53,786 INFO  L87              Difference]: Start difference. First operand 13 states. Second operand 4 states.
+[2018-11-19 14:41:53,943 INFO  L144             Difference]: Subtrahend was deterministic. Have not used determinization.
+[2018-11-19 14:41:53,944 INFO  L93              Difference]: Finished difference Result 18 states and 18 transitions.
+[2018-11-19 14:41:53,945 INFO  L142   InterpolantAutomaton]: Switched to read-only mode: deterministic interpolant automaton has 4 states. 
+[2018-11-19 14:41:53,946 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:41:53,968 INFO  L78                 Accepts]: Start accepts. Automaton has 4 states. Word has length 8
+[2018-11-19 14:41:53,969 INFO  L84                 Accepts]: Finished accepts. some prefix is accepted.
+[2018-11-19 14:41:53,980 INFO  L225             Difference]: With dead ends: 18
+[2018-11-19 14:41:53,980 INFO  L226             Difference]: Without dead ends: 14
+[2018-11-19 14:41:53,981 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:41:53,989 INFO  L521         BasicCegarLoop]: 0 DeclaredPredicates, 7 GetRequests, 5 SyntacticMatches, 0 SemanticMatches, 2 ConstructedPredicates, 0 IntricatePredicates, 0 DeprecatedPredicates, 0 ImplicationChecksByTransitivity, 0.1s TimeCoverageRelationStatistics Valid=5, Invalid=7, Unknown=0, NotChecked=0, Total=12
+[2018-11-19 14:41:53,989 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:41:54,017 INFO  L82        GeneralOperation]: Start minimizeSevpa. Operand 14 states.
+[2018-11-19 14:41:54,034 INFO  L88        GeneralOperation]: Finished minimizeSevpa. Reduced states from 14 to 12.
+[2018-11-19 14:41:54,036 INFO  L82        GeneralOperation]: Start removeUnreachable. Operand 12 states.
+[2018-11-19 14:41:54,037 INFO  L88        GeneralOperation]: Finished removeUnreachable. Reduced from 12 states to 12 states and 12 transitions.
+[2018-11-19 14:41:54,039 INFO  L78                 Accepts]: Start accepts. Automaton has 12 states and 12 transitions. Word has length 8
+[2018-11-19 14:41:54,039 INFO  L84                 Accepts]: Finished accepts. word is rejected.
+[2018-11-19 14:41:54,040 INFO  L432      AbstractCegarLoop]: Abstraction has 12 states and 12 transitions.
+[2018-11-19 14:41:54,040 INFO  L433      AbstractCegarLoop]: Interpolant automaton has 4 states.
+[2018-11-19 14:41:54,040 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:41:54,043 INFO  L276                IsEmpty]: Start isEmpty. Operand 12 states and 12 transitions.
+[2018-11-19 14:41:54,044 INFO  L282                IsEmpty]: Finished isEmpty. Found accepting run of length 12
+[2018-11-19 14:41:54,044 INFO  L312         BasicCegarLoop]: Found error trace
+[2018-11-19 14:41:54,045 INFO  L320         BasicCegarLoop]: trace histogram [2, 2, 1, 1, 1, 1, 1, 1, 1]
+[2018-11-19 14:41:54,045 INFO  L371      AbstractCegarLoop]: === Iteration 2 === [mainErr0AssertViolation]===
+[2018-11-19 14:41:54,046 INFO  L82        PathProgramCache]: Analyzing trace with hash 865944086, now seen corresponding path program 1 times
+[2018-11-19 14:41:54,050 INFO  L91    tionRefinementEngine]: Using refinement strategy FixedTraceAbstractionRefinementStrategy
+[2018-11-19 14:41:54,200 INFO  L136    AnnotateAndAsserter]: Conjunction of SSA is unsat
+[2018-11-19 14:41:54,207 INFO  L270         TraceCheckSpWp]: Computing forward predicates...
+[2018-11-19 14:41:54,373 INFO  L134       CoverageAnalysis]: Checked inductivity of 3 backedges. 0 proven. 3 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:41:54,374 INFO  L372   tionRefinementEngine]: Constructing automaton from 0 perfect and 1 imperfect interpolant sequences.
+[2018-11-19 14:41:54,374 INFO  L387   tionRefinementEngine]: Number of different interpolants: perfect sequences [] imperfect sequences [4] total 4
+[2018-11-19 14:41:54,375 INFO  L142   lantAutomatonBuilder]: Constructing canonical interpolant automaton, with selfloop in false state
+[2018-11-19 14:41:54,375 INFO  L134       CoverageAnalysis]: Checked inductivity of 0 backedges. 0 proven. 0 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:41:54,375 INFO  L182   omatonBuilderFactory]: Interpolants [71#true, 72#false, 88#(and (= main_~j~1 0) (= main_~k~1 0) (= main_~i~1 0)), 105#(and (= main_~i~1 2) (= main_~k~1 6) (= main_~j~1 4)), 95#(and (= main_~i~1 1) (= main_~k~1 3) (= main_~j~1 2))]
+[2018-11-19 14:41:54,376 INFO  L134       CoverageAnalysis]: Checked inductivity of 3 backedges. 0 proven. 3 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:41:54,378 INFO  L409      AbstractCegarLoop]: Interpolant automaton has 5 states
+[2018-11-19 14:41:54,378 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:41:54,383 INFO  L132   InterpolantAutomaton]: Constructing interpolant automaton starting with 5 interpolants.
+[2018-11-19 14:41:54,383 INFO  L133   InterpolantAutomaton]: CoverageRelationStatistics Valid=7, Invalid=13, Unknown=0, NotChecked=0, Total=20
+[2018-11-19 14:41:54,384 INFO  L87              Difference]: Start difference. First operand 12 states and 12 transitions. Second operand 5 states.
+[2018-11-19 14:41:54,484 INFO  L144             Difference]: Subtrahend was deterministic. Have not used determinization.
+[2018-11-19 14:41:54,484 INFO  L93              Difference]: Finished difference Result 17 states and 17 transitions.
+[2018-11-19 14:41:54,485 INFO  L142   InterpolantAutomaton]: Switched to read-only mode: deterministic interpolant automaton has 5 states. 
+[2018-11-19 14:41:54,486 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:41:54,491 INFO  L78                 Accepts]: Start accepts. Automaton has 5 states. Word has length 11
+[2018-11-19 14:41:54,492 INFO  L84                 Accepts]: Finished accepts. some prefix is accepted.
+[2018-11-19 14:41:54,492 INFO  L225             Difference]: With dead ends: 17
+[2018-11-19 14:41:54,493 INFO  L226             Difference]: Without dead ends: 17
+[2018-11-19 14:41:54,493 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:41:54,498 INFO  L521         BasicCegarLoop]: 0 DeclaredPredicates, 10 GetRequests, 7 SyntacticMatches, 0 SemanticMatches, 3 ConstructedPredicates, 0 IntricatePredicates, 0 DeprecatedPredicates, 0 ImplicationChecksByTransitivity, 0.1s TimeCoverageRelationStatistics Valid=7, Invalid=13, Unknown=0, NotChecked=0, Total=20
+[2018-11-19 14:41:54,499 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:41:54,502 INFO  L82        GeneralOperation]: Start minimizeSevpa. Operand 17 states.
+[2018-11-19 14:41:54,505 INFO  L88        GeneralOperation]: Finished minimizeSevpa. Reduced states from 17 to 15.
+[2018-11-19 14:41:54,505 INFO  L82        GeneralOperation]: Start removeUnreachable. Operand 15 states.
+[2018-11-19 14:41:54,506 INFO  L88        GeneralOperation]: Finished removeUnreachable. Reduced from 15 states to 15 states and 15 transitions.
+[2018-11-19 14:41:54,507 INFO  L78                 Accepts]: Start accepts. Automaton has 15 states and 15 transitions. Word has length 11
+[2018-11-19 14:41:54,507 INFO  L84                 Accepts]: Finished accepts. word is rejected.
+[2018-11-19 14:41:54,507 INFO  L432      AbstractCegarLoop]: Abstraction has 15 states and 15 transitions.
+[2018-11-19 14:41:54,507 INFO  L433      AbstractCegarLoop]: Interpolant automaton has 5 states.
+[2018-11-19 14:41:54,508 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:41:54,511 INFO  L276                IsEmpty]: Start isEmpty. Operand 15 states and 15 transitions.
+[2018-11-19 14:41:54,512 INFO  L282                IsEmpty]: Finished isEmpty. Found accepting run of length 15
+[2018-11-19 14:41:54,512 INFO  L312         BasicCegarLoop]: Found error trace
+[2018-11-19 14:41:54,512 INFO  L320         BasicCegarLoop]: trace histogram [3, 3, 2, 1, 1, 1, 1, 1, 1]
+[2018-11-19 14:41:54,513 INFO  L371      AbstractCegarLoop]: === Iteration 3 === [mainErr0AssertViolation]===
+[2018-11-19 14:41:54,513 INFO  L82        PathProgramCache]: Analyzing trace with hash 1766724178, now seen corresponding path program 2 times
+[2018-11-19 14:41:54,515 INFO  L91    tionRefinementEngine]: Using refinement strategy FixedTraceAbstractionRefinementStrategy
+[2018-11-19 14:41:54,608 INFO  L136    AnnotateAndAsserter]: Conjunction of SSA is unsat
+[2018-11-19 14:41:54,617 INFO  L270         TraceCheckSpWp]: Computing forward predicates...
+[2018-11-19 14:41:54,899 INFO  L134       CoverageAnalysis]: Checked inductivity of 9 backedges. 0 proven. 9 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:41:54,901 INFO  L372   tionRefinementEngine]: Constructing automaton from 0 perfect and 1 imperfect interpolant sequences.
+[2018-11-19 14:41:54,901 INFO  L387   tionRefinementEngine]: Number of different interpolants: perfect sequences [] imperfect sequences [5] total 5
+[2018-11-19 14:41:54,901 INFO  L142   lantAutomatonBuilder]: Constructing canonical interpolant automaton, with selfloop in false state
+[2018-11-19 14:41:54,903 INFO  L134       CoverageAnalysis]: Checked inductivity of 0 backedges. 0 proven. 0 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:41:54,903 INFO  L182   omatonBuilderFactory]: Interpolants [162#(and (= main_~i~1 1) (= main_~k~1 3) (= main_~j~1 2)), 182#(and (= main_~j~1 6) (= main_~i~1 3) (= main_~k~1 9)), 138#true, 139#false, 155#(and (= main_~j~1 0) (= main_~k~1 0) (= main_~i~1 0)), 172#(and (= main_~i~1 2) (= main_~k~1 6) (= main_~j~1 4))]
+[2018-11-19 14:41:54,904 INFO  L134       CoverageAnalysis]: Checked inductivity of 9 backedges. 0 proven. 9 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:41:54,905 INFO  L409      AbstractCegarLoop]: Interpolant automaton has 6 states
+[2018-11-19 14:41:54,905 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:41:54,912 INFO  L132   InterpolantAutomaton]: Constructing interpolant automaton starting with 6 interpolants.
+[2018-11-19 14:41:54,912 INFO  L133   InterpolantAutomaton]: CoverageRelationStatistics Valid=9, Invalid=21, Unknown=0, NotChecked=0, Total=30
+[2018-11-19 14:41:54,916 INFO  L87              Difference]: Start difference. First operand 15 states and 15 transitions. Second operand 6 states.
+[2018-11-19 14:41:55,105 INFO  L144             Difference]: Subtrahend was deterministic. Have not used determinization.
+[2018-11-19 14:41:55,105 INFO  L93              Difference]: Finished difference Result 20 states and 20 transitions.
+[2018-11-19 14:41:55,106 INFO  L142   InterpolantAutomaton]: Switched to read-only mode: deterministic interpolant automaton has 6 states. 
+[2018-11-19 14:41:55,106 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:41:55,111 INFO  L78                 Accepts]: Start accepts. Automaton has 6 states. Word has length 14
+[2018-11-19 14:41:55,112 INFO  L84                 Accepts]: Finished accepts. some prefix is accepted.
+[2018-11-19 14:41:55,112 INFO  L225             Difference]: With dead ends: 20
+[2018-11-19 14:41:55,112 INFO  L226             Difference]: Without dead ends: 20
+[2018-11-19 14:41:55,113 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:41:55,117 INFO  L521         BasicCegarLoop]: 0 DeclaredPredicates, 13 GetRequests, 9 SyntacticMatches, 0 SemanticMatches, 4 ConstructedPredicates, 0 IntricatePredicates, 0 DeprecatedPredicates, 0 ImplicationChecksByTransitivity, 0.2s TimeCoverageRelationStatistics Valid=9, Invalid=21, Unknown=0, NotChecked=0, Total=30
+[2018-11-19 14:41:55,117 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:41:55,121 INFO  L82        GeneralOperation]: Start minimizeSevpa. Operand 20 states.
+[2018-11-19 14:41:55,123 INFO  L88        GeneralOperation]: Finished minimizeSevpa. Reduced states from 20 to 18.
+[2018-11-19 14:41:55,124 INFO  L82        GeneralOperation]: Start removeUnreachable. Operand 18 states.
+[2018-11-19 14:41:55,125 INFO  L88        GeneralOperation]: Finished removeUnreachable. Reduced from 18 states to 18 states and 18 transitions.
+[2018-11-19 14:41:55,125 INFO  L78                 Accepts]: Start accepts. Automaton has 18 states and 18 transitions. Word has length 14
+[2018-11-19 14:41:55,126 INFO  L84                 Accepts]: Finished accepts. word is rejected.
+[2018-11-19 14:41:55,126 INFO  L432      AbstractCegarLoop]: Abstraction has 18 states and 18 transitions.
+[2018-11-19 14:41:55,126 INFO  L433      AbstractCegarLoop]: Interpolant automaton has 6 states.
+[2018-11-19 14:41:55,126 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:41:55,129 INFO  L276                IsEmpty]: Start isEmpty. Operand 18 states and 18 transitions.
+[2018-11-19 14:41:55,130 INFO  L282                IsEmpty]: Finished isEmpty. Found accepting run of length 18
+[2018-11-19 14:41:55,130 INFO  L312         BasicCegarLoop]: Found error trace
+[2018-11-19 14:41:55,131 INFO  L320         BasicCegarLoop]: trace histogram [4, 4, 3, 1, 1, 1, 1, 1, 1]
+[2018-11-19 14:41:55,131 INFO  L371      AbstractCegarLoop]: === Iteration 4 === [mainErr0AssertViolation]===
+[2018-11-19 14:41:55,131 INFO  L82        PathProgramCache]: Analyzing trace with hash 1950779542, now seen corresponding path program 3 times
+[2018-11-19 14:41:55,133 INFO  L91    tionRefinementEngine]: Using refinement strategy FixedTraceAbstractionRefinementStrategy
+[2018-11-19 14:41:55,205 INFO  L136    AnnotateAndAsserter]: Conjunction of SSA is unsat
+[2018-11-19 14:41:55,213 INFO  L270         TraceCheckSpWp]: Computing forward predicates...
+[2018-11-19 14:41:55,490 INFO  L134       CoverageAnalysis]: Checked inductivity of 18 backedges. 0 proven. 18 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:41:55,491 INFO  L372   tionRefinementEngine]: Constructing automaton from 0 perfect and 1 imperfect interpolant sequences.
+[2018-11-19 14:41:55,491 INFO  L387   tionRefinementEngine]: Number of different interpolants: perfect sequences [] imperfect sequences [6] total 6
+[2018-11-19 14:41:55,491 INFO  L142   lantAutomatonBuilder]: Constructing canonical interpolant automaton, with selfloop in false state
+[2018-11-19 14:41:55,492 INFO  L134       CoverageAnalysis]: Checked inductivity of 0 backedges. 0 proven. 0 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:41:55,492 INFO  L182   omatonBuilderFactory]: Interpolants [275#(and (= main_~i~1 4) (= main_~j~1 8) (= main_~k~1 12)), 245#(and (= main_~i~1 1) (= main_~k~1 3) (= main_~j~1 2)), 265#(and (= main_~j~1 6) (= main_~i~1 3) (= main_~k~1 9)), 221#true, 222#false, 238#(and (= main_~j~1 0) (= main_~k~1 0) (= main_~i~1 0)), 255#(and (= main_~i~1 2) (= main_~k~1 6) (= main_~j~1 4))]
+[2018-11-19 14:41:55,492 INFO  L134       CoverageAnalysis]: Checked inductivity of 18 backedges. 0 proven. 18 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:41:55,493 INFO  L409      AbstractCegarLoop]: Interpolant automaton has 7 states
+[2018-11-19 14:41:55,493 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:41:55,498 INFO  L132   InterpolantAutomaton]: Constructing interpolant automaton starting with 7 interpolants.
+[2018-11-19 14:41:55,498 INFO  L133   InterpolantAutomaton]: CoverageRelationStatistics Valid=11, Invalid=31, Unknown=0, NotChecked=0, Total=42
+[2018-11-19 14:41:55,498 INFO  L87              Difference]: Start difference. First operand 18 states and 18 transitions. Second operand 7 states.
+[2018-11-19 14:41:55,756 INFO  L144             Difference]: Subtrahend was deterministic. Have not used determinization.
+[2018-11-19 14:41:55,756 INFO  L93              Difference]: Finished difference Result 23 states and 23 transitions.
+[2018-11-19 14:41:55,758 INFO  L142   InterpolantAutomaton]: Switched to read-only mode: deterministic interpolant automaton has 7 states. 
+[2018-11-19 14:41:55,758 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:41:55,763 INFO  L78                 Accepts]: Start accepts. Automaton has 7 states. Word has length 17
+[2018-11-19 14:41:55,764 INFO  L84                 Accepts]: Finished accepts. some prefix is accepted.
+[2018-11-19 14:41:55,765 INFO  L225             Difference]: With dead ends: 23
+[2018-11-19 14:41:55,765 INFO  L226             Difference]: Without dead ends: 23
+[2018-11-19 14:41:55,765 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:41:55,769 INFO  L521         BasicCegarLoop]: 0 DeclaredPredicates, 16 GetRequests, 11 SyntacticMatches, 0 SemanticMatches, 5 ConstructedPredicates, 0 IntricatePredicates, 0 DeprecatedPredicates, 0 ImplicationChecksByTransitivity, 0.2s TimeCoverageRelationStatistics Valid=11, Invalid=31, Unknown=0, NotChecked=0, Total=42
+[2018-11-19 14:41:55,770 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:41:55,773 INFO  L82        GeneralOperation]: Start minimizeSevpa. Operand 23 states.
+[2018-11-19 14:41:55,775 INFO  L88        GeneralOperation]: Finished minimizeSevpa. Reduced states from 23 to 21.
+[2018-11-19 14:41:55,776 INFO  L82        GeneralOperation]: Start removeUnreachable. Operand 21 states.
+[2018-11-19 14:41:55,777 INFO  L88        GeneralOperation]: Finished removeUnreachable. Reduced from 21 states to 21 states and 21 transitions.
+[2018-11-19 14:41:55,777 INFO  L78                 Accepts]: Start accepts. Automaton has 21 states and 21 transitions. Word has length 17
+[2018-11-19 14:41:55,777 INFO  L84                 Accepts]: Finished accepts. word is rejected.
+[2018-11-19 14:41:55,778 INFO  L432      AbstractCegarLoop]: Abstraction has 21 states and 21 transitions.
+[2018-11-19 14:41:55,778 INFO  L433      AbstractCegarLoop]: Interpolant automaton has 7 states.
+[2018-11-19 14:41:55,778 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:41:55,781 INFO  L276                IsEmpty]: Start isEmpty. Operand 21 states and 21 transitions.
+[2018-11-19 14:41:55,782 INFO  L282                IsEmpty]: Finished isEmpty. Found accepting run of length 21
+[2018-11-19 14:41:55,782 INFO  L312         BasicCegarLoop]: Found error trace
+[2018-11-19 14:41:55,782 INFO  L320         BasicCegarLoop]: trace histogram [5, 5, 4, 1, 1, 1, 1, 1, 1]
+[2018-11-19 14:41:55,782 INFO  L371      AbstractCegarLoop]: === Iteration 5 === [mainErr0AssertViolation]===
+[2018-11-19 14:41:55,783 INFO  L82        PathProgramCache]: Analyzing trace with hash 470891474, now seen corresponding path program 4 times
+[2018-11-19 14:41:55,784 INFO  L91    tionRefinementEngine]: Using refinement strategy FixedTraceAbstractionRefinementStrategy
+[2018-11-19 14:41:55,874 INFO  L136    AnnotateAndAsserter]: Conjunction of SSA is unsat
+[2018-11-19 14:41:55,880 INFO  L270         TraceCheckSpWp]: Computing forward predicates...
+[2018-11-19 14:41:56,270 INFO  L134       CoverageAnalysis]: Checked inductivity of 30 backedges. 0 proven. 30 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:41:56,271 INFO  L372   tionRefinementEngine]: Constructing automaton from 0 perfect and 1 imperfect interpolant sequences.
+[2018-11-19 14:41:56,272 INFO  L387   tionRefinementEngine]: Number of different interpolants: perfect sequences [] imperfect sequences [7] total 7
+[2018-11-19 14:41:56,272 INFO  L142   lantAutomatonBuilder]: Constructing canonical interpolant automaton, with selfloop in false state
+[2018-11-19 14:41:56,273 INFO  L134       CoverageAnalysis]: Checked inductivity of 0 backedges. 0 proven. 0 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:41:56,273 INFO  L182   omatonBuilderFactory]: Interpolants [320#true, 384#(and (= main_~k~1 15) (= main_~i~1 5) (= main_~j~1 10)), 321#false, 337#(and (= main_~j~1 0) (= main_~k~1 0) (= main_~i~1 0)), 354#(and (= main_~i~1 2) (= main_~k~1 6) (= main_~j~1 4)), 374#(and (= main_~i~1 4) (= main_~j~1 8) (= main_~k~1 12)), 344#(and (= main_~i~1 1) (= main_~k~1 3) (= main_~j~1 2)), 364#(and (= main_~j~1 6) (= main_~i~1 3) (= main_~k~1 9))]
+[2018-11-19 14:41:56,273 INFO  L134       CoverageAnalysis]: Checked inductivity of 30 backedges. 0 proven. 30 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:41:56,274 INFO  L409      AbstractCegarLoop]: Interpolant automaton has 8 states
+[2018-11-19 14:41:56,274 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:41:56,278 INFO  L132   InterpolantAutomaton]: Constructing interpolant automaton starting with 8 interpolants.
+[2018-11-19 14:41:56,278 INFO  L133   InterpolantAutomaton]: CoverageRelationStatistics Valid=13, Invalid=43, Unknown=0, NotChecked=0, Total=56
+[2018-11-19 14:41:56,279 INFO  L87              Difference]: Start difference. First operand 21 states and 21 transitions. Second operand 8 states.
+[2018-11-19 14:41:56,579 INFO  L144             Difference]: Subtrahend was deterministic. Have not used determinization.
+[2018-11-19 14:41:56,579 INFO  L93              Difference]: Finished difference Result 26 states and 26 transitions.
+[2018-11-19 14:41:56,581 INFO  L142   InterpolantAutomaton]: Switched to read-only mode: deterministic interpolant automaton has 8 states. 
+[2018-11-19 14:41:56,581 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:41:56,586 INFO  L78                 Accepts]: Start accepts. Automaton has 8 states. Word has length 20
+[2018-11-19 14:41:56,587 INFO  L84                 Accepts]: Finished accepts. some prefix is accepted.
+[2018-11-19 14:41:56,588 INFO  L225             Difference]: With dead ends: 26
+[2018-11-19 14:41:56,588 INFO  L226             Difference]: Without dead ends: 26
+[2018-11-19 14:41:56,588 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:41:56,593 INFO  L521         BasicCegarLoop]: 0 DeclaredPredicates, 19 GetRequests, 13 SyntacticMatches, 0 SemanticMatches, 6 ConstructedPredicates, 0 IntricatePredicates, 0 DeprecatedPredicates, 0 ImplicationChecksByTransitivity, 0.3s TimeCoverageRelationStatistics Valid=13, Invalid=43, Unknown=0, NotChecked=0, Total=56
+[2018-11-19 14:41:56,593 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:41:56,597 INFO  L82        GeneralOperation]: Start minimizeSevpa. Operand 26 states.
+[2018-11-19 14:41:56,600 INFO  L88        GeneralOperation]: Finished minimizeSevpa. Reduced states from 26 to 24.
+[2018-11-19 14:41:56,600 INFO  L82        GeneralOperation]: Start removeUnreachable. Operand 24 states.
+[2018-11-19 14:41:56,601 INFO  L88        GeneralOperation]: Finished removeUnreachable. Reduced from 24 states to 24 states and 24 transitions.
+[2018-11-19 14:41:56,602 INFO  L78                 Accepts]: Start accepts. Automaton has 24 states and 24 transitions. Word has length 20
+[2018-11-19 14:41:56,602 INFO  L84                 Accepts]: Finished accepts. word is rejected.
+[2018-11-19 14:41:56,602 INFO  L432      AbstractCegarLoop]: Abstraction has 24 states and 24 transitions.
+[2018-11-19 14:41:56,603 INFO  L433      AbstractCegarLoop]: Interpolant automaton has 8 states.
+[2018-11-19 14:41:56,603 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:41:56,606 INFO  L276                IsEmpty]: Start isEmpty. Operand 24 states and 24 transitions.
+[2018-11-19 14:41:56,607 INFO  L282                IsEmpty]: Finished isEmpty. Found accepting run of length 24
+[2018-11-19 14:41:56,608 INFO  L312         BasicCegarLoop]: Found error trace
+[2018-11-19 14:41:56,608 INFO  L320         BasicCegarLoop]: trace histogram [6, 6, 5, 1, 1, 1, 1, 1, 1]
+[2018-11-19 14:41:56,608 INFO  L371      AbstractCegarLoop]: === Iteration 6 === [mainErr0AssertViolation]===
+[2018-11-19 14:41:56,609 INFO  L82        PathProgramCache]: Analyzing trace with hash 964751126, now seen corresponding path program 5 times
+[2018-11-19 14:41:56,610 INFO  L91    tionRefinementEngine]: Using refinement strategy FixedTraceAbstractionRefinementStrategy
+[2018-11-19 14:41:56,702 INFO  L136    AnnotateAndAsserter]: Conjunction of SSA is unsat
+[2018-11-19 14:41:56,709 INFO  L270         TraceCheckSpWp]: Computing forward predicates...
+[2018-11-19 14:41:57,292 INFO  L134       CoverageAnalysis]: Checked inductivity of 45 backedges. 0 proven. 45 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:41:57,293 INFO  L372   tionRefinementEngine]: Constructing automaton from 0 perfect and 1 imperfect interpolant sequences.
+[2018-11-19 14:41:57,294 INFO  L387   tionRefinementEngine]: Number of different interpolants: perfect sequences [] imperfect sequences [8] total 8
+[2018-11-19 14:41:57,294 INFO  L142   lantAutomatonBuilder]: Constructing canonical interpolant automaton, with selfloop in false state
+[2018-11-19 14:41:57,294 INFO  L134       CoverageAnalysis]: Checked inductivity of 0 backedges. 0 proven. 0 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:41:57,295 INFO  L182   omatonBuilderFactory]: Interpolants [435#true, 499#(and (= main_~k~1 15) (= main_~i~1 5) (= main_~j~1 10)), 436#false, 452#(and (= main_~j~1 0) (= main_~k~1 0) (= main_~i~1 0)), 469#(and (= main_~i~1 2) (= main_~k~1 6) (= main_~j~1 4)), 489#(and (= main_~i~1 4) (= main_~j~1 8) (= main_~k~1 12)), 459#(and (= main_~i~1 1) (= main_~k~1 3) (= main_~j~1 2)), 509#(and (= main_~k~1 18) (= main_~j~1 12) (= main_~i~1 6)), 479#(and (= main_~j~1 6) (= main_~i~1 3) (= main_~k~1 9))]
+[2018-11-19 14:41:57,295 INFO  L134       CoverageAnalysis]: Checked inductivity of 45 backedges. 0 proven. 45 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:41:57,296 INFO  L409      AbstractCegarLoop]: Interpolant automaton has 9 states
+[2018-11-19 14:41:57,296 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:41:57,300 INFO  L132   InterpolantAutomaton]: Constructing interpolant automaton starting with 9 interpolants.
+[2018-11-19 14:41:57,300 INFO  L133   InterpolantAutomaton]: CoverageRelationStatistics Valid=15, Invalid=57, Unknown=0, NotChecked=0, Total=72
+[2018-11-19 14:41:57,301 INFO  L87              Difference]: Start difference. First operand 24 states and 24 transitions. Second operand 9 states.
+[2018-11-19 14:41:57,659 INFO  L144             Difference]: Subtrahend was deterministic. Have not used determinization.
+[2018-11-19 14:41:57,659 INFO  L93              Difference]: Finished difference Result 29 states and 29 transitions.
+[2018-11-19 14:41:57,661 INFO  L142   InterpolantAutomaton]: Switched to read-only mode: deterministic interpolant automaton has 9 states. 
+[2018-11-19 14:41:57,661 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:41:57,666 INFO  L78                 Accepts]: Start accepts. Automaton has 9 states. Word has length 23
+[2018-11-19 14:41:57,668 INFO  L84                 Accepts]: Finished accepts. some prefix is accepted.
+[2018-11-19 14:41:57,672 INFO  L225             Difference]: With dead ends: 29
+[2018-11-19 14:41:57,672 INFO  L226             Difference]: Without dead ends: 29
+[2018-11-19 14:41:57,672 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:41:57,677 INFO  L521         BasicCegarLoop]: 0 DeclaredPredicates, 22 GetRequests, 15 SyntacticMatches, 0 SemanticMatches, 7 ConstructedPredicates, 0 IntricatePredicates, 0 DeprecatedPredicates, 0 ImplicationChecksByTransitivity, 0.5s TimeCoverageRelationStatistics Valid=15, Invalid=57, Unknown=0, NotChecked=0, Total=72
+[2018-11-19 14:41:57,677 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:41:57,688 INFO  L82        GeneralOperation]: Start minimizeSevpa. Operand 29 states.
+[2018-11-19 14:41:57,691 INFO  L88        GeneralOperation]: Finished minimizeSevpa. Reduced states from 29 to 27.
+[2018-11-19 14:41:57,692 INFO  L82        GeneralOperation]: Start removeUnreachable. Operand 27 states.
+[2018-11-19 14:41:57,692 INFO  L88        GeneralOperation]: Finished removeUnreachable. Reduced from 27 states to 27 states and 27 transitions.
+[2018-11-19 14:41:57,693 INFO  L78                 Accepts]: Start accepts. Automaton has 27 states and 27 transitions. Word has length 23
+[2018-11-19 14:41:57,693 INFO  L84                 Accepts]: Finished accepts. word is rejected.
+[2018-11-19 14:41:57,693 INFO  L432      AbstractCegarLoop]: Abstraction has 27 states and 27 transitions.
+[2018-11-19 14:41:57,693 INFO  L433      AbstractCegarLoop]: Interpolant automaton has 9 states.
+[2018-11-19 14:41:57,694 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:41:57,698 INFO  L276                IsEmpty]: Start isEmpty. Operand 27 states and 27 transitions.
+[2018-11-19 14:41:57,699 INFO  L282                IsEmpty]: Finished isEmpty. Found accepting run of length 27
+[2018-11-19 14:41:57,699 INFO  L312         BasicCegarLoop]: Found error trace
+[2018-11-19 14:41:57,700 INFO  L320         BasicCegarLoop]: trace histogram [7, 7, 6, 1, 1, 1, 1, 1, 1]
+[2018-11-19 14:41:57,700 INFO  L371      AbstractCegarLoop]: === Iteration 7 === [mainErr0AssertViolation]===
+[2018-11-19 14:41:57,700 INFO  L82        PathProgramCache]: Analyzing trace with hash -1020312238, now seen corresponding path program 6 times
+[2018-11-19 14:41:57,702 INFO  L91    tionRefinementEngine]: Using refinement strategy FixedTraceAbstractionRefinementStrategy
+[2018-11-19 14:41:57,857 INFO  L136    AnnotateAndAsserter]: Conjunction of SSA is unsat
+[2018-11-19 14:41:57,864 INFO  L270         TraceCheckSpWp]: Computing forward predicates...
+[2018-11-19 14:41:58,620 INFO  L134       CoverageAnalysis]: Checked inductivity of 63 backedges. 0 proven. 63 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:41:58,621 INFO  L372   tionRefinementEngine]: Constructing automaton from 0 perfect and 1 imperfect interpolant sequences.
+[2018-11-19 14:41:58,622 INFO  L387   tionRefinementEngine]: Number of different interpolants: perfect sequences [] imperfect sequences [9] total 9
+[2018-11-19 14:41:58,622 INFO  L142   lantAutomatonBuilder]: Constructing canonical interpolant automaton, with selfloop in false state
+[2018-11-19 14:41:58,622 INFO  L134       CoverageAnalysis]: Checked inductivity of 0 backedges. 0 proven. 0 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:41:58,623 INFO  L182   omatonBuilderFactory]: Interpolants [640#(and (= main_~k~1 18) (= main_~j~1 12) (= main_~i~1 6)), 610#(and (= main_~j~1 6) (= main_~i~1 3) (= main_~k~1 9)), 566#true, 630#(and (= main_~k~1 15) (= main_~i~1 5) (= main_~j~1 10)), 567#false, 583#(and (= main_~j~1 0) (= main_~k~1 0) (= main_~i~1 0)), 600#(and (= main_~i~1 2) (= main_~k~1 6) (= main_~j~1 4)), 650#(and (= main_~i~1 7) (= main_~k~1 21) (= main_~j~1 14)), 620#(and (= main_~i~1 4) (= main_~j~1 8) (= main_~k~1 12)), 590#(and (= main_~i~1 1) (= main_~k~1 3) (= main_~j~1 2))]
+[2018-11-19 14:41:58,623 INFO  L134       CoverageAnalysis]: Checked inductivity of 63 backedges. 0 proven. 63 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:41:58,624 INFO  L409      AbstractCegarLoop]: Interpolant automaton has 10 states
+[2018-11-19 14:41:58,624 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:41:58,628 INFO  L132   InterpolantAutomaton]: Constructing interpolant automaton starting with 10 interpolants.
+[2018-11-19 14:41:58,629 INFO  L133   InterpolantAutomaton]: CoverageRelationStatistics Valid=17, Invalid=73, Unknown=0, NotChecked=0, Total=90
+[2018-11-19 14:41:58,629 INFO  L87              Difference]: Start difference. First operand 27 states and 27 transitions. Second operand 10 states.
+[2018-11-19 14:41:58,935 INFO  L144             Difference]: Subtrahend was deterministic. Have not used determinization.
+[2018-11-19 14:41:58,936 INFO  L93              Difference]: Finished difference Result 32 states and 32 transitions.
+[2018-11-19 14:41:58,936 INFO  L142   InterpolantAutomaton]: Switched to read-only mode: deterministic interpolant automaton has 10 states. 
+[2018-11-19 14:41:58,937 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:41:58,941 INFO  L78                 Accepts]: Start accepts. Automaton has 10 states. Word has length 26
+[2018-11-19 14:41:58,942 INFO  L84                 Accepts]: Finished accepts. some prefix is accepted.
+[2018-11-19 14:41:58,942 INFO  L225             Difference]: With dead ends: 32
+[2018-11-19 14:41:58,943 INFO  L226             Difference]: Without dead ends: 32
+[2018-11-19 14:41:58,943 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:41:58,947 INFO  L521         BasicCegarLoop]: 0 DeclaredPredicates, 25 GetRequests, 17 SyntacticMatches, 0 SemanticMatches, 8 ConstructedPredicates, 0 IntricatePredicates, 0 DeprecatedPredicates, 0 ImplicationChecksByTransitivity, 0.7s TimeCoverageRelationStatistics Valid=17, Invalid=73, Unknown=0, NotChecked=0, Total=90
+[2018-11-19 14:41:58,947 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:41:58,951 INFO  L82        GeneralOperation]: Start minimizeSevpa. Operand 32 states.
+[2018-11-19 14:41:58,954 INFO  L88        GeneralOperation]: Finished minimizeSevpa. Reduced states from 32 to 30.
+[2018-11-19 14:41:58,954 INFO  L82        GeneralOperation]: Start removeUnreachable. Operand 30 states.
+[2018-11-19 14:41:58,955 INFO  L88        GeneralOperation]: Finished removeUnreachable. Reduced from 30 states to 30 states and 30 transitions.
+[2018-11-19 14:41:58,956 INFO  L78                 Accepts]: Start accepts. Automaton has 30 states and 30 transitions. Word has length 26
+[2018-11-19 14:41:58,956 INFO  L84                 Accepts]: Finished accepts. word is rejected.
+[2018-11-19 14:41:58,956 INFO  L432      AbstractCegarLoop]: Abstraction has 30 states and 30 transitions.
+[2018-11-19 14:41:58,956 INFO  L433      AbstractCegarLoop]: Interpolant automaton has 10 states.
+[2018-11-19 14:41:58,957 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:41:58,960 INFO  L276                IsEmpty]: Start isEmpty. Operand 30 states and 30 transitions.
+[2018-11-19 14:41:58,961 INFO  L282                IsEmpty]: Finished isEmpty. Found accepting run of length 30
+[2018-11-19 14:41:58,961 INFO  L312         BasicCegarLoop]: Found error trace
+[2018-11-19 14:41:58,961 INFO  L320         BasicCegarLoop]: trace histogram [8, 8, 7, 1, 1, 1, 1, 1, 1]
+[2018-11-19 14:41:58,961 INFO  L371      AbstractCegarLoop]: === Iteration 8 === [mainErr0AssertViolation]===
+[2018-11-19 14:41:58,962 INFO  L82        PathProgramCache]: Analyzing trace with hash -638290538, now seen corresponding path program 7 times
+[2018-11-19 14:41:58,964 INFO  L91    tionRefinementEngine]: Using refinement strategy FixedTraceAbstractionRefinementStrategy
+[2018-11-19 14:41:59,142 INFO  L136    AnnotateAndAsserter]: Conjunction of SSA is unsat
+[2018-11-19 14:41:59,161 INFO  L270         TraceCheckSpWp]: Computing forward predicates...
+[2018-11-19 14:42:00,163 INFO  L134       CoverageAnalysis]: Checked inductivity of 84 backedges. 0 proven. 84 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:42:00,163 INFO  L372   tionRefinementEngine]: Constructing automaton from 0 perfect and 1 imperfect interpolant sequences.
+[2018-11-19 14:42:00,164 INFO  L387   tionRefinementEngine]: Number of different interpolants: perfect sequences [] imperfect sequences [10] total 10
+[2018-11-19 14:42:00,164 INFO  L142   lantAutomatonBuilder]: Constructing canonical interpolant automaton, with selfloop in false state
+[2018-11-19 14:42:00,164 INFO  L134       CoverageAnalysis]: Checked inductivity of 0 backedges. 0 proven. 0 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:42:00,165 INFO  L182   omatonBuilderFactory]: Interpolants [737#(and (= main_~i~1 1) (= main_~k~1 3) (= main_~j~1 2)), 787#(and (= main_~k~1 18) (= main_~j~1 12) (= main_~i~1 6)), 757#(and (= main_~j~1 6) (= main_~i~1 3) (= main_~k~1 9)), 807#(and (= main_~j~1 16) (= main_~i~1 8) (= main_~k~1 24)), 713#true, 777#(and (= main_~k~1 15) (= main_~i~1 5) (= main_~j~1 10)), 714#false, 730#(and (= main_~j~1 0) (= main_~k~1 0) (= main_~i~1 0)), 747#(and (= main_~i~1 2) (= main_~k~1 6) (= main_~j~1 4)), 797#(and (= main_~i~1 7) (= main_~k~1 21) (= main_~j~1 14)), 767#(and (= main_~i~1 4) (= main_~j~1 8) (= main_~k~1 12))]
+[2018-11-19 14:42:00,165 INFO  L134       CoverageAnalysis]: Checked inductivity of 84 backedges. 0 proven. 84 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:42:00,165 INFO  L409      AbstractCegarLoop]: Interpolant automaton has 11 states
+[2018-11-19 14:42:00,166 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:00,169 INFO  L132   InterpolantAutomaton]: Constructing interpolant automaton starting with 11 interpolants.
+[2018-11-19 14:42:00,170 INFO  L133   InterpolantAutomaton]: CoverageRelationStatistics Valid=19, Invalid=91, Unknown=0, NotChecked=0, Total=110
+[2018-11-19 14:42:00,170 INFO  L87              Difference]: Start difference. First operand 30 states and 30 transitions. Second operand 11 states.
+[2018-11-19 14:42:00,595 INFO  L144             Difference]: Subtrahend was deterministic. Have not used determinization.
+[2018-11-19 14:42:00,595 INFO  L93              Difference]: Finished difference Result 35 states and 35 transitions.
+[2018-11-19 14:42:00,596 INFO  L142   InterpolantAutomaton]: Switched to read-only mode: deterministic interpolant automaton has 11 states. 
+[2018-11-19 14:42:00,596 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:00,601 INFO  L78                 Accepts]: Start accepts. Automaton has 11 states. Word has length 29
+[2018-11-19 14:42:00,601 INFO  L84                 Accepts]: Finished accepts. some prefix is accepted.
+[2018-11-19 14:42:00,602 INFO  L225             Difference]: With dead ends: 35
+[2018-11-19 14:42:00,602 INFO  L226             Difference]: Without dead ends: 35
+[2018-11-19 14:42:00,603 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:00,615 INFO  L521         BasicCegarLoop]: 0 DeclaredPredicates, 28 GetRequests, 19 SyntacticMatches, 0 SemanticMatches, 9 ConstructedPredicates, 0 IntricatePredicates, 0 DeprecatedPredicates, 0 ImplicationChecksByTransitivity, 0.9s TimeCoverageRelationStatistics Valid=19, Invalid=91, Unknown=0, NotChecked=0, Total=110
+[2018-11-19 14:42:00,615 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:00,619 INFO  L82        GeneralOperation]: Start minimizeSevpa. Operand 35 states.
+[2018-11-19 14:42:00,622 INFO  L88        GeneralOperation]: Finished minimizeSevpa. Reduced states from 35 to 33.
+[2018-11-19 14:42:00,622 INFO  L82        GeneralOperation]: Start removeUnreachable. Operand 33 states.
+[2018-11-19 14:42:00,623 INFO  L88        GeneralOperation]: Finished removeUnreachable. Reduced from 33 states to 33 states and 33 transitions.
+[2018-11-19 14:42:00,623 INFO  L78                 Accepts]: Start accepts. Automaton has 33 states and 33 transitions. Word has length 29
+[2018-11-19 14:42:00,633 INFO  L84                 Accepts]: Finished accepts. word is rejected.
+[2018-11-19 14:42:00,634 INFO  L432      AbstractCegarLoop]: Abstraction has 33 states and 33 transitions.
+[2018-11-19 14:42:00,634 INFO  L433      AbstractCegarLoop]: Interpolant automaton has 11 states.
+[2018-11-19 14:42:00,634 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:00,637 INFO  L276                IsEmpty]: Start isEmpty. Operand 33 states and 33 transitions.
+[2018-11-19 14:42:00,638 INFO  L282                IsEmpty]: Finished isEmpty. Found accepting run of length 33
+[2018-11-19 14:42:00,639 INFO  L312         BasicCegarLoop]: Found error trace
+[2018-11-19 14:42:00,639 INFO  L320         BasicCegarLoop]: trace histogram [9, 9, 8, 1, 1, 1, 1, 1, 1]
+[2018-11-19 14:42:00,641 INFO  L371      AbstractCegarLoop]: === Iteration 9 === [mainErr0AssertViolation]===
+[2018-11-19 14:42:00,642 INFO  L82        PathProgramCache]: Analyzing trace with hash -1493160238, now seen corresponding path program 8 times
+[2018-11-19 14:42:00,644 INFO  L91    tionRefinementEngine]: Using refinement strategy FixedTraceAbstractionRefinementStrategy
+[2018-11-19 14:42:00,749 INFO  L136    AnnotateAndAsserter]: Conjunction of SSA is unsat
+[2018-11-19 14:42:00,760 INFO  L270         TraceCheckSpWp]: Computing forward predicates...
+[2018-11-19 14:42:01,825 INFO  L134       CoverageAnalysis]: Checked inductivity of 108 backedges. 0 proven. 108 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:42:01,825 INFO  L372   tionRefinementEngine]: Constructing automaton from 0 perfect and 1 imperfect interpolant sequences.
+[2018-11-19 14:42:01,826 INFO  L387   tionRefinementEngine]: Number of different interpolants: perfect sequences [] imperfect sequences [11] total 11
+[2018-11-19 14:42:01,826 INFO  L142   lantAutomatonBuilder]: Constructing canonical interpolant automaton, with selfloop in false state
+[2018-11-19 14:42:01,827 INFO  L134       CoverageAnalysis]: Checked inductivity of 0 backedges. 0 proven. 0 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:42:01,827 INFO  L182   omatonBuilderFactory]: Interpolants [960#(and (= main_~i~1 7) (= main_~k~1 21) (= main_~j~1 14)), 930#(and (= main_~i~1 4) (= main_~j~1 8) (= main_~k~1 12)), 900#(and (= main_~i~1 1) (= main_~k~1 3) (= main_~j~1 2)), 980#(and (= main_~j~1 18) (= main_~i~1 9) (= main_~k~1 27)), 950#(and (= main_~k~1 18) (= main_~j~1 12) (= main_~i~1 6)), 920#(and (= main_~j~1 6) (= main_~i~1 3) (= main_~k~1 9)), 970#(and (= main_~j~1 16) (= main_~i~1 8) (= main_~k~1 24)), 876#true, 940#(and (= main_~k~1 15) (= main_~i~1 5) (= main_~j~1 10)), 877#false, 893#(and (= main_~j~1 0) (= main_~k~1 0) (= main_~i~1 0)), 910#(and (= main_~i~1 2) (= main_~k~1 6) (= main_~j~1 4))]
+[2018-11-19 14:42:01,828 INFO  L134       CoverageAnalysis]: Checked inductivity of 108 backedges. 0 proven. 108 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:42:01,828 INFO  L409      AbstractCegarLoop]: Interpolant automaton has 12 states
+[2018-11-19 14:42:01,828 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:01,833 INFO  L132   InterpolantAutomaton]: Constructing interpolant automaton starting with 12 interpolants.
+[2018-11-19 14:42:01,834 INFO  L133   InterpolantAutomaton]: CoverageRelationStatistics Valid=21, Invalid=111, Unknown=0, NotChecked=0, Total=132
+[2018-11-19 14:42:01,834 INFO  L87              Difference]: Start difference. First operand 33 states and 33 transitions. Second operand 12 states.
+[2018-11-19 14:42:02,367 INFO  L144             Difference]: Subtrahend was deterministic. Have not used determinization.
+[2018-11-19 14:42:02,367 INFO  L93              Difference]: Finished difference Result 38 states and 38 transitions.
+[2018-11-19 14:42:02,368 INFO  L142   InterpolantAutomaton]: Switched to read-only mode: deterministic interpolant automaton has 12 states. 
+[2018-11-19 14:42:02,368 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:02,373 INFO  L78                 Accepts]: Start accepts. Automaton has 12 states. Word has length 32
+[2018-11-19 14:42:02,373 INFO  L84                 Accepts]: Finished accepts. some prefix is accepted.
+[2018-11-19 14:42:02,376 INFO  L225             Difference]: With dead ends: 38
+[2018-11-19 14:42:02,376 INFO  L226             Difference]: Without dead ends: 38
+[2018-11-19 14:42:02,376 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:02,386 INFO  L521         BasicCegarLoop]: 0 DeclaredPredicates, 31 GetRequests, 21 SyntacticMatches, 0 SemanticMatches, 10 ConstructedPredicates, 0 IntricatePredicates, 0 DeprecatedPredicates, 0 ImplicationChecksByTransitivity, 1.0s TimeCoverageRelationStatistics Valid=21, Invalid=111, Unknown=0, NotChecked=0, Total=132
+[2018-11-19 14:42:02,387 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:02,393 INFO  L82        GeneralOperation]: Start minimizeSevpa. Operand 38 states.
+[2018-11-19 14:42:02,396 INFO  L88        GeneralOperation]: Finished minimizeSevpa. Reduced states from 38 to 36.
+[2018-11-19 14:42:02,397 INFO  L82        GeneralOperation]: Start removeUnreachable. Operand 36 states.
+[2018-11-19 14:42:02,403 INFO  L88        GeneralOperation]: Finished removeUnreachable. Reduced from 36 states to 36 states and 36 transitions.
+[2018-11-19 14:42:02,404 INFO  L78                 Accepts]: Start accepts. Automaton has 36 states and 36 transitions. Word has length 32
+[2018-11-19 14:42:02,405 INFO  L84                 Accepts]: Finished accepts. word is rejected.
+[2018-11-19 14:42:02,405 INFO  L432      AbstractCegarLoop]: Abstraction has 36 states and 36 transitions.
+[2018-11-19 14:42:02,405 INFO  L433      AbstractCegarLoop]: Interpolant automaton has 12 states.
+[2018-11-19 14:42:02,406 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:02,409 INFO  L276                IsEmpty]: Start isEmpty. Operand 36 states and 36 transitions.
+[2018-11-19 14:42:02,410 INFO  L282                IsEmpty]: Finished isEmpty. Found accepting run of length 36
+[2018-11-19 14:42:02,411 INFO  L312         BasicCegarLoop]: Found error trace
+[2018-11-19 14:42:02,411 INFO  L320         BasicCegarLoop]: trace histogram [10, 10, 9, 1, 1, 1, 1, 1, 1]
+[2018-11-19 14:42:02,411 INFO  L371      AbstractCegarLoop]: === Iteration 10 === [mainErr0AssertViolation]===
+[2018-11-19 14:42:02,411 INFO  L82        PathProgramCache]: Analyzing trace with hash 239672342, now seen corresponding path program 9 times
+[2018-11-19 14:42:02,413 INFO  L91    tionRefinementEngine]: Using refinement strategy FixedTraceAbstractionRefinementStrategy
+[2018-11-19 14:42:02,482 INFO  L136    AnnotateAndAsserter]: Conjunction of SSA is unsat
+[2018-11-19 14:42:02,488 INFO  L270         TraceCheckSpWp]: Computing forward predicates...
+[2018-11-19 14:42:03,071 INFO  L134       CoverageAnalysis]: Checked inductivity of 135 backedges. 0 proven. 135 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:42:03,072 INFO  L372   tionRefinementEngine]: Constructing automaton from 0 perfect and 1 imperfect interpolant sequences.
+[2018-11-19 14:42:03,072 INFO  L387   tionRefinementEngine]: Number of different interpolants: perfect sequences [] imperfect sequences [12] total 12
+[2018-11-19 14:42:03,072 INFO  L142   lantAutomatonBuilder]: Constructing canonical interpolant automaton, with selfloop in false state
+[2018-11-19 14:42:03,073 INFO  L134       CoverageAnalysis]: Checked inductivity of 0 backedges. 0 proven. 0 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:42:03,073 INFO  L182   omatonBuilderFactory]: Interpolants [1056#false, 1089#(and (= main_~i~1 2) (= main_~k~1 6) (= main_~j~1 4)), 1159#(and (= main_~j~1 18) (= main_~i~1 9) (= main_~k~1 27)), 1129#(and (= main_~k~1 18) (= main_~j~1 12) (= main_~i~1 6)), 1099#(and (= main_~j~1 6) (= main_~i~1 3) (= main_~k~1 9)), 1072#(and (= main_~j~1 0) (= main_~k~1 0) (= main_~i~1 0)), 1169#(and (= main_~k~1 30) (= main_~i~1 10) (= main_~j~1 20)), 1139#(and (= main_~i~1 7) (= main_~k~1 21) (= main_~j~1 14)), 1109#(and (= main_~i~1 4) (= main_~j~1 8) (= main_~k~1 12)), 1079#(and (= main_~i~1 1) (= main_~k~1 3) (= main_~j~1 2)), 1149#(and (= main_~j~1 16) (= main_~i~1 8) (= main_~k~1 24)), 1055#true, 1119#(and (= main_~k~1 15) (= main_~i~1 5) (= main_~j~1 10))]
+[2018-11-19 14:42:03,073 INFO  L134       CoverageAnalysis]: Checked inductivity of 135 backedges. 0 proven. 135 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:42:03,074 INFO  L409      AbstractCegarLoop]: Interpolant automaton has 13 states
+[2018-11-19 14:42:03,074 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:03,082 INFO  L132   InterpolantAutomaton]: Constructing interpolant automaton starting with 13 interpolants.
+[2018-11-19 14:42:03,083 INFO  L133   InterpolantAutomaton]: CoverageRelationStatistics Valid=23, Invalid=133, Unknown=0, NotChecked=0, Total=156
+[2018-11-19 14:42:03,083 INFO  L87              Difference]: Start difference. First operand 36 states and 36 transitions. Second operand 13 states.
+[2018-11-19 14:42:03,594 INFO  L144             Difference]: Subtrahend was deterministic. Have not used determinization.
+[2018-11-19 14:42:03,594 INFO  L93              Difference]: Finished difference Result 41 states and 41 transitions.
+[2018-11-19 14:42:03,597 INFO  L142   InterpolantAutomaton]: Switched to read-only mode: deterministic interpolant automaton has 13 states. 
+[2018-11-19 14:42:03,597 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:03,601 INFO  L78                 Accepts]: Start accepts. Automaton has 13 states. Word has length 35
+[2018-11-19 14:42:03,604 INFO  L84                 Accepts]: Finished accepts. some prefix is accepted.
+[2018-11-19 14:42:03,605 INFO  L225             Difference]: With dead ends: 41
+[2018-11-19 14:42:03,605 INFO  L226             Difference]: Without dead ends: 41
+[2018-11-19 14:42:03,605 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:03,609 INFO  L521         BasicCegarLoop]: 0 DeclaredPredicates, 34 GetRequests, 23 SyntacticMatches, 0 SemanticMatches, 11 ConstructedPredicates, 0 IntricatePredicates, 0 DeprecatedPredicates, 0 ImplicationChecksByTransitivity, 0.5s TimeCoverageRelationStatistics Valid=23, Invalid=133, Unknown=0, NotChecked=0, Total=156
+[2018-11-19 14:42:03,610 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:03,613 INFO  L82        GeneralOperation]: Start minimizeSevpa. Operand 41 states.
+[2018-11-19 14:42:03,616 INFO  L88        GeneralOperation]: Finished minimizeSevpa. Reduced states from 41 to 39.
+[2018-11-19 14:42:03,616 INFO  L82        GeneralOperation]: Start removeUnreachable. Operand 39 states.
+[2018-11-19 14:42:03,617 INFO  L88        GeneralOperation]: Finished removeUnreachable. Reduced from 39 states to 39 states and 39 transitions.
+[2018-11-19 14:42:03,617 INFO  L78                 Accepts]: Start accepts. Automaton has 39 states and 39 transitions. Word has length 35
+[2018-11-19 14:42:03,618 INFO  L84                 Accepts]: Finished accepts. word is rejected.
+[2018-11-19 14:42:03,618 INFO  L432      AbstractCegarLoop]: Abstraction has 39 states and 39 transitions.
+[2018-11-19 14:42:03,618 INFO  L433      AbstractCegarLoop]: Interpolant automaton has 13 states.
+[2018-11-19 14:42:03,618 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:03,621 INFO  L276                IsEmpty]: Start isEmpty. Operand 39 states and 39 transitions.
+[2018-11-19 14:42:03,622 INFO  L282                IsEmpty]: Finished isEmpty. Found accepting run of length 39
+[2018-11-19 14:42:03,623 INFO  L312         BasicCegarLoop]: Found error trace
+[2018-11-19 14:42:03,623 INFO  L320         BasicCegarLoop]: trace histogram [11, 11, 10, 1, 1, 1, 1, 1, 1]
+[2018-11-19 14:42:03,623 INFO  L371      AbstractCegarLoop]: === Iteration 11 === [mainErr0AssertViolation]===
+[2018-11-19 14:42:03,623 INFO  L82        PathProgramCache]: Analyzing trace with hash 1843132498, now seen corresponding path program 10 times
+[2018-11-19 14:42:03,625 INFO  L91    tionRefinementEngine]: Using refinement strategy FixedTraceAbstractionRefinementStrategy
+[2018-11-19 14:42:03,694 INFO  L136    AnnotateAndAsserter]: Conjunction of SSA is unsat
+[2018-11-19 14:42:03,701 INFO  L270         TraceCheckSpWp]: Computing forward predicates...
+[2018-11-19 14:42:04,161 INFO  L134       CoverageAnalysis]: Checked inductivity of 165 backedges. 0 proven. 165 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:42:04,162 INFO  L372   tionRefinementEngine]: Constructing automaton from 0 perfect and 1 imperfect interpolant sequences.
+[2018-11-19 14:42:04,162 INFO  L387   tionRefinementEngine]: Number of different interpolants: perfect sequences [] imperfect sequences [13] total 13
+[2018-11-19 14:42:04,163 INFO  L142   lantAutomatonBuilder]: Constructing canonical interpolant automaton, with selfloop in false state
+[2018-11-19 14:42:04,175 INFO  L134       CoverageAnalysis]: Checked inductivity of 0 backedges. 0 proven. 0 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:42:04,176 INFO  L182   omatonBuilderFactory]: Interpolants [1344#(and (= main_~j~1 16) (= main_~i~1 8) (= main_~k~1 24)), 1250#true, 1314#(and (= main_~k~1 15) (= main_~i~1 5) (= main_~j~1 10)), 1251#false, 1284#(and (= main_~i~1 2) (= main_~k~1 6) (= main_~j~1 4)), 1354#(and (= main_~j~1 18) (= main_~i~1 9) (= main_~k~1 27)), 1324#(and (= main_~k~1 18) (= main_~j~1 12) (= main_~i~1 6)), 1294#(and (= main_~j~1 6) (= main_~i~1 3) (= main_~k~1 9)), 1267#(and (= main_~j~1 0) (= main_~k~1 0) (= main_~i~1 0)), 1364#(and (= main_~k~1 30) (= main_~i~1 10) (= main_~j~1 20)), 1334#(and (= main_~i~1 7) (= main_~k~1 21) (= main_~j~1 14)), 1304#(and (= main_~i~1 4) (= main_~j~1 8) (= main_~k~1 12)), 1274#(and (= main_~i~1 1) (= main_~k~1 3) (= main_~j~1 2)), 1374#(and (= main_~i~1 11) (= main_~k~1 33) (= main_~j~1 22))]
+[2018-11-19 14:42:04,176 INFO  L134       CoverageAnalysis]: Checked inductivity of 165 backedges. 0 proven. 165 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:42:04,177 INFO  L409      AbstractCegarLoop]: Interpolant automaton has 14 states
+[2018-11-19 14:42:04,177 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:04,181 INFO  L132   InterpolantAutomaton]: Constructing interpolant automaton starting with 14 interpolants.
+[2018-11-19 14:42:04,182 INFO  L133   InterpolantAutomaton]: CoverageRelationStatistics Valid=25, Invalid=157, Unknown=0, NotChecked=0, Total=182
+[2018-11-19 14:42:04,182 INFO  L87              Difference]: Start difference. First operand 39 states and 39 transitions. Second operand 14 states.
+[2018-11-19 14:42:04,661 INFO  L144             Difference]: Subtrahend was deterministic. Have not used determinization.
+[2018-11-19 14:42:04,663 INFO  L93              Difference]: Finished difference Result 44 states and 44 transitions.
+[2018-11-19 14:42:04,664 INFO  L142   InterpolantAutomaton]: Switched to read-only mode: deterministic interpolant automaton has 14 states. 
+[2018-11-19 14:42:04,664 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:04,669 INFO  L78                 Accepts]: Start accepts. Automaton has 14 states. Word has length 38
+[2018-11-19 14:42:04,670 INFO  L84                 Accepts]: Finished accepts. some prefix is accepted.
+[2018-11-19 14:42:04,670 INFO  L225             Difference]: With dead ends: 44
+[2018-11-19 14:42:04,670 INFO  L226             Difference]: Without dead ends: 44
+[2018-11-19 14:42:04,671 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:04,675 INFO  L521         BasicCegarLoop]: 0 DeclaredPredicates, 37 GetRequests, 25 SyntacticMatches, 0 SemanticMatches, 12 ConstructedPredicates, 0 IntricatePredicates, 0 DeprecatedPredicates, 0 ImplicationChecksByTransitivity, 0.4s TimeCoverageRelationStatistics Valid=25, Invalid=157, Unknown=0, NotChecked=0, Total=182
+[2018-11-19 14:42:04,675 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:04,678 INFO  L82        GeneralOperation]: Start minimizeSevpa. Operand 44 states.
+[2018-11-19 14:42:04,681 INFO  L88        GeneralOperation]: Finished minimizeSevpa. Reduced states from 44 to 42.
+[2018-11-19 14:42:04,682 INFO  L82        GeneralOperation]: Start removeUnreachable. Operand 42 states.
+[2018-11-19 14:42:04,682 INFO  L88        GeneralOperation]: Finished removeUnreachable. Reduced from 42 states to 42 states and 42 transitions.
+[2018-11-19 14:42:04,683 INFO  L78                 Accepts]: Start accepts. Automaton has 42 states and 42 transitions. Word has length 38
+[2018-11-19 14:42:04,683 INFO  L84                 Accepts]: Finished accepts. word is rejected.
+[2018-11-19 14:42:04,683 INFO  L432      AbstractCegarLoop]: Abstraction has 42 states and 42 transitions.
+[2018-11-19 14:42:04,683 INFO  L433      AbstractCegarLoop]: Interpolant automaton has 14 states.
+[2018-11-19 14:42:04,684 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:04,687 INFO  L276                IsEmpty]: Start isEmpty. Operand 42 states and 42 transitions.
+[2018-11-19 14:42:04,688 INFO  L282                IsEmpty]: Finished isEmpty. Found accepting run of length 42
+[2018-11-19 14:42:04,688 INFO  L312         BasicCegarLoop]: Found error trace
+[2018-11-19 14:42:04,688 INFO  L320         BasicCegarLoop]: trace histogram [12, 12, 11, 1, 1, 1, 1, 1, 1]
+[2018-11-19 14:42:04,689 INFO  L371      AbstractCegarLoop]: === Iteration 12 === [mainErr0AssertViolation]===
+[2018-11-19 14:42:04,689 INFO  L82        PathProgramCache]: Analyzing trace with hash 1898373782, now seen corresponding path program 11 times
+[2018-11-19 14:42:04,690 INFO  L91    tionRefinementEngine]: Using refinement strategy FixedTraceAbstractionRefinementStrategy
+[2018-11-19 14:42:04,757 INFO  L136    AnnotateAndAsserter]: Conjunction of SSA is unsat
+[2018-11-19 14:42:04,764 INFO  L270         TraceCheckSpWp]: Computing forward predicates...
+[2018-11-19 14:42:05,541 INFO  L134       CoverageAnalysis]: Checked inductivity of 198 backedges. 0 proven. 198 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:42:05,541 INFO  L372   tionRefinementEngine]: Constructing automaton from 0 perfect and 1 imperfect interpolant sequences.
+[2018-11-19 14:42:05,542 INFO  L387   tionRefinementEngine]: Number of different interpolants: perfect sequences [] imperfect sequences [14] total 14
+[2018-11-19 14:42:05,542 INFO  L142   lantAutomatonBuilder]: Constructing canonical interpolant automaton, with selfloop in false state
+[2018-11-19 14:42:05,542 INFO  L134       CoverageAnalysis]: Checked inductivity of 0 backedges. 0 proven. 0 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:42:05,543 INFO  L182   omatonBuilderFactory]: Interpolants [1505#(and (= main_~j~1 6) (= main_~i~1 3) (= main_~k~1 9)), 1478#(and (= main_~j~1 0) (= main_~k~1 0) (= main_~i~1 0)), 1575#(and (= main_~k~1 30) (= main_~i~1 10) (= main_~j~1 20)), 1545#(and (= main_~i~1 7) (= main_~k~1 21) (= main_~j~1 14)), 1515#(and (= main_~i~1 4) (= main_~j~1 8) (= main_~k~1 12)), 1485#(and (= main_~i~1 1) (= main_~k~1 3) (= main_~j~1 2)), 1585#(and (= main_~i~1 11) (= main_~k~1 33) (= main_~j~1 22)), 1555#(and (= main_~j~1 16) (= main_~i~1 8) (= main_~k~1 24)), 1461#true, 1525#(and (= main_~k~1 15) (= main_~i~1 5) (= main_~j~1 10)), 1462#false, 1495#(and (= main_~i~1 2) (= main_~k~1 6) (= main_~j~1 4)), 1595#(and (= main_~k~1 36) (= main_~i~1 12) (= main_~j~1 24)), 1565#(and (= main_~j~1 18) (= main_~i~1 9) (= main_~k~1 27)), 1535#(and (= main_~k~1 18) (= main_~j~1 12) (= main_~i~1 6))]
+[2018-11-19 14:42:05,543 INFO  L134       CoverageAnalysis]: Checked inductivity of 198 backedges. 0 proven. 198 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:42:05,543 INFO  L409      AbstractCegarLoop]: Interpolant automaton has 15 states
+[2018-11-19 14:42:05,544 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:05,551 INFO  L132   InterpolantAutomaton]: Constructing interpolant automaton starting with 15 interpolants.
+[2018-11-19 14:42:05,551 INFO  L133   InterpolantAutomaton]: CoverageRelationStatistics Valid=27, Invalid=183, Unknown=0, NotChecked=0, Total=210
+[2018-11-19 14:42:05,552 INFO  L87              Difference]: Start difference. First operand 42 states and 42 transitions. Second operand 15 states.
+[2018-11-19 14:42:06,153 INFO  L144             Difference]: Subtrahend was deterministic. Have not used determinization.
+[2018-11-19 14:42:06,153 INFO  L93              Difference]: Finished difference Result 47 states and 47 transitions.
+[2018-11-19 14:42:06,154 INFO  L142   InterpolantAutomaton]: Switched to read-only mode: deterministic interpolant automaton has 15 states. 
+[2018-11-19 14:42:06,154 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:06,159 INFO  L78                 Accepts]: Start accepts. Automaton has 15 states. Word has length 41
+[2018-11-19 14:42:06,159 INFO  L84                 Accepts]: Finished accepts. some prefix is accepted.
+[2018-11-19 14:42:06,160 INFO  L225             Difference]: With dead ends: 47
+[2018-11-19 14:42:06,160 INFO  L226             Difference]: Without dead ends: 47
+[2018-11-19 14:42:06,160 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:06,164 INFO  L521         BasicCegarLoop]: 0 DeclaredPredicates, 40 GetRequests, 27 SyntacticMatches, 0 SemanticMatches, 13 ConstructedPredicates, 0 IntricatePredicates, 0 DeprecatedPredicates, 0 ImplicationChecksByTransitivity, 0.7s TimeCoverageRelationStatistics Valid=27, Invalid=183, Unknown=0, NotChecked=0, Total=210
+[2018-11-19 14:42:06,164 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:06,168 INFO  L82        GeneralOperation]: Start minimizeSevpa. Operand 47 states.
+[2018-11-19 14:42:06,171 INFO  L88        GeneralOperation]: Finished minimizeSevpa. Reduced states from 47 to 45.
+[2018-11-19 14:42:06,172 INFO  L82        GeneralOperation]: Start removeUnreachable. Operand 45 states.
+[2018-11-19 14:42:06,172 INFO  L88        GeneralOperation]: Finished removeUnreachable. Reduced from 45 states to 45 states and 45 transitions.
+[2018-11-19 14:42:06,172 INFO  L78                 Accepts]: Start accepts. Automaton has 45 states and 45 transitions. Word has length 41
+[2018-11-19 14:42:06,173 INFO  L84                 Accepts]: Finished accepts. word is rejected.
+[2018-11-19 14:42:06,173 INFO  L432      AbstractCegarLoop]: Abstraction has 45 states and 45 transitions.
+[2018-11-19 14:42:06,173 INFO  L433      AbstractCegarLoop]: Interpolant automaton has 15 states.
+[2018-11-19 14:42:06,173 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:06,176 INFO  L276                IsEmpty]: Start isEmpty. Operand 45 states and 45 transitions.
+[2018-11-19 14:42:06,177 INFO  L282                IsEmpty]: Finished isEmpty. Found accepting run of length 45
+[2018-11-19 14:42:06,177 INFO  L312         BasicCegarLoop]: Found error trace
+[2018-11-19 14:42:06,178 INFO  L320         BasicCegarLoop]: trace histogram [13, 13, 12, 1, 1, 1, 1, 1, 1]
+[2018-11-19 14:42:06,178 INFO  L371      AbstractCegarLoop]: === Iteration 13 === [mainErr0AssertViolation]===
+[2018-11-19 14:42:06,178 INFO  L82        PathProgramCache]: Analyzing trace with hash -1675976238, now seen corresponding path program 12 times
+[2018-11-19 14:42:06,179 INFO  L91    tionRefinementEngine]: Using refinement strategy FixedTraceAbstractionRefinementStrategy
+[2018-11-19 14:42:06,252 INFO  L136    AnnotateAndAsserter]: Conjunction of SSA is unsat
+[2018-11-19 14:42:06,259 INFO  L270         TraceCheckSpWp]: Computing forward predicates...
+[2018-11-19 14:42:06,791 INFO  L134       CoverageAnalysis]: Checked inductivity of 234 backedges. 0 proven. 234 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:42:06,792 INFO  L372   tionRefinementEngine]: Constructing automaton from 0 perfect and 1 imperfect interpolant sequences.
+[2018-11-19 14:42:06,792 INFO  L387   tionRefinementEngine]: Number of different interpolants: perfect sequences [] imperfect sequences [15] total 15
+[2018-11-19 14:42:06,793 INFO  L142   lantAutomatonBuilder]: Constructing canonical interpolant automaton, with selfloop in false state
+[2018-11-19 14:42:06,793 INFO  L134       CoverageAnalysis]: Checked inductivity of 0 backedges. 0 proven. 0 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:42:06,794 INFO  L182   omatonBuilderFactory]: Interpolants [1792#(and (= main_~j~1 18) (= main_~i~1 9) (= main_~k~1 27)), 1762#(and (= main_~k~1 18) (= main_~j~1 12) (= main_~i~1 6)), 1732#(and (= main_~j~1 6) (= main_~i~1 3) (= main_~k~1 9)), 1832#(and (= main_~j~1 26) (= main_~i~1 13) (= main_~k~1 39)), 1705#(and (= main_~j~1 0) (= main_~k~1 0) (= main_~i~1 0)), 1802#(and (= main_~k~1 30) (= main_~i~1 10) (= main_~j~1 20)), 1772#(and (= main_~i~1 7) (= main_~k~1 21) (= main_~j~1 14)), 1742#(and (= main_~i~1 4) (= main_~j~1 8) (= main_~k~1 12)), 1712#(and (= main_~i~1 1) (= main_~k~1 3) (= main_~j~1 2)), 1812#(and (= main_~i~1 11) (= main_~k~1 33) (= main_~j~1 22)), 1782#(and (= main_~j~1 16) (= main_~i~1 8) (= main_~k~1 24)), 1688#true, 1752#(and (= main_~k~1 15) (= main_~i~1 5) (= main_~j~1 10)), 1689#false, 1722#(and (= main_~i~1 2) (= main_~k~1 6) (= main_~j~1 4)), 1822#(and (= main_~k~1 36) (= main_~i~1 12) (= main_~j~1 24))]
+[2018-11-19 14:42:06,794 INFO  L134       CoverageAnalysis]: Checked inductivity of 234 backedges. 0 proven. 234 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:42:06,794 INFO  L409      AbstractCegarLoop]: Interpolant automaton has 16 states
+[2018-11-19 14:42:06,795 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:06,799 INFO  L132   InterpolantAutomaton]: Constructing interpolant automaton starting with 16 interpolants.
+[2018-11-19 14:42:06,799 INFO  L133   InterpolantAutomaton]: CoverageRelationStatistics Valid=29, Invalid=211, Unknown=0, NotChecked=0, Total=240
+[2018-11-19 14:42:06,800 INFO  L87              Difference]: Start difference. First operand 45 states and 45 transitions. Second operand 16 states.
+[2018-11-19 14:42:07,497 INFO  L144             Difference]: Subtrahend was deterministic. Have not used determinization.
+[2018-11-19 14:42:07,498 INFO  L93              Difference]: Finished difference Result 50 states and 50 transitions.
+[2018-11-19 14:42:07,499 INFO  L142   InterpolantAutomaton]: Switched to read-only mode: deterministic interpolant automaton has 16 states. 
+[2018-11-19 14:42:07,499 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:07,532 INFO  L78                 Accepts]: Start accepts. Automaton has 16 states. Word has length 44
+[2018-11-19 14:42:07,532 INFO  L84                 Accepts]: Finished accepts. some prefix is accepted.
+[2018-11-19 14:42:07,533 INFO  L225             Difference]: With dead ends: 50
+[2018-11-19 14:42:07,534 INFO  L226             Difference]: Without dead ends: 50
+[2018-11-19 14:42:07,534 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:07,540 INFO  L521         BasicCegarLoop]: 0 DeclaredPredicates, 43 GetRequests, 29 SyntacticMatches, 0 SemanticMatches, 14 ConstructedPredicates, 0 IntricatePredicates, 0 DeprecatedPredicates, 0 ImplicationChecksByTransitivity, 0.5s TimeCoverageRelationStatistics Valid=29, Invalid=211, Unknown=0, NotChecked=0, Total=240
+[2018-11-19 14:42:07,540 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:07,544 INFO  L82        GeneralOperation]: Start minimizeSevpa. Operand 50 states.
+[2018-11-19 14:42:07,548 INFO  L88        GeneralOperation]: Finished minimizeSevpa. Reduced states from 50 to 48.
+[2018-11-19 14:42:07,548 INFO  L82        GeneralOperation]: Start removeUnreachable. Operand 48 states.
+[2018-11-19 14:42:07,549 INFO  L88        GeneralOperation]: Finished removeUnreachable. Reduced from 48 states to 48 states and 48 transitions.
+[2018-11-19 14:42:07,549 INFO  L78                 Accepts]: Start accepts. Automaton has 48 states and 48 transitions. Word has length 44
+[2018-11-19 14:42:07,550 INFO  L84                 Accepts]: Finished accepts. word is rejected.
+[2018-11-19 14:42:07,550 INFO  L432      AbstractCegarLoop]: Abstraction has 48 states and 48 transitions.
+[2018-11-19 14:42:07,550 INFO  L433      AbstractCegarLoop]: Interpolant automaton has 16 states.
+[2018-11-19 14:42:07,550 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:07,554 INFO  L276                IsEmpty]: Start isEmpty. Operand 48 states and 48 transitions.
+[2018-11-19 14:42:07,555 INFO  L282                IsEmpty]: Finished isEmpty. Found accepting run of length 48
+[2018-11-19 14:42:07,555 INFO  L312         BasicCegarLoop]: Found error trace
+[2018-11-19 14:42:07,556 INFO  L320         BasicCegarLoop]: trace histogram [14, 14, 13, 1, 1, 1, 1, 1, 1]
+[2018-11-19 14:42:07,556 INFO  L371      AbstractCegarLoop]: === Iteration 14 === [mainErr0AssertViolation]===
+[2018-11-19 14:42:07,556 INFO  L82        PathProgramCache]: Analyzing trace with hash -13252330, now seen corresponding path program 13 times
+[2018-11-19 14:42:07,558 INFO  L91    tionRefinementEngine]: Using refinement strategy FixedTraceAbstractionRefinementStrategy
+[2018-11-19 14:42:07,730 INFO  L136    AnnotateAndAsserter]: Conjunction of SSA is unsat
+[2018-11-19 14:42:07,796 INFO  L270         TraceCheckSpWp]: Computing forward predicates...
+[2018-11-19 14:42:08,982 INFO  L134       CoverageAnalysis]: Checked inductivity of 273 backedges. 0 proven. 273 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:42:08,982 INFO  L372   tionRefinementEngine]: Constructing automaton from 0 perfect and 1 imperfect interpolant sequences.
+[2018-11-19 14:42:08,983 INFO  L387   tionRefinementEngine]: Number of different interpolants: perfect sequences [] imperfect sequences [16] total 16
+[2018-11-19 14:42:08,983 INFO  L142   lantAutomatonBuilder]: Constructing canonical interpolant automaton, with selfloop in false state
+[2018-11-19 14:42:08,983 INFO  L134       CoverageAnalysis]: Checked inductivity of 0 backedges. 0 proven. 0 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:42:08,984 INFO  L182   omatonBuilderFactory]: Interpolants [1985#(and (= main_~i~1 4) (= main_~j~1 8) (= main_~k~1 12)), 1955#(and (= main_~i~1 1) (= main_~k~1 3) (= main_~j~1 2)), 2085#(and (= main_~i~1 14) (= main_~j~1 28) (= main_~k~1 42)), 2055#(and (= main_~i~1 11) (= main_~k~1 33) (= main_~j~1 22)), 2025#(and (= main_~j~1 16) (= main_~i~1 8) (= main_~k~1 24)), 1931#true, 1995#(and (= main_~k~1 15) (= main_~i~1 5) (= main_~j~1 10)), 1932#false, 1965#(and (= main_~i~1 2) (= main_~k~1 6) (= main_~j~1 4)), 2065#(and (= main_~k~1 36) (= main_~i~1 12) (= main_~j~1 24)), 2035#(and (= main_~j~1 18) (= main_~i~1 9) (= main_~k~1 27)), 2005#(and (= main_~k~1 18) (= main_~j~1 12) (= main_~i~1 6)), 1975#(and (= main_~j~1 6) (= main_~i~1 3) (= main_~k~1 9)), 2075#(and (= main_~j~1 26) (= main_~i~1 13) (= main_~k~1 39)), 1948#(and (= main_~j~1 0) (= main_~k~1 0) (= main_~i~1 0)), 2045#(and (= main_~k~1 30) (= main_~i~1 10) (= main_~j~1 20)), 2015#(and (= main_~i~1 7) (= main_~k~1 21) (= main_~j~1 14))]
+[2018-11-19 14:42:08,984 INFO  L134       CoverageAnalysis]: Checked inductivity of 273 backedges. 0 proven. 273 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:42:08,984 INFO  L409      AbstractCegarLoop]: Interpolant automaton has 17 states
+[2018-11-19 14:42:08,985 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:08,988 INFO  L132   InterpolantAutomaton]: Constructing interpolant automaton starting with 17 interpolants.
+[2018-11-19 14:42:08,988 INFO  L133   InterpolantAutomaton]: CoverageRelationStatistics Valid=31, Invalid=241, Unknown=0, NotChecked=0, Total=272
+[2018-11-19 14:42:08,988 INFO  L87              Difference]: Start difference. First operand 48 states and 48 transitions. Second operand 17 states.
+[2018-11-19 14:42:09,733 INFO  L144             Difference]: Subtrahend was deterministic. Have not used determinization.
+[2018-11-19 14:42:09,734 INFO  L93              Difference]: Finished difference Result 53 states and 53 transitions.
+[2018-11-19 14:42:09,735 INFO  L142   InterpolantAutomaton]: Switched to read-only mode: deterministic interpolant automaton has 17 states. 
+[2018-11-19 14:42:09,735 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:09,739 INFO  L78                 Accepts]: Start accepts. Automaton has 17 states. Word has length 47
+[2018-11-19 14:42:09,740 INFO  L84                 Accepts]: Finished accepts. some prefix is accepted.
+[2018-11-19 14:42:09,741 INFO  L225             Difference]: With dead ends: 53
+[2018-11-19 14:42:09,741 INFO  L226             Difference]: Without dead ends: 53
+[2018-11-19 14:42:09,741 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:09,745 INFO  L521         BasicCegarLoop]: 0 DeclaredPredicates, 46 GetRequests, 31 SyntacticMatches, 0 SemanticMatches, 15 ConstructedPredicates, 0 IntricatePredicates, 0 DeprecatedPredicates, 0 ImplicationChecksByTransitivity, 1.1s TimeCoverageRelationStatistics Valid=31, Invalid=241, Unknown=0, NotChecked=0, Total=272
+[2018-11-19 14:42:09,745 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:09,755 INFO  L82        GeneralOperation]: Start minimizeSevpa. Operand 53 states.
+[2018-11-19 14:42:09,759 INFO  L88        GeneralOperation]: Finished minimizeSevpa. Reduced states from 53 to 51.
+[2018-11-19 14:42:09,759 INFO  L82        GeneralOperation]: Start removeUnreachable. Operand 51 states.
+[2018-11-19 14:42:09,759 INFO  L88        GeneralOperation]: Finished removeUnreachable. Reduced from 51 states to 51 states and 51 transitions.
+[2018-11-19 14:42:09,760 INFO  L78                 Accepts]: Start accepts. Automaton has 51 states and 51 transitions. Word has length 47
+[2018-11-19 14:42:09,760 INFO  L84                 Accepts]: Finished accepts. word is rejected.
+[2018-11-19 14:42:09,760 INFO  L432      AbstractCegarLoop]: Abstraction has 51 states and 51 transitions.
+[2018-11-19 14:42:09,760 INFO  L433      AbstractCegarLoop]: Interpolant automaton has 17 states.
+[2018-11-19 14:42:09,760 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:09,763 INFO  L276                IsEmpty]: Start isEmpty. Operand 51 states and 51 transitions.
+[2018-11-19 14:42:09,764 INFO  L282                IsEmpty]: Finished isEmpty. Found accepting run of length 51
+[2018-11-19 14:42:09,764 INFO  L312         BasicCegarLoop]: Found error trace
+[2018-11-19 14:42:09,765 INFO  L320         BasicCegarLoop]: trace histogram [15, 15, 14, 1, 1, 1, 1, 1, 1]
+[2018-11-19 14:42:09,765 INFO  L371      AbstractCegarLoop]: === Iteration 15 === [mainErr0AssertViolation]===
+[2018-11-19 14:42:09,765 INFO  L82        PathProgramCache]: Analyzing trace with hash 336866130, now seen corresponding path program 14 times
+[2018-11-19 14:42:09,768 INFO  L91    tionRefinementEngine]: Using refinement strategy FixedTraceAbstractionRefinementStrategy
+[2018-11-19 14:42:09,866 INFO  L136    AnnotateAndAsserter]: Conjunction of SSA is unsat
+[2018-11-19 14:42:09,872 INFO  L270         TraceCheckSpWp]: Computing forward predicates...
+[2018-11-19 14:42:10,532 INFO  L134       CoverageAnalysis]: Checked inductivity of 315 backedges. 0 proven. 315 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:42:10,533 INFO  L372   tionRefinementEngine]: Constructing automaton from 0 perfect and 1 imperfect interpolant sequences.
+[2018-11-19 14:42:10,533 INFO  L387   tionRefinementEngine]: Number of different interpolants: perfect sequences [] imperfect sequences [17] total 17
+[2018-11-19 14:42:10,533 INFO  L142   lantAutomatonBuilder]: Constructing canonical interpolant automaton, with selfloop in false state
+[2018-11-19 14:42:10,534 INFO  L134       CoverageAnalysis]: Checked inductivity of 0 backedges. 0 proven. 0 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:42:10,534 INFO  L182   omatonBuilderFactory]: Interpolants [2304#(and (= main_~k~1 30) (= main_~i~1 10) (= main_~j~1 20)), 2274#(and (= main_~i~1 7) (= main_~k~1 21) (= main_~j~1 14)), 2244#(and (= main_~i~1 4) (= main_~j~1 8) (= main_~k~1 12)), 2214#(and (= main_~i~1 1) (= main_~k~1 3) (= main_~j~1 2)), 2344#(and (= main_~i~1 14) (= main_~j~1 28) (= main_~k~1 42)), 2314#(and (= main_~i~1 11) (= main_~k~1 33) (= main_~j~1 22)), 2284#(and (= main_~j~1 16) (= main_~i~1 8) (= main_~k~1 24)), 2190#true, 2254#(and (= main_~k~1 15) (= main_~i~1 5) (= main_~j~1 10)), 2191#false, 2224#(and (= main_~i~1 2) (= main_~k~1 6) (= main_~j~1 4)), 2354#(and (= main_~k~1 45) (= main_~i~1 15) (= main_~j~1 30)), 2324#(and (= main_~k~1 36) (= main_~i~1 12) (= main_~j~1 24)), 2294#(and (= main_~j~1 18) (= main_~i~1 9) (= main_~k~1 27)), 2264#(and (= main_~k~1 18) (= main_~j~1 12) (= main_~i~1 6)), 2234#(and (= main_~j~1 6) (= main_~i~1 3) (= main_~k~1 9)), 2334#(and (= main_~j~1 26) (= main_~i~1 13) (= main_~k~1 39)), 2207#(and (= main_~j~1 0) (= main_~k~1 0) (= main_~i~1 0))]
+[2018-11-19 14:42:10,534 INFO  L134       CoverageAnalysis]: Checked inductivity of 315 backedges. 0 proven. 315 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:42:10,535 INFO  L409      AbstractCegarLoop]: Interpolant automaton has 18 states
+[2018-11-19 14:42:10,535 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:10,538 INFO  L132   InterpolantAutomaton]: Constructing interpolant automaton starting with 18 interpolants.
+[2018-11-19 14:42:10,539 INFO  L133   InterpolantAutomaton]: CoverageRelationStatistics Valid=33, Invalid=273, Unknown=0, NotChecked=0, Total=306
+[2018-11-19 14:42:10,539 INFO  L87              Difference]: Start difference. First operand 51 states and 51 transitions. Second operand 18 states.
+[2018-11-19 14:42:11,477 INFO  L144             Difference]: Subtrahend was deterministic. Have not used determinization.
+[2018-11-19 14:42:11,477 INFO  L93              Difference]: Finished difference Result 56 states and 56 transitions.
+[2018-11-19 14:42:11,478 INFO  L142   InterpolantAutomaton]: Switched to read-only mode: deterministic interpolant automaton has 18 states. 
+[2018-11-19 14:42:11,478 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:11,483 INFO  L78                 Accepts]: Start accepts. Automaton has 18 states. Word has length 50
+[2018-11-19 14:42:11,483 INFO  L84                 Accepts]: Finished accepts. some prefix is accepted.
+[2018-11-19 14:42:11,484 INFO  L225             Difference]: With dead ends: 56
+[2018-11-19 14:42:11,484 INFO  L226             Difference]: Without dead ends: 56
+[2018-11-19 14:42:11,484 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:11,488 INFO  L521         BasicCegarLoop]: 0 DeclaredPredicates, 49 GetRequests, 33 SyntacticMatches, 0 SemanticMatches, 16 ConstructedPredicates, 0 IntricatePredicates, 0 DeprecatedPredicates, 0 ImplicationChecksByTransitivity, 0.6s TimeCoverageRelationStatistics Valid=33, Invalid=273, Unknown=0, NotChecked=0, Total=306
+[2018-11-19 14:42:11,489 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:11,492 INFO  L82        GeneralOperation]: Start minimizeSevpa. Operand 56 states.
+[2018-11-19 14:42:11,496 INFO  L88        GeneralOperation]: Finished minimizeSevpa. Reduced states from 56 to 54.
+[2018-11-19 14:42:11,496 INFO  L82        GeneralOperation]: Start removeUnreachable. Operand 54 states.
+[2018-11-19 14:42:11,497 INFO  L88        GeneralOperation]: Finished removeUnreachable. Reduced from 54 states to 54 states and 54 transitions.
+[2018-11-19 14:42:11,497 INFO  L78                 Accepts]: Start accepts. Automaton has 54 states and 54 transitions. Word has length 50
+[2018-11-19 14:42:11,497 INFO  L84                 Accepts]: Finished accepts. word is rejected.
+[2018-11-19 14:42:11,498 INFO  L432      AbstractCegarLoop]: Abstraction has 54 states and 54 transitions.
+[2018-11-19 14:42:11,498 INFO  L433      AbstractCegarLoop]: Interpolant automaton has 18 states.
+[2018-11-19 14:42:11,498 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:11,501 INFO  L276                IsEmpty]: Start isEmpty. Operand 54 states and 54 transitions.
+[2018-11-19 14:42:11,502 INFO  L282                IsEmpty]: Finished isEmpty. Found accepting run of length 54
+[2018-11-19 14:42:11,503 INFO  L312         BasicCegarLoop]: Found error trace
+[2018-11-19 14:42:11,503 INFO  L320         BasicCegarLoop]: trace histogram [16, 16, 15, 1, 1, 1, 1, 1, 1]
+[2018-11-19 14:42:11,503 INFO  L371      AbstractCegarLoop]: === Iteration 16 === [mainErr0AssertViolation]===
+[2018-11-19 14:42:11,503 INFO  L82        PathProgramCache]: Analyzing trace with hash -1759653994, now seen corresponding path program 15 times
+[2018-11-19 14:42:11,505 INFO  L91    tionRefinementEngine]: Using refinement strategy FixedTraceAbstractionRefinementStrategy
+[2018-11-19 14:42:11,597 INFO  L136    AnnotateAndAsserter]: Conjunction of SSA is unsat
+[2018-11-19 14:42:11,604 INFO  L270         TraceCheckSpWp]: Computing forward predicates...
+[2018-11-19 14:42:12,030 INFO  L134       CoverageAnalysis]: Checked inductivity of 360 backedges. 0 proven. 360 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:42:12,030 INFO  L372   tionRefinementEngine]: Constructing automaton from 0 perfect and 1 imperfect interpolant sequences.
+[2018-11-19 14:42:12,031 INFO  L387   tionRefinementEngine]: Number of different interpolants: perfect sequences [] imperfect sequences [18] total 18
+[2018-11-19 14:42:12,031 INFO  L142   lantAutomatonBuilder]: Constructing canonical interpolant automaton, with selfloop in false state
+[2018-11-19 14:42:12,031 INFO  L134       CoverageAnalysis]: Checked inductivity of 0 backedges. 0 proven. 0 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:42:12,031 INFO  L182   omatonBuilderFactory]: Interpolants [2465#true, 2529#(and (= main_~k~1 15) (= main_~i~1 5) (= main_~j~1 10)), 2466#false, 2499#(and (= main_~i~1 2) (= main_~k~1 6) (= main_~j~1 4)), 2629#(and (= main_~k~1 45) (= main_~i~1 15) (= main_~j~1 30)), 2599#(and (= main_~k~1 36) (= main_~i~1 12) (= main_~j~1 24)), 2569#(and (= main_~j~1 18) (= main_~i~1 9) (= main_~k~1 27)), 2539#(and (= main_~k~1 18) (= main_~j~1 12) (= main_~i~1 6)), 2509#(and (= main_~j~1 6) (= main_~i~1 3) (= main_~k~1 9)), 2639#(and (= main_~j~1 32) (= main_~k~1 48) (= main_~i~1 16)), 2609#(and (= main_~j~1 26) (= main_~i~1 13) (= main_~k~1 39)), 2482#(and (= main_~j~1 0) (= main_~k~1 0) (= main_~i~1 0)), 2579#(and (= main_~k~1 30) (= main_~i~1 10) (= main_~j~1 20)), 2549#(and (= main_~i~1 7) (= main_~k~1 21) (= main_~j~1 14)), 2519#(and (= main_~i~1 4) (= main_~j~1 8) (= main_~k~1 12)), 2489#(and (= main_~i~1 1) (= main_~k~1 3) (= main_~j~1 2)), 2619#(and (= main_~i~1 14) (= main_~j~1 28) (= main_~k~1 42)), 2589#(and (= main_~i~1 11) (= main_~k~1 33) (= main_~j~1 22)), 2559#(and (= main_~j~1 16) (= main_~i~1 8) (= main_~k~1 24))]
+[2018-11-19 14:42:12,032 INFO  L134       CoverageAnalysis]: Checked inductivity of 360 backedges. 0 proven. 360 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:42:12,032 INFO  L409      AbstractCegarLoop]: Interpolant automaton has 19 states
+[2018-11-19 14:42:12,033 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:12,036 INFO  L132   InterpolantAutomaton]: Constructing interpolant automaton starting with 19 interpolants.
+[2018-11-19 14:42:12,037 INFO  L133   InterpolantAutomaton]: CoverageRelationStatistics Valid=35, Invalid=307, Unknown=0, NotChecked=0, Total=342
+[2018-11-19 14:42:12,037 INFO  L87              Difference]: Start difference. First operand 54 states and 54 transitions. Second operand 19 states.
+[2018-11-19 14:42:13,534 INFO  L144             Difference]: Subtrahend was deterministic. Have not used determinization.
+[2018-11-19 14:42:13,535 INFO  L93              Difference]: Finished difference Result 59 states and 59 transitions.
+[2018-11-19 14:42:13,535 INFO  L142   InterpolantAutomaton]: Switched to read-only mode: deterministic interpolant automaton has 19 states. 
+[2018-11-19 14:42:13,536 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:13,540 INFO  L78                 Accepts]: Start accepts. Automaton has 19 states. Word has length 53
+[2018-11-19 14:42:13,541 INFO  L84                 Accepts]: Finished accepts. some prefix is accepted.
+[2018-11-19 14:42:13,541 INFO  L225             Difference]: With dead ends: 59
+[2018-11-19 14:42:13,541 INFO  L226             Difference]: Without dead ends: 59
+[2018-11-19 14:42:13,542 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:13,546 INFO  L521         BasicCegarLoop]: 0 DeclaredPredicates, 52 GetRequests, 35 SyntacticMatches, 0 SemanticMatches, 17 ConstructedPredicates, 0 IntricatePredicates, 0 DeprecatedPredicates, 0 ImplicationChecksByTransitivity, 0.4s TimeCoverageRelationStatistics Valid=35, Invalid=307, Unknown=0, NotChecked=0, Total=342
+[2018-11-19 14:42:13,546 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:13,550 INFO  L82        GeneralOperation]: Start minimizeSevpa. Operand 59 states.
+[2018-11-19 14:42:13,554 INFO  L88        GeneralOperation]: Finished minimizeSevpa. Reduced states from 59 to 57.
+[2018-11-19 14:42:13,554 INFO  L82        GeneralOperation]: Start removeUnreachable. Operand 57 states.
+[2018-11-19 14:42:13,555 INFO  L88        GeneralOperation]: Finished removeUnreachable. Reduced from 57 states to 57 states and 57 transitions.
+[2018-11-19 14:42:13,555 INFO  L78                 Accepts]: Start accepts. Automaton has 57 states and 57 transitions. Word has length 53
+[2018-11-19 14:42:13,555 INFO  L84                 Accepts]: Finished accepts. word is rejected.
+[2018-11-19 14:42:13,556 INFO  L432      AbstractCegarLoop]: Abstraction has 57 states and 57 transitions.
+[2018-11-19 14:42:13,556 INFO  L433      AbstractCegarLoop]: Interpolant automaton has 19 states.
+[2018-11-19 14:42:13,556 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:13,559 INFO  L276                IsEmpty]: Start isEmpty. Operand 57 states and 57 transitions.
+[2018-11-19 14:42:13,560 INFO  L282                IsEmpty]: Finished isEmpty. Found accepting run of length 57
+[2018-11-19 14:42:13,561 INFO  L312         BasicCegarLoop]: Found error trace
+[2018-11-19 14:42:13,561 INFO  L320         BasicCegarLoop]: trace histogram [17, 17, 16, 1, 1, 1, 1, 1, 1]
+[2018-11-19 14:42:13,561 INFO  L371      AbstractCegarLoop]: === Iteration 17 === [mainErr0AssertViolation]===
+[2018-11-19 14:42:13,562 INFO  L82        PathProgramCache]: Analyzing trace with hash -1776249646, now seen corresponding path program 16 times
+[2018-11-19 14:42:13,565 INFO  L91    tionRefinementEngine]: Using refinement strategy FixedTraceAbstractionRefinementStrategy
+[2018-11-19 14:42:13,670 INFO  L136    AnnotateAndAsserter]: Conjunction of SSA is unsat
+[2018-11-19 14:42:13,678 INFO  L270         TraceCheckSpWp]: Computing forward predicates...
+[2018-11-19 14:42:14,470 INFO  L134       CoverageAnalysis]: Checked inductivity of 408 backedges. 0 proven. 408 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:42:14,470 INFO  L372   tionRefinementEngine]: Constructing automaton from 0 perfect and 1 imperfect interpolant sequences.
+[2018-11-19 14:42:14,470 INFO  L387   tionRefinementEngine]: Number of different interpolants: perfect sequences [] imperfect sequences [19] total 19
+[2018-11-19 14:42:14,470 INFO  L142   lantAutomatonBuilder]: Constructing canonical interpolant automaton, with selfloop in false state
+[2018-11-19 14:42:14,471 INFO  L134       CoverageAnalysis]: Checked inductivity of 0 backedges. 0 proven. 0 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:42:14,471 INFO  L182   omatonBuilderFactory]: Interpolants [2880#(and (= main_~i~1 11) (= main_~k~1 33) (= main_~j~1 22)), 2850#(and (= main_~j~1 16) (= main_~i~1 8) (= main_~k~1 24)), 2756#true, 2820#(and (= main_~k~1 15) (= main_~i~1 5) (= main_~j~1 10)), 2757#false, 2790#(and (= main_~i~1 2) (= main_~k~1 6) (= main_~j~1 4)), 2920#(and (= main_~k~1 45) (= main_~i~1 15) (= main_~j~1 30)), 2890#(and (= main_~k~1 36) (= main_~i~1 12) (= main_~j~1 24)), 2860#(and (= main_~j~1 18) (= main_~i~1 9) (= main_~k~1 27)), 2830#(and (= main_~k~1 18) (= main_~j~1 12) (= main_~i~1 6)), 2800#(and (= main_~j~1 6) (= main_~i~1 3) (= main_~k~1 9)), 2930#(and (= main_~j~1 32) (= main_~k~1 48) (= main_~i~1 16)), 2900#(and (= main_~j~1 26) (= main_~i~1 13) (= main_~k~1 39)), 2773#(and (= main_~j~1 0) (= main_~k~1 0) (= main_~i~1 0)), 2870#(and (= main_~k~1 30) (= main_~i~1 10) (= main_~j~1 20)), 2840#(and (= main_~i~1 7) (= main_~k~1 21) (= main_~j~1 14)), 2810#(and (= main_~i~1 4) (= main_~j~1 8) (= main_~k~1 12)), 2780#(and (= main_~i~1 1) (= main_~k~1 3) (= main_~j~1 2)), 2940#(and (= main_~j~1 34) (= main_~k~1 51) (= main_~i~1 17)), 2910#(and (= main_~i~1 14) (= main_~j~1 28) (= main_~k~1 42))]
+[2018-11-19 14:42:14,472 INFO  L134       CoverageAnalysis]: Checked inductivity of 408 backedges. 0 proven. 408 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:42:14,472 INFO  L409      AbstractCegarLoop]: Interpolant automaton has 20 states
+[2018-11-19 14:42:14,472 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:14,476 INFO  L132   InterpolantAutomaton]: Constructing interpolant automaton starting with 20 interpolants.
+[2018-11-19 14:42:14,476 INFO  L133   InterpolantAutomaton]: CoverageRelationStatistics Valid=37, Invalid=343, Unknown=0, NotChecked=0, Total=380
+[2018-11-19 14:42:14,477 INFO  L87              Difference]: Start difference. First operand 57 states and 57 transitions. Second operand 20 states.
+[2018-11-19 14:42:15,404 INFO  L144             Difference]: Subtrahend was deterministic. Have not used determinization.
+[2018-11-19 14:42:15,404 INFO  L93              Difference]: Finished difference Result 62 states and 62 transitions.
+[2018-11-19 14:42:15,405 INFO  L142   InterpolantAutomaton]: Switched to read-only mode: deterministic interpolant automaton has 20 states. 
+[2018-11-19 14:42:15,405 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:15,410 INFO  L78                 Accepts]: Start accepts. Automaton has 20 states. Word has length 56
+[2018-11-19 14:42:15,411 INFO  L84                 Accepts]: Finished accepts. some prefix is accepted.
+[2018-11-19 14:42:15,412 INFO  L225             Difference]: With dead ends: 62
+[2018-11-19 14:42:15,412 INFO  L226             Difference]: Without dead ends: 62
+[2018-11-19 14:42:15,412 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:15,418 INFO  L521         BasicCegarLoop]: 0 DeclaredPredicates, 55 GetRequests, 37 SyntacticMatches, 0 SemanticMatches, 18 ConstructedPredicates, 0 IntricatePredicates, 0 DeprecatedPredicates, 0 ImplicationChecksByTransitivity, 0.7s TimeCoverageRelationStatistics Valid=37, Invalid=343, Unknown=0, NotChecked=0, Total=380
+[2018-11-19 14:42:15,418 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:15,423 INFO  L82        GeneralOperation]: Start minimizeSevpa. Operand 62 states.
+[2018-11-19 14:42:15,427 INFO  L88        GeneralOperation]: Finished minimizeSevpa. Reduced states from 62 to 60.
+[2018-11-19 14:42:15,427 INFO  L82        GeneralOperation]: Start removeUnreachable. Operand 60 states.
+[2018-11-19 14:42:15,428 INFO  L88        GeneralOperation]: Finished removeUnreachable. Reduced from 60 states to 60 states and 60 transitions.
+[2018-11-19 14:42:15,428 INFO  L78                 Accepts]: Start accepts. Automaton has 60 states and 60 transitions. Word has length 56
+[2018-11-19 14:42:15,428 INFO  L84                 Accepts]: Finished accepts. word is rejected.
+[2018-11-19 14:42:15,429 INFO  L432      AbstractCegarLoop]: Abstraction has 60 states and 60 transitions.
+[2018-11-19 14:42:15,429 INFO  L433      AbstractCegarLoop]: Interpolant automaton has 20 states.
+[2018-11-19 14:42:15,429 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:15,433 INFO  L276                IsEmpty]: Start isEmpty. Operand 60 states and 60 transitions.
+[2018-11-19 14:42:15,434 INFO  L282                IsEmpty]: Finished isEmpty. Found accepting run of length 60
+[2018-11-19 14:42:15,434 INFO  L312         BasicCegarLoop]: Found error trace
+[2018-11-19 14:42:15,434 INFO  L320         BasicCegarLoop]: trace histogram [18, 18, 17, 1, 1, 1, 1, 1, 1]
+[2018-11-19 14:42:15,434 INFO  L371      AbstractCegarLoop]: === Iteration 18 === [mainErr0AssertViolation]===
+[2018-11-19 14:42:15,435 INFO  L82        PathProgramCache]: Analyzing trace with hash 2038887958, now seen corresponding path program 17 times
+[2018-11-19 14:42:15,436 INFO  L91    tionRefinementEngine]: Using refinement strategy FixedTraceAbstractionRefinementStrategy
+[2018-11-19 14:42:15,641 INFO  L136    AnnotateAndAsserter]: Conjunction of SSA is unsat
+[2018-11-19 14:42:15,649 INFO  L270         TraceCheckSpWp]: Computing forward predicates...
+[2018-11-19 14:42:16,167 INFO  L134       CoverageAnalysis]: Checked inductivity of 459 backedges. 0 proven. 459 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:42:16,168 INFO  L372   tionRefinementEngine]: Constructing automaton from 0 perfect and 1 imperfect interpolant sequences.
+[2018-11-19 14:42:16,168 INFO  L387   tionRefinementEngine]: Number of different interpolants: perfect sequences [] imperfect sequences [20] total 20
+[2018-11-19 14:42:16,168 INFO  L142   lantAutomatonBuilder]: Constructing canonical interpolant automaton, with selfloop in false state
+[2018-11-19 14:42:16,169 INFO  L134       CoverageAnalysis]: Checked inductivity of 0 backedges. 0 proven. 0 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:42:16,169 INFO  L182   omatonBuilderFactory]: Interpolants [3137#(and (= main_~k~1 18) (= main_~j~1 12) (= main_~i~1 6)), 3107#(and (= main_~j~1 6) (= main_~i~1 3) (= main_~k~1 9)), 3237#(and (= main_~j~1 32) (= main_~k~1 48) (= main_~i~1 16)), 3207#(and (= main_~j~1 26) (= main_~i~1 13) (= main_~k~1 39)), 3080#(and (= main_~j~1 0) (= main_~k~1 0) (= main_~i~1 0)), 3177#(and (= main_~k~1 30) (= main_~i~1 10) (= main_~j~1 20)), 3147#(and (= main_~i~1 7) (= main_~k~1 21) (= main_~j~1 14)), 3117#(and (= main_~i~1 4) (= main_~j~1 8) (= main_~k~1 12)), 3087#(and (= main_~i~1 1) (= main_~k~1 3) (= main_~j~1 2)), 3247#(and (= main_~j~1 34) (= main_~k~1 51) (= main_~i~1 17)), 3217#(and (= main_~i~1 14) (= main_~j~1 28) (= main_~k~1 42)), 3187#(and (= main_~i~1 11) (= main_~k~1 33) (= main_~j~1 22)), 3157#(and (= main_~j~1 16) (= main_~i~1 8) (= main_~k~1 24)), 3063#true, 3127#(and (= main_~k~1 15) (= main_~i~1 5) (= main_~j~1 10)), 3064#false, 3097#(and (= main_~i~1 2) (= main_~k~1 6) (= main_~j~1 4)), 3257#(and (= main_~i~1 18) (= main_~k~1 54) (= main_~j~1 36)), 3227#(and (= main_~k~1 45) (= main_~i~1 15) (= main_~j~1 30)), 3197#(and (= main_~k~1 36) (= main_~i~1 12) (= main_~j~1 24)), 3167#(and (= main_~j~1 18) (= main_~i~1 9) (= main_~k~1 27))]
+[2018-11-19 14:42:16,170 INFO  L134       CoverageAnalysis]: Checked inductivity of 459 backedges. 0 proven. 459 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:42:16,171 INFO  L409      AbstractCegarLoop]: Interpolant automaton has 21 states
+[2018-11-19 14:42:16,171 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:16,177 INFO  L132   InterpolantAutomaton]: Constructing interpolant automaton starting with 21 interpolants.
+[2018-11-19 14:42:16,178 INFO  L133   InterpolantAutomaton]: CoverageRelationStatistics Valid=39, Invalid=381, Unknown=0, NotChecked=0, Total=420
+[2018-11-19 14:42:16,178 INFO  L87              Difference]: Start difference. First operand 60 states and 60 transitions. Second operand 21 states.
+[2018-11-19 14:42:17,090 INFO  L144             Difference]: Subtrahend was deterministic. Have not used determinization.
+[2018-11-19 14:42:17,090 INFO  L93              Difference]: Finished difference Result 65 states and 65 transitions.
+[2018-11-19 14:42:17,091 INFO  L142   InterpolantAutomaton]: Switched to read-only mode: deterministic interpolant automaton has 21 states. 
+[2018-11-19 14:42:17,091 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:17,096 INFO  L78                 Accepts]: Start accepts. Automaton has 21 states. Word has length 59
+[2018-11-19 14:42:17,096 INFO  L84                 Accepts]: Finished accepts. some prefix is accepted.
+[2018-11-19 14:42:17,097 INFO  L225             Difference]: With dead ends: 65
+[2018-11-19 14:42:17,097 INFO  L226             Difference]: Without dead ends: 65
+[2018-11-19 14:42:17,097 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:17,102 INFO  L521         BasicCegarLoop]: 0 DeclaredPredicates, 58 GetRequests, 39 SyntacticMatches, 0 SemanticMatches, 19 ConstructedPredicates, 0 IntricatePredicates, 0 DeprecatedPredicates, 0 ImplicationChecksByTransitivity, 0.4s TimeCoverageRelationStatistics Valid=39, Invalid=381, Unknown=0, NotChecked=0, Total=420
+[2018-11-19 14:42:17,102 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:17,106 INFO  L82        GeneralOperation]: Start minimizeSevpa. Operand 65 states.
+[2018-11-19 14:42:17,111 INFO  L88        GeneralOperation]: Finished minimizeSevpa. Reduced states from 65 to 63.
+[2018-11-19 14:42:17,111 INFO  L82        GeneralOperation]: Start removeUnreachable. Operand 63 states.
+[2018-11-19 14:42:17,112 INFO  L88        GeneralOperation]: Finished removeUnreachable. Reduced from 63 states to 63 states and 63 transitions.
+[2018-11-19 14:42:17,112 INFO  L78                 Accepts]: Start accepts. Automaton has 63 states and 63 transitions. Word has length 59
+[2018-11-19 14:42:17,112 INFO  L84                 Accepts]: Finished accepts. word is rejected.
+[2018-11-19 14:42:17,112 INFO  L432      AbstractCegarLoop]: Abstraction has 63 states and 63 transitions.
+[2018-11-19 14:42:17,113 INFO  L433      AbstractCegarLoop]: Interpolant automaton has 21 states.
+[2018-11-19 14:42:17,113 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:17,116 INFO  L276                IsEmpty]: Start isEmpty. Operand 63 states and 63 transitions.
+[2018-11-19 14:42:17,117 INFO  L282                IsEmpty]: Finished isEmpty. Found accepting run of length 63
+[2018-11-19 14:42:17,118 INFO  L312         BasicCegarLoop]: Found error trace
+[2018-11-19 14:42:17,118 INFO  L320         BasicCegarLoop]: trace histogram [19, 19, 18, 1, 1, 1, 1, 1, 1]
+[2018-11-19 14:42:17,118 INFO  L371      AbstractCegarLoop]: === Iteration 19 === [mainErr0AssertViolation]===
+[2018-11-19 14:42:17,118 INFO  L82        PathProgramCache]: Analyzing trace with hash 1083694674, now seen corresponding path program 18 times
+[2018-11-19 14:42:17,119 INFO  L91    tionRefinementEngine]: Using refinement strategy FixedTraceAbstractionRefinementStrategy
+[2018-11-19 14:42:17,245 INFO  L136    AnnotateAndAsserter]: Conjunction of SSA is unsat
+[2018-11-19 14:42:17,253 INFO  L270         TraceCheckSpWp]: Computing forward predicates...
+[2018-11-19 14:42:18,254 INFO  L134       CoverageAnalysis]: Checked inductivity of 513 backedges. 0 proven. 513 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:42:18,255 INFO  L372   tionRefinementEngine]: Constructing automaton from 0 perfect and 1 imperfect interpolant sequences.
+[2018-11-19 14:42:18,255 INFO  L387   tionRefinementEngine]: Number of different interpolants: perfect sequences [] imperfect sequences [21] total 21
+[2018-11-19 14:42:18,255 INFO  L142   lantAutomatonBuilder]: Constructing canonical interpolant automaton, with selfloop in false state
+[2018-11-19 14:42:18,255 INFO  L134       CoverageAnalysis]: Checked inductivity of 0 backedges. 0 proven. 0 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:42:18,256 INFO  L182   omatonBuilderFactory]: Interpolants [3520#(and (= main_~k~1 36) (= main_~i~1 12) (= main_~j~1 24)), 3490#(and (= main_~j~1 18) (= main_~i~1 9) (= main_~k~1 27)), 3460#(and (= main_~k~1 18) (= main_~j~1 12) (= main_~i~1 6)), 3430#(and (= main_~j~1 6) (= main_~i~1 3) (= main_~k~1 9)), 3590#(and (= main_~i~1 19) (= main_~k~1 57) (= main_~j~1 38)), 3560#(and (= main_~j~1 32) (= main_~k~1 48) (= main_~i~1 16)), 3530#(and (= main_~j~1 26) (= main_~i~1 13) (= main_~k~1 39)), 3403#(and (= main_~j~1 0) (= main_~k~1 0) (= main_~i~1 0)), 3500#(and (= main_~k~1 30) (= main_~i~1 10) (= main_~j~1 20)), 3470#(and (= main_~i~1 7) (= main_~k~1 21) (= main_~j~1 14)), 3440#(and (= main_~i~1 4) (= main_~j~1 8) (= main_~k~1 12)), 3410#(and (= main_~i~1 1) (= main_~k~1 3) (= main_~j~1 2)), 3570#(and (= main_~j~1 34) (= main_~k~1 51) (= main_~i~1 17)), 3540#(and (= main_~i~1 14) (= main_~j~1 28) (= main_~k~1 42)), 3510#(and (= main_~i~1 11) (= main_~k~1 33) (= main_~j~1 22)), 3480#(and (= main_~j~1 16) (= main_~i~1 8) (= main_~k~1 24)), 3386#true, 3450#(and (= main_~k~1 15) (= main_~i~1 5) (= main_~j~1 10)), 3387#false, 3420#(and (= main_~i~1 2) (= main_~k~1 6) (= main_~j~1 4)), 3580#(and (= main_~i~1 18) (= main_~k~1 54) (= main_~j~1 36)), 3550#(and (= main_~k~1 45) (= main_~i~1 15) (= main_~j~1 30))]
+[2018-11-19 14:42:18,256 INFO  L134       CoverageAnalysis]: Checked inductivity of 513 backedges. 0 proven. 513 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:42:18,257 INFO  L409      AbstractCegarLoop]: Interpolant automaton has 22 states
+[2018-11-19 14:42:18,257 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:18,261 INFO  L132   InterpolantAutomaton]: Constructing interpolant automaton starting with 22 interpolants.
+[2018-11-19 14:42:18,261 INFO  L133   InterpolantAutomaton]: CoverageRelationStatistics Valid=41, Invalid=421, Unknown=0, NotChecked=0, Total=462
+[2018-11-19 14:42:18,262 INFO  L87              Difference]: Start difference. First operand 63 states and 63 transitions. Second operand 22 states.
+[2018-11-19 14:42:19,326 INFO  L144             Difference]: Subtrahend was deterministic. Have not used determinization.
+[2018-11-19 14:42:19,326 INFO  L93              Difference]: Finished difference Result 68 states and 68 transitions.
+[2018-11-19 14:42:19,327 INFO  L142   InterpolantAutomaton]: Switched to read-only mode: deterministic interpolant automaton has 22 states. 
+[2018-11-19 14:42:19,327 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:19,332 INFO  L78                 Accepts]: Start accepts. Automaton has 22 states. Word has length 62
+[2018-11-19 14:42:19,333 INFO  L84                 Accepts]: Finished accepts. some prefix is accepted.
+[2018-11-19 14:42:19,333 INFO  L225             Difference]: With dead ends: 68
+[2018-11-19 14:42:19,333 INFO  L226             Difference]: Without dead ends: 68
+[2018-11-19 14:42:19,334 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:19,338 INFO  L521         BasicCegarLoop]: 0 DeclaredPredicates, 61 GetRequests, 41 SyntacticMatches, 0 SemanticMatches, 20 ConstructedPredicates, 0 IntricatePredicates, 0 DeprecatedPredicates, 0 ImplicationChecksByTransitivity, 0.9s TimeCoverageRelationStatistics Valid=41, Invalid=421, Unknown=0, NotChecked=0, Total=462
+[2018-11-19 14:42:19,338 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:19,342 INFO  L82        GeneralOperation]: Start minimizeSevpa. Operand 68 states.
+[2018-11-19 14:42:19,345 INFO  L88        GeneralOperation]: Finished minimizeSevpa. Reduced states from 68 to 66.
+[2018-11-19 14:42:19,345 INFO  L82        GeneralOperation]: Start removeUnreachable. Operand 66 states.
+[2018-11-19 14:42:19,346 INFO  L88        GeneralOperation]: Finished removeUnreachable. Reduced from 66 states to 66 states and 66 transitions.
+[2018-11-19 14:42:19,346 INFO  L78                 Accepts]: Start accepts. Automaton has 66 states and 66 transitions. Word has length 62
+[2018-11-19 14:42:19,347 INFO  L84                 Accepts]: Finished accepts. word is rejected.
+[2018-11-19 14:42:19,347 INFO  L432      AbstractCegarLoop]: Abstraction has 66 states and 66 transitions.
+[2018-11-19 14:42:19,347 INFO  L433      AbstractCegarLoop]: Interpolant automaton has 22 states.
+[2018-11-19 14:42:19,347 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:19,351 INFO  L276                IsEmpty]: Start isEmpty. Operand 66 states and 66 transitions.
+[2018-11-19 14:42:19,351 INFO  L282                IsEmpty]: Finished isEmpty. Found accepting run of length 66
+[2018-11-19 14:42:19,352 INFO  L312         BasicCegarLoop]: Found error trace
+[2018-11-19 14:42:19,352 INFO  L320         BasicCegarLoop]: trace histogram [20, 20, 19, 1, 1, 1, 1, 1, 1]
+[2018-11-19 14:42:19,352 INFO  L371      AbstractCegarLoop]: === Iteration 20 === [mainErr0AssertViolation]===
+[2018-11-19 14:42:19,353 INFO  L82        PathProgramCache]: Analyzing trace with hash -921092970, now seen corresponding path program 19 times
+[2018-11-19 14:42:19,354 INFO  L91    tionRefinementEngine]: Using refinement strategy FixedTraceAbstractionRefinementStrategy
+[2018-11-19 14:42:19,499 INFO  L136    AnnotateAndAsserter]: Conjunction of SSA is unsat
+[2018-11-19 14:42:19,510 INFO  L270         TraceCheckSpWp]: Computing forward predicates...
+[2018-11-19 14:42:20,427 INFO  L134       CoverageAnalysis]: Checked inductivity of 570 backedges. 0 proven. 570 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:42:20,428 INFO  L372   tionRefinementEngine]: Constructing automaton from 0 perfect and 1 imperfect interpolant sequences.
+[2018-11-19 14:42:20,428 INFO  L387   tionRefinementEngine]: Number of different interpolants: perfect sequences [] imperfect sequences [22] total 22
+[2018-11-19 14:42:20,428 INFO  L142   lantAutomatonBuilder]: Constructing canonical interpolant automaton, with selfloop in false state
+[2018-11-19 14:42:20,429 INFO  L134       CoverageAnalysis]: Checked inductivity of 0 backedges. 0 proven. 0 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:42:20,429 INFO  L182   omatonBuilderFactory]: Interpolants [3809#(and (= main_~i~1 7) (= main_~k~1 21) (= main_~j~1 14)), 3779#(and (= main_~i~1 4) (= main_~j~1 8) (= main_~k~1 12)), 3939#(and (= main_~j~1 40) (= main_~k~1 60) (= main_~i~1 20)), 3749#(and (= main_~i~1 1) (= main_~k~1 3) (= main_~j~1 2)), 3909#(and (= main_~j~1 34) (= main_~k~1 51) (= main_~i~1 17)), 3879#(and (= main_~i~1 14) (= main_~j~1 28) (= main_~k~1 42)), 3849#(and (= main_~i~1 11) (= main_~k~1 33) (= main_~j~1 22)), 3819#(and (= main_~j~1 16) (= main_~i~1 8) (= main_~k~1 24)), 3725#true, 3789#(and (= main_~k~1 15) (= main_~i~1 5) (= main_~j~1 10)), 3726#false, 3759#(and (= main_~i~1 2) (= main_~k~1 6) (= main_~j~1 4)), 3919#(and (= main_~i~1 18) (= main_~k~1 54) (= main_~j~1 36)), 3889#(and (= main_~k~1 45) (= main_~i~1 15) (= main_~j~1 30)), 3859#(and (= main_~k~1 36) (= main_~i~1 12) (= main_~j~1 24)), 3829#(and (= main_~j~1 18) (= main_~i~1 9) (= main_~k~1 27)), 3799#(and (= main_~k~1 18) (= main_~j~1 12) (= main_~i~1 6)), 3769#(and (= main_~j~1 6) (= main_~i~1 3) (= main_~k~1 9)), 3929#(and (= main_~i~1 19) (= main_~k~1 57) (= main_~j~1 38)), 3899#(and (= main_~j~1 32) (= main_~k~1 48) (= main_~i~1 16)), 3869#(and (= main_~j~1 26) (= main_~i~1 13) (= main_~k~1 39)), 3742#(and (= main_~j~1 0) (= main_~k~1 0) (= main_~i~1 0)), 3839#(and (= main_~k~1 30) (= main_~i~1 10) (= main_~j~1 20))]
+[2018-11-19 14:42:20,430 INFO  L134       CoverageAnalysis]: Checked inductivity of 570 backedges. 0 proven. 570 refuted. 0 times theorem prover too weak. 0 trivial. 0 not checked.
+[2018-11-19 14:42:20,430 INFO  L409      AbstractCegarLoop]: Interpolant automaton has 23 states
+[2018-11-19 14:42:20,430 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:20,434 INFO  L132   InterpolantAutomaton]: Constructing interpolant automaton starting with 23 interpolants.
+[2018-11-19 14:42:20,435 INFO  L133   InterpolantAutomaton]: CoverageRelationStatistics Valid=43, Invalid=463, Unknown=0, NotChecked=0, Total=506
+[2018-11-19 14:42:20,435 INFO  L87              Difference]: Start difference. First operand 66 states and 66 transitions. Second operand 23 states.
+[2018-11-19 14:42:21,508 INFO  L144             Difference]: Subtrahend was deterministic. Have not used determinization.
+[2018-11-19 14:42:21,509 INFO  L93              Difference]: Finished difference Result 67 states and 66 transitions.
+[2018-11-19 14:42:21,509 INFO  L142   InterpolantAutomaton]: Switched to read-only mode: deterministic interpolant automaton has 23 states. 
+[2018-11-19 14:42:21,510 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:21,514 INFO  L78                 Accepts]: Start accepts. Automaton has 23 states. Word has length 65
+[2018-11-19 14:42:21,515 INFO  L84                 Accepts]: Finished accepts. some prefix is accepted.
+[2018-11-19 14:42:21,515 INFO  L225             Difference]: With dead ends: 67
+[2018-11-19 14:42:21,515 INFO  L226             Difference]: Without dead ends: 0
+[2018-11-19 14:42:21,516 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:21,520 INFO  L521         BasicCegarLoop]: 0 DeclaredPredicates, 64 GetRequests, 43 SyntacticMatches, 0 SemanticMatches, 21 ConstructedPredicates, 0 IntricatePredicates, 0 DeprecatedPredicates, 0 ImplicationChecksByTransitivity, 0.8s TimeCoverageRelationStatistics Valid=43, Invalid=463, Unknown=0, NotChecked=0, Total=506
+[2018-11-19 14:42:21,521 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:21,522 INFO  L82        GeneralOperation]: Start minimizeSevpa. Operand 0 states.
+[2018-11-19 14:42:21,522 INFO  L88        GeneralOperation]: Finished minimizeSevpa. Reduced states from 0 to 0.
+[2018-11-19 14:42:21,522 INFO  L82        GeneralOperation]: Start removeUnreachable. Operand 0 states.
+[2018-11-19 14:42:21,522 INFO  L88        GeneralOperation]: Finished removeUnreachable. Reduced from 0 states to 0 states and 0 transitions.
+[2018-11-19 14:42:21,523 INFO  L78                 Accepts]: Start accepts. Automaton has 0 states and 0 transitions. Word has length 65
+[2018-11-19 14:42:21,523 INFO  L84                 Accepts]: Finished accepts. word is rejected.
+[2018-11-19 14:42:21,523 INFO  L432      AbstractCegarLoop]: Abstraction has 0 states and 0 transitions.
+[2018-11-19 14:42:21,523 INFO  L433      AbstractCegarLoop]: Interpolant automaton has 23 states.
+[2018-11-19 14:42:21,523 WARN  L166   tonDefinitionPrinter]: Dumping automata.
+[2018-11-19 14:42:21,524 INFO  L276                IsEmpty]: Start isEmpty. Operand 0 states and 0 transitions.
+[2018-11-19 14:42:21,525 INFO  L282                IsEmpty]: Finished isEmpty. No accepting run.
+[2018-11-19 14:42:21,566 INFO  L202        PluginConnector]: Adding new model de.uni_freiburg.informatik.ultimate.plugins.generator.traceabstraction CFG 19.11 02:42:21 BoogieIcfgContainer
+[2018-11-19 14:42:21,567 INFO  L132        PluginConnector]: ------------------------ END TraceAbstraction----------------------------
+[2018-11-19 14:42:21,568 INFO  L168              Benchmark]: Toolchain (without parser) took 29200.47 ms. Allocated memory was 514.9 MB in the beginning and 757.6 MB in the end (delta: 242.7 MB). Free memory was 475.8 MB in the beginning and 453.8 MB in the end (delta: 22.0 MB). Peak memory consumption was 264.8 MB. Max. memory is 11.5 GB.
+[2018-11-19 14:42:21,570 INFO  L168              Benchmark]: CDTParser took 0.25 ms. Allocated memory is still 514.9 MB. Free memory is still 479.9 MB. There was no memory consumed. Max. memory is 11.5 GB.
+[2018-11-19 14:42:21,570 INFO  L168              Benchmark]: CACSL2BoogieTranslator took 390.36 ms. Allocated memory is still 514.9 MB. Free memory was 474.5 MB in the beginning and 466.2 MB in the end (delta: 8.2 MB). Peak memory consumption was 8.2 MB. Max. memory is 11.5 GB.
+[2018-11-19 14:42:21,571 INFO  L168              Benchmark]: Boogie Preprocessor took 58.15 ms. Allocated memory is still 514.9 MB. Free memory was 466.2 MB in the beginning and 464.9 MB in the end (delta: 1.3 MB). Peak memory consumption was 1.3 MB. Max. memory is 11.5 GB.
+[2018-11-19 14:42:21,571 INFO  L168              Benchmark]: RCFGBuilder took 290.66 ms. Allocated memory is still 514.9 MB. Free memory was 464.9 MB in the beginning and 452.6 MB in the end (delta: 12.3 MB). Peak memory consumption was 12.3 MB. Max. memory is 11.5 GB.
+[2018-11-19 14:42:21,572 INFO  L168              Benchmark]: TraceAbstraction took 28447.89 ms. Allocated memory was 514.9 MB in the beginning and 757.6 MB in the end (delta: 242.7 MB). Free memory was 452.6 MB in the beginning and 453.8 MB in the end (delta: -1.1 MB). Peak memory consumption was 241.6 MB. Max. memory is 11.5 GB.
+[2018-11-19 14:42:21,574 INFO  L344   ainManager$Toolchain]: #######################  End [Toolchain 1] #######################
+ --- Results ---
+ * Results from de.uni_freiburg.informatik.ultimate.core:
+  - StatisticsResult: Toolchain Benchmarks
+    Benchmark results are:
+ * CDTParser took 0.25 ms. Allocated memory is still 514.9 MB. Free memory is still 479.9 MB. There was no memory consumed. Max. memory is 11.5 GB.
+ * CACSL2BoogieTranslator took 390.36 ms. Allocated memory is still 514.9 MB. Free memory was 474.5 MB in the beginning and 466.2 MB in the end (delta: 8.2 MB). Peak memory consumption was 8.2 MB. Max. memory is 11.5 GB.
+ * Boogie Preprocessor took 58.15 ms. Allocated memory is still 514.9 MB. Free memory was 466.2 MB in the beginning and 464.9 MB in the end (delta: 1.3 MB). Peak memory consumption was 1.3 MB. Max. memory is 11.5 GB.
+ * RCFGBuilder took 290.66 ms. Allocated memory is still 514.9 MB. Free memory was 464.9 MB in the beginning and 452.6 MB in the end (delta: 12.3 MB). Peak memory consumption was 12.3 MB. Max. memory is 11.5 GB.
+ * TraceAbstraction took 28447.89 ms. Allocated memory was 514.9 MB in the beginning and 757.6 MB in the end (delta: 242.7 MB). Free memory was 452.6 MB in the beginning and 453.8 MB in the end (delta: -1.1 MB). Peak memory consumption was 241.6 MB. Max. memory is 11.5 GB.
+ * Results from de.uni_freiburg.informatik.ultimate.plugins.generator.traceabstraction:
+  - PositiveResult [Line: 13]: assertion always holds
+    For all program executions holds that assertion always holds at this location
+  - AllSpecificationsHoldResult: All specifications hold
+    1 specifications checked. All of them hold
+  - StatisticsResult: Ultimate Automizer benchmark data
+    CFG has 3 procedures, 13 locations, 1 error locations. SAFE Result, 28.3s OverallTime, 20 OverallIterations, 20 TraceHistogramMax, 12.4s AutomataDifference, 0.0s DeadEndRemovalTime, 0.0s HoareAnnotationTime, HoareTripleCheckerStatistics: 353 SDtfs, 40 SDslu, 4006 SDs, 0 SdLazy, 6810 SolverSat, 3 SolverUnsat, 0 SolverUnknown, 0 SolverNotchecked, 10.0s Time, PredicateUnifierStatistics: 0 DeclaredPredicates, 710 GetRequests, 480 SyntacticMatches, 0 SemanticMatches, 230 ConstructedPredicates, 0 IntricatePredicates, 0 DeprecatedPredicates, 0 ImplicationChecksByTransitivity, 12.1s Time, 0.0s BasicInterpolantAutomatonTime, BiggestAbstraction: size=66occurred in iteration=19, traceCheckStatistics: No data available, InterpolantConsolidationStatistics: No data available, PathInvariantsStatistics: No data available, 0/3990 InterpolantCoveringCapability, TotalInterpolationStatistics: No data available, 0.0s AbstIntTime, 0 AbstIntIterations, 0 AbstIntStrong, NaN AbsIntWeakeningRatio, NaN AbsIntAvgWeakeningVarsNumRemoved, NaN AbsIntAvgWeakenedConjuncts, AutomataMinimizationStatistics: 0.1s AutomataMinimizationTime, 20 MinimizatonAttempts, 38 StatesRemovedByMinimization, 19 NontrivialMinimizations, HoareAnnotationStatistics: No data available, RefinementEngineStatistics: TraceCheckStatistics: 0.0s SsaConstructionTime, 2.2s SatisfiabilityAnalysisTime, 12.8s InterpolantComputationTime, 730 NumberOfCodeBlocks, 730 NumberOfCodeBlocksAsserted, 20 NumberOfCheckSat, 710 ConstructedInterpolants, 0 QuantifiedInterpolants, 286340 SizeOfPredicates, 0 NumberOfNonLiveVariables, 2780 ConjunctsInSsa, 1400 ConjunctsInUnsatCore, 20 InterpolantComputations, 1 PerfectInterpolantSequences, 0/3990 InterpolantCoveringCapability, InvariantSynthesisStatistics: No data available, InterpolantConsolidationStatistics: No data available
+RESULT: Ultimate proved your program to be correct!
+Received shutdown request...

@@ -1,0 +1,44 @@
+// Testfile dumped by Ultimate at 2018/11/19 14:33:56
+//
+// 
+
+NestedWordAutomaton nwa = (
+	callAlphabet = {"call ULTIMATE.init();" "call #t~ret2 := main();" },
+	internalAlphabet = {"assume !(~k~1 % 4294967296 == 36);" "assume true;" "assume ~k~1 % 4294967296 == 36;" "assume true;" "assume true;" "~i~1 := 0;~j~1 := 0;~k~1 := 0;~i~1 := 1;" "assume true;" "assume !(~i~1 % 4294967296 <= 3);" "assume !!(~i~1 % 4294967296 <= 3);~j~1 := 1;" "assume true;" "assume !(~j~1 % 4294967296 <= 3);" "assume !!(~j~1 % 4294967296 <= 3);~k~1 := ~i~1 + ~j~1 + ~k~1;" "#t~post1 := ~j~1;~j~1 := #t~post1 + 1;havoc #t~post1;" "assume !true;" "#t~post0 := ~i~1;~i~1 := #t~post0 + 1;havoc #t~post0;" "assume !true;" },
+	returnAlphabet = {"return;" "return;" },
+	states = {"20#true" "21#false" },
+	initialStates = {"20#true" },
+	finalStates = {"21#false" },
+	callTransitions = {
+		("20#true" "call ULTIMATE.init();" "20#true")
+		("20#true" "call #t~ret2 := main();" "20#true")
+		("21#false" "call ULTIMATE.init();" "21#false")
+		("21#false" "call #t~ret2 := main();" "21#false")
+	},
+	internalTransitions = {
+		("20#true" "assume true;" "20#true")
+		("20#true" "~i~1 := 0;~j~1 := 0;~k~1 := 0;~i~1 := 1;" "20#true")
+		("20#true" "assume !true;" "21#false")
+		("21#false" "assume !(~k~1 % 4294967296 == 36);" "21#false")
+		("21#false" "assume true;" "21#false")
+		("21#false" "assume ~k~1 % 4294967296 == 36;" "21#false")
+		("21#false" "assume true;" "21#false")
+		("21#false" "assume true;" "21#false")
+		("21#false" "~i~1 := 0;~j~1 := 0;~k~1 := 0;~i~1 := 1;" "21#false")
+		("21#false" "assume true;" "21#false")
+		("21#false" "assume !(~i~1 % 4294967296 <= 3);" "21#false")
+		("21#false" "assume !!(~i~1 % 4294967296 <= 3);~j~1 := 1;" "21#false")
+		("21#false" "assume true;" "21#false")
+		("21#false" "assume !(~j~1 % 4294967296 <= 3);" "21#false")
+		("21#false" "assume !!(~j~1 % 4294967296 <= 3);~k~1 := ~i~1 + ~j~1 + ~k~1;" "21#false")
+		("21#false" "#t~post1 := ~j~1;~j~1 := #t~post1 + 1;havoc #t~post1;" "21#false")
+		("21#false" "assume !true;" "21#false")
+		("21#false" "#t~post0 := ~i~1;~i~1 := #t~post0 + 1;havoc #t~post0;" "21#false")
+		("21#false" "assume !true;" "21#false")
+	},
+	returnTransitions = {
+		("20#true" "20#true" "return;" "20#true")
+		("21#false" "21#false" "return;" "21#false")
+		("21#false" "21#false" "return;" "21#false")
+	}
+);
