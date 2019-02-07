@@ -1,125 +1,158 @@
 This is Ultimate 0.1.23-3204b74
-[2018-11-21 15:11:04,724 INFO  L170        SettingsManager]: Resetting all preferences to default values...
-[2018-11-21 15:11:04,728 INFO  L174        SettingsManager]: Resetting UltimateCore preferences to default values
-[2018-11-21 15:11:04,765 INFO  L177        SettingsManager]: Ultimate Commandline Interface provides no preferences, ignoring...
-[2018-11-21 15:11:04,766 INFO  L174        SettingsManager]: Resetting Boogie Preprocessor preferences to default values
-[2018-11-21 15:11:04,768 INFO  L174        SettingsManager]: Resetting Boogie Procedure Inliner preferences to default values
-[2018-11-21 15:11:04,771 INFO  L174        SettingsManager]: Resetting Abstract Interpretation preferences to default values
-[2018-11-21 15:11:04,773 INFO  L174        SettingsManager]: Resetting LassoRanker preferences to default values
-[2018-11-21 15:11:04,776 INFO  L174        SettingsManager]: Resetting Reaching Definitions preferences to default values
-[2018-11-21 15:11:04,778 INFO  L174        SettingsManager]: Resetting SyntaxChecker preferences to default values
-[2018-11-21 15:11:04,779 INFO  L177        SettingsManager]: Büchi Program Product provides no preferences, ignoring...
-[2018-11-21 15:11:04,780 INFO  L174        SettingsManager]: Resetting LTL2Aut preferences to default values
-[2018-11-21 15:11:04,781 INFO  L174        SettingsManager]: Resetting BlockEncodingV2 preferences to default values
-[2018-11-21 15:11:04,783 INFO  L174        SettingsManager]: Resetting AutomataScriptInterpreter preferences to default values
-[2018-11-21 15:11:04,784 INFO  L174        SettingsManager]: Resetting BuchiAutomizer preferences to default values
-[2018-11-21 15:11:04,787 INFO  L174        SettingsManager]: Resetting CACSL2BoogieTranslator preferences to default values
-[2018-11-21 15:11:04,791 INFO  L174        SettingsManager]: Resetting CodeCheck preferences to default values
-[2018-11-21 15:11:04,794 INFO  L174        SettingsManager]: Resetting InvariantSynthesis preferences to default values
-[2018-11-21 15:11:04,795 INFO  L174        SettingsManager]: Resetting RCFGBuilder preferences to default values
-[2018-11-21 15:11:04,797 INFO  L174        SettingsManager]: Resetting TraceAbstraction preferences to default values
-[2018-11-21 15:11:04,802 INFO  L177        SettingsManager]: TraceAbstractionConcurrent provides no preferences, ignoring...
-[2018-11-21 15:11:04,803 INFO  L177        SettingsManager]: TraceAbstractionWithAFAs provides no preferences, ignoring...
-[2018-11-21 15:11:04,807 INFO  L174        SettingsManager]: Resetting IcfgTransformer preferences to default values
-[2018-11-21 15:11:04,809 INFO  L174        SettingsManager]: Resetting Boogie Printer preferences to default values
-[2018-11-21 15:11:04,810 INFO  L174        SettingsManager]: Resetting Witness Printer preferences to default values
-[2018-11-21 15:11:04,816 INFO  L177        SettingsManager]: Boogie PL CUP Parser provides no preferences, ignoring...
-[2018-11-21 15:11:04,816 INFO  L174        SettingsManager]: Resetting CDTParser preferences to default values
-[2018-11-21 15:11:04,817 INFO  L177        SettingsManager]: PEA to Boogie provides no preferences, ignoring...
-[2018-11-21 15:11:04,817 INFO  L177        SettingsManager]: AutomataScriptParser provides no preferences, ignoring...
-[2018-11-21 15:11:04,818 INFO  L174        SettingsManager]: Resetting Witness Parser preferences to default values
-[2018-11-21 15:11:04,820 INFO  L181        SettingsManager]: Finished resetting all preferences to default values...
-[2018-11-21 15:11:04,893 INFO  L81    nceAwareModelManager]: Repository-Root is: /tmp
-[2018-11-21 15:11:04,920 INFO  L266   ainManager$Toolchain]: [Toolchain 1]: Parser(s) successfully initialized
-[2018-11-21 15:11:04,928 INFO  L222   ainManager$Toolchain]: [Toolchain 1]: Toolchain data selected.
-[2018-11-21 15:11:04,930 INFO  L271        PluginConnector]: Initializing AutomataScriptParser...
-[2018-11-21 15:11:04,931 INFO  L276        PluginConnector]: AutomataScriptParser initialized
-[2018-11-21 15:11:04,932 INFO  L431   ainManager$Toolchain]: [Toolchain 1]: Parsing single file: /home/arijit/verification/ApnaAutomizer/./temp/apna_ats.ats
-[2018-11-21 15:11:04,933 INFO  L88    AutomataScriptParser]: Parsing '/home/arijit/verification/ApnaAutomizer/./temp/apna_ats.ats'
-[2018-11-21 15:11:05,048 INFO  L304   ainManager$Toolchain]: ####################### [Toolchain 1] #######################
-[2018-11-21 15:11:05,053 INFO  L131        ToolchainWalker]: Walking toolchain with 1 elements.
-[2018-11-21 15:11:05,054 INFO  L113        PluginConnector]: ------------------------AutomataScriptInterpreter----------------------------
-[2018-11-21 15:11:05,054 INFO  L271        PluginConnector]: Initializing AutomataScriptInterpreter...
-[2018-11-21 15:11:05,055 INFO  L276        PluginConnector]: AutomataScriptInterpreter initialized
-[2018-11-21 15:11:05,059 INFO  L185        PluginConnector]: Executing the observer AutomataScriptInterpreterObserver from plugin AutomataScriptInterpreter for "apna_ats.ats de.uni_freiburg.informatik.ultimate.plugins.source.automatascriptparser AST 21.11 03:11:05" (1/1) ...
-[2018-11-21 15:11:05,702 INFO  L101             Complement]: Start complement. Operand 6 states.
-[2018-11-21 15:11:05,715 INFO  L145             Complement]: Operand was not deterministic. Recomputing result with determinization.
-[2018-11-21 15:11:05,739 INFO  L107             Complement]: Finished complement. Result 20 states and 200 transitions.
-[2018-11-21 15:11:05,740 INFO  L673    TestFileInterpreter]: reporting benchmark results
-[2018-11-21 15:11:05,745 INFO  L77               Intersect]: Start intersect. First operand 9 states. Second operand 20 states and 200 transitions.
-[2018-11-21 15:11:05,748 INFO  L84               Intersect]: Finished intersect. Result 17 states and 17 transitions.
-[2018-11-21 15:11:05,748 INFO  L673    TestFileInterpreter]: reporting benchmark results
-[2018-11-21 15:11:05,749 INFO  L101             Complement]: Start complement. Operand 8 states.
-[2018-11-21 15:11:05,749 INFO  L145             Complement]: Operand was not deterministic. Recomputing result with determinization.
-[2018-11-21 15:11:05,779 INFO  L107             Complement]: Finished complement. Result 57 states and 570 transitions.
-[2018-11-21 15:11:05,779 INFO  L673    TestFileInterpreter]: reporting benchmark results
-[2018-11-21 15:11:05,780 INFO  L77               Intersect]: Start intersect. First operand 17 states and 17 transitions. Second operand 57 states and 570 transitions.
-[2018-11-21 15:11:05,783 INFO  L84               Intersect]: Finished intersect. Result 23 states and 23 transitions.
-[2018-11-21 15:11:05,783 INFO  L673    TestFileInterpreter]: reporting benchmark results
-[2018-11-21 15:11:05,783 INFO  L101             Complement]: Start complement. Operand 10 states.
-[2018-11-21 15:11:05,784 INFO  L145             Complement]: Operand was not deterministic. Recomputing result with determinization.
-[2018-11-21 15:11:05,810 INFO  L107             Complement]: Finished complement. Result 134 states and 1340 transitions.
-[2018-11-21 15:11:05,810 INFO  L673    TestFileInterpreter]: reporting benchmark results
-[2018-11-21 15:11:05,811 INFO  L77               Intersect]: Start intersect. First operand 23 states and 23 transitions. Second operand 134 states and 1340 transitions.
-[2018-11-21 15:11:05,812 INFO  L84               Intersect]: Finished intersect. Result 29 states and 29 transitions.
-[2018-11-21 15:11:05,813 INFO  L673    TestFileInterpreter]: reporting benchmark results
-[2018-11-21 15:11:05,813 INFO  L101             Complement]: Start complement. Operand 12 states.
-[2018-11-21 15:11:05,814 INFO  L145             Complement]: Operand was not deterministic. Recomputing result with determinization.
-[2018-11-21 15:11:05,884 INFO  L107             Complement]: Finished complement. Result 290 states and 2900 transitions.
-[2018-11-21 15:11:05,885 INFO  L673    TestFileInterpreter]: reporting benchmark results
-[2018-11-21 15:11:05,885 INFO  L77               Intersect]: Start intersect. First operand 29 states and 29 transitions. Second operand 290 states and 2900 transitions.
-[2018-11-21 15:11:05,887 INFO  L84               Intersect]: Finished intersect. Result 35 states and 35 transitions.
-[2018-11-21 15:11:05,887 INFO  L673    TestFileInterpreter]: reporting benchmark results
-[2018-11-21 15:11:05,888 INFO  L101             Complement]: Start complement. Operand 5 states.
-[2018-11-21 15:11:05,888 INFO  L145             Complement]: Operand was not deterministic. Recomputing result with determinization.
-[2018-11-21 15:11:05,890 INFO  L107             Complement]: Finished complement. Result 14 states and 140 transitions.
-[2018-11-21 15:11:05,891 INFO  L673    TestFileInterpreter]: reporting benchmark results
-[2018-11-21 15:11:05,891 INFO  L77               Intersect]: Start intersect. First operand 35 states and 35 transitions. Second operand 14 states and 140 transitions.
-[2018-11-21 15:11:05,893 INFO  L84               Intersect]: Finished intersect. Result 35 states and 35 transitions.
-[2018-11-21 15:11:05,894 INFO  L673    TestFileInterpreter]: reporting benchmark results
-[2018-11-21 15:11:05,897 INFO  L276                IsEmpty]: Start isEmpty. Operand 35 states and 35 transitions.
-[2018-11-21 15:11:05,901 INFO  L282                IsEmpty]: Finished isEmpty. No accepting run.
-[2018-11-21 15:11:05,902 INFO  L673    TestFileInterpreter]: reporting benchmark results
-[2018-11-21 15:11:05,902 INFO  L1008   TestFileInterpreter]: Printing isEmpty(nfa_5)
-[2018-11-21 15:11:05,906 INFO  L1008   TestFileInterpreter]: true
-[2018-11-21 15:11:05,906 INFO  L918    TestFileInterpreter]: ----------------- Test Summary -----------------
-[2018-11-21 15:11:05,910 INFO  L1008   TestFileInterpreter]:  You have not used any assert statement in your automata script. Assert statements can be used to check Boolean results.
-[2018-11-21 15:11:05,919 INFO  L202        PluginConnector]: Adding new model apna_ats.ats de.uni_freiburg.informatik.ultimate.plugins.generator.automatascriptinterpreter AST 21.11 03:11:05 AutomatonState
-[2018-11-21 15:11:05,919 INFO  L132        PluginConnector]: ------------------------ END AutomataScriptInterpreter----------------------------
-[2018-11-21 15:11:05,921 INFO  L168              Benchmark]: Toolchain (without parser) took 871.90 ms. Allocated memory is still 514.9 MB. Free memory was 478.1 MB in the beginning and 426.8 MB in the end (delta: 51.3 MB). Peak memory consumption was 51.3 MB. Max. memory is 11.5 GB.
-[2018-11-21 15:11:05,929 INFO  L168              Benchmark]: AutomataScriptParser took 0.40 ms. Allocated memory is still 514.9 MB. Free memory is still 480.8 MB. There was no memory consumed. Max. memory is 11.5 GB.
-[2018-11-21 15:11:05,932 INFO  L168              Benchmark]: AutomataScriptInterpreter took 866.07 ms. Allocated memory is still 514.9 MB. Free memory was 478.1 MB in the beginning and 426.8 MB in the end (delta: 51.3 MB). Peak memory consumption was 51.3 MB. Max. memory is 11.5 GB.
-[2018-11-21 15:11:05,937 INFO  L344   ainManager$Toolchain]: #######################  End [Toolchain 1] #######################
+[2019-01-11 12:07:37,266 INFO  L170        SettingsManager]: Resetting all preferences to default values...
+[2019-01-11 12:07:37,269 INFO  L174        SettingsManager]: Resetting UltimateCore preferences to default values
+[2019-01-11 12:07:37,291 INFO  L177        SettingsManager]: Ultimate Commandline Interface provides no preferences, ignoring...
+[2019-01-11 12:07:37,291 INFO  L174        SettingsManager]: Resetting Boogie Preprocessor preferences to default values
+[2019-01-11 12:07:37,293 INFO  L174        SettingsManager]: Resetting Boogie Procedure Inliner preferences to default values
+[2019-01-11 12:07:37,295 INFO  L174        SettingsManager]: Resetting Abstract Interpretation preferences to default values
+[2019-01-11 12:07:37,297 INFO  L174        SettingsManager]: Resetting LassoRanker preferences to default values
+[2019-01-11 12:07:37,300 INFO  L174        SettingsManager]: Resetting Reaching Definitions preferences to default values
+[2019-01-11 12:07:37,301 INFO  L174        SettingsManager]: Resetting SyntaxChecker preferences to default values
+[2019-01-11 12:07:37,303 INFO  L177        SettingsManager]: Büchi Program Product provides no preferences, ignoring...
+[2019-01-11 12:07:37,303 INFO  L174        SettingsManager]: Resetting LTL2Aut preferences to default values
+[2019-01-11 12:07:37,305 INFO  L174        SettingsManager]: Resetting BlockEncodingV2 preferences to default values
+[2019-01-11 12:07:37,306 INFO  L174        SettingsManager]: Resetting AutomataScriptInterpreter preferences to default values
+[2019-01-11 12:07:37,308 INFO  L174        SettingsManager]: Resetting BuchiAutomizer preferences to default values
+[2019-01-11 12:07:37,311 INFO  L174        SettingsManager]: Resetting CACSL2BoogieTranslator preferences to default values
+[2019-01-11 12:07:37,314 INFO  L174        SettingsManager]: Resetting CodeCheck preferences to default values
+[2019-01-11 12:07:37,317 INFO  L174        SettingsManager]: Resetting InvariantSynthesis preferences to default values
+[2019-01-11 12:07:37,319 INFO  L174        SettingsManager]: Resetting RCFGBuilder preferences to default values
+[2019-01-11 12:07:37,321 INFO  L174        SettingsManager]: Resetting TraceAbstraction preferences to default values
+[2019-01-11 12:07:37,326 INFO  L177        SettingsManager]: TraceAbstractionConcurrent provides no preferences, ignoring...
+[2019-01-11 12:07:37,326 INFO  L177        SettingsManager]: TraceAbstractionWithAFAs provides no preferences, ignoring...
+[2019-01-11 12:07:37,327 INFO  L174        SettingsManager]: Resetting IcfgTransformer preferences to default values
+[2019-01-11 12:07:37,328 INFO  L174        SettingsManager]: Resetting Boogie Printer preferences to default values
+[2019-01-11 12:07:37,330 INFO  L174        SettingsManager]: Resetting Witness Printer preferences to default values
+[2019-01-11 12:07:37,332 INFO  L177        SettingsManager]: Boogie PL CUP Parser provides no preferences, ignoring...
+[2019-01-11 12:07:37,332 INFO  L174        SettingsManager]: Resetting CDTParser preferences to default values
+[2019-01-11 12:07:37,337 INFO  L177        SettingsManager]: PEA to Boogie provides no preferences, ignoring...
+[2019-01-11 12:07:37,338 INFO  L177        SettingsManager]: AutomataScriptParser provides no preferences, ignoring...
+[2019-01-11 12:07:37,338 INFO  L174        SettingsManager]: Resetting Witness Parser preferences to default values
+[2019-01-11 12:07:37,339 INFO  L181        SettingsManager]: Finished resetting all preferences to default values...
+[2019-01-11 12:07:37,388 INFO  L81    nceAwareModelManager]: Repository-Root is: /tmp
+[2019-01-11 12:07:37,405 INFO  L266   ainManager$Toolchain]: [Toolchain 1]: Parser(s) successfully initialized
+[2019-01-11 12:07:37,411 INFO  L222   ainManager$Toolchain]: [Toolchain 1]: Toolchain data selected.
+[2019-01-11 12:07:37,413 INFO  L271        PluginConnector]: Initializing AutomataScriptParser...
+[2019-01-11 12:07:37,414 INFO  L276        PluginConnector]: AutomataScriptParser initialized
+[2019-01-11 12:07:37,415 INFO  L431   ainManager$Toolchain]: [Toolchain 1]: Parsing single file: /home/arijit/verification/ApnaAutomizer/./temp/apna_ats.ats
+[2019-01-11 12:07:37,415 INFO  L88    AutomataScriptParser]: Parsing '/home/arijit/verification/ApnaAutomizer/./temp/apna_ats.ats'
+[2019-01-11 12:07:37,540 INFO  L304   ainManager$Toolchain]: ####################### [Toolchain 1] #######################
+[2019-01-11 12:07:37,543 INFO  L131        ToolchainWalker]: Walking toolchain with 1 elements.
+[2019-01-11 12:07:37,544 INFO  L113        PluginConnector]: ------------------------AutomataScriptInterpreter----------------------------
+[2019-01-11 12:07:37,544 INFO  L271        PluginConnector]: Initializing AutomataScriptInterpreter...
+[2019-01-11 12:07:37,544 INFO  L276        PluginConnector]: AutomataScriptInterpreter initialized
+[2019-01-11 12:07:37,549 INFO  L185        PluginConnector]: Executing the observer AutomataScriptInterpreterObserver from plugin AutomataScriptInterpreter for "apna_ats.ats de.uni_freiburg.informatik.ultimate.plugins.source.automatascriptparser AST 11.01 12:07:37" (1/1) ...
+[2019-01-11 12:07:38,218 INFO  L101             Complement]: Start complement. Operand 3 states.
+[2019-01-11 12:07:38,232 INFO  L145             Complement]: Operand was not deterministic. Recomputing result with determinization.
+[2019-01-11 12:07:38,247 INFO  L107             Complement]: Finished complement. Result 4 states and 48 transitions.
+[2019-01-11 12:07:38,248 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2019-01-11 12:07:38,252 INFO  L77               Intersect]: Start intersect. First operand 11 states. Second operand 4 states and 48 transitions.
+[2019-01-11 12:07:38,256 INFO  L84               Intersect]: Finished intersect. Result 19 states and 21 transitions.
+[2019-01-11 12:07:38,256 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2019-01-11 12:07:38,257 INFO  L101             Complement]: Start complement. Operand 4 states.
+[2019-01-11 12:07:38,257 INFO  L145             Complement]: Operand was not deterministic. Recomputing result with determinization.
+[2019-01-11 12:07:38,264 INFO  L107             Complement]: Finished complement. Result 8 states and 96 transitions.
+[2019-01-11 12:07:38,264 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2019-01-11 12:07:38,265 INFO  L77               Intersect]: Start intersect. First operand 19 states and 21 transitions. Second operand 8 states and 96 transitions.
+[2019-01-11 12:07:38,267 INFO  L84               Intersect]: Finished intersect. Result 27 states and 30 transitions.
+[2019-01-11 12:07:38,268 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2019-01-11 12:07:38,268 INFO  L101             Complement]: Start complement. Operand 5 states.
+[2019-01-11 12:07:38,269 INFO  L145             Complement]: Operand was not deterministic. Recomputing result with determinization.
+[2019-01-11 12:07:38,279 INFO  L107             Complement]: Finished complement. Result 16 states and 192 transitions.
+[2019-01-11 12:07:38,279 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2019-01-11 12:07:38,280 INFO  L77               Intersect]: Start intersect. First operand 27 states and 30 transitions. Second operand 16 states and 192 transitions.
+[2019-01-11 12:07:38,282 INFO  L84               Intersect]: Finished intersect. Result 35 states and 39 transitions.
+[2019-01-11 12:07:38,283 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2019-01-11 12:07:38,283 INFO  L101             Complement]: Start complement. Operand 6 states.
+[2019-01-11 12:07:38,284 INFO  L145             Complement]: Operand was not deterministic. Recomputing result with determinization.
+[2019-01-11 12:07:38,298 INFO  L107             Complement]: Finished complement. Result 30 states and 360 transitions.
+[2019-01-11 12:07:38,299 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2019-01-11 12:07:38,299 INFO  L77               Intersect]: Start intersect. First operand 35 states and 39 transitions. Second operand 30 states and 360 transitions.
+[2019-01-11 12:07:38,301 INFO  L84               Intersect]: Finished intersect. Result 43 states and 48 transitions.
+[2019-01-11 12:07:38,302 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2019-01-11 12:07:38,302 INFO  L101             Complement]: Start complement. Operand 7 states.
+[2019-01-11 12:07:38,303 INFO  L145             Complement]: Operand was not deterministic. Recomputing result with determinization.
+[2019-01-11 12:07:38,318 INFO  L107             Complement]: Finished complement. Result 54 states and 648 transitions.
+[2019-01-11 12:07:38,319 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2019-01-11 12:07:38,319 INFO  L77               Intersect]: Start intersect. First operand 43 states and 48 transitions. Second operand 54 states and 648 transitions.
+[2019-01-11 12:07:38,321 INFO  L84               Intersect]: Finished intersect. Result 51 states and 57 transitions.
+[2019-01-11 12:07:38,322 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2019-01-11 12:07:38,322 INFO  L101             Complement]: Start complement. Operand 15 states.
+[2019-01-11 12:07:38,323 INFO  L145             Complement]: Operand was not deterministic. Recomputing result with determinization.
+[2019-01-11 12:07:38,446 INFO  L107             Complement]: Finished complement. Result 638 states and 7656 transitions.
+[2019-01-11 12:07:38,447 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2019-01-11 12:07:38,448 INFO  L77               Intersect]: Start intersect. First operand 51 states and 57 transitions. Second operand 638 states and 7656 transitions.
+[2019-01-11 12:07:38,451 INFO  L84               Intersect]: Finished intersect. Result 89 states and 100 transitions.
+[2019-01-11 12:07:38,451 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2019-01-11 12:07:38,452 INFO  L101             Complement]: Start complement. Operand 8 states.
+[2019-01-11 12:07:38,452 INFO  L145             Complement]: Operand was not deterministic. Recomputing result with determinization.
+[2019-01-11 12:07:38,459 INFO  L107             Complement]: Finished complement. Result 45 states and 540 transitions.
+[2019-01-11 12:07:38,459 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2019-01-11 12:07:38,460 INFO  L77               Intersect]: Start intersect. First operand 89 states and 100 transitions. Second operand 45 states and 540 transitions.
+[2019-01-11 12:07:38,463 INFO  L84               Intersect]: Finished intersect. Result 121 states and 137 transitions.
+[2019-01-11 12:07:38,464 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2019-01-11 12:07:38,464 INFO  L101             Complement]: Start complement. Operand 8 states.
+[2019-01-11 12:07:38,465 INFO  L145             Complement]: Operand was not deterministic. Recomputing result with determinization.
+[2019-01-11 12:07:38,471 INFO  L107             Complement]: Finished complement. Result 45 states and 540 transitions.
+[2019-01-11 12:07:38,472 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2019-01-11 12:07:38,472 INFO  L77               Intersect]: Start intersect. First operand 121 states and 137 transitions. Second operand 45 states and 540 transitions.
+[2019-01-11 12:07:38,475 INFO  L84               Intersect]: Finished intersect. Result 121 states and 137 transitions.
+[2019-01-11 12:07:38,475 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2019-01-11 12:07:38,478 INFO  L276                IsEmpty]: Start isEmpty. Operand 121 states and 137 transitions.
+[2019-01-11 12:07:38,481 INFO  L282                IsEmpty]: Finished isEmpty. No accepting run.
+[2019-01-11 12:07:38,482 INFO  L673    TestFileInterpreter]: reporting benchmark results
+[2019-01-11 12:07:38,482 INFO  L1008   TestFileInterpreter]: Printing isEmpty(nfa_8)
+[2019-01-11 12:07:38,486 INFO  L1008   TestFileInterpreter]: true
+[2019-01-11 12:07:38,487 INFO  L918    TestFileInterpreter]: ----------------- Test Summary -----------------
+[2019-01-11 12:07:38,488 INFO  L1008   TestFileInterpreter]:  You have not used any assert statement in your automata script. Assert statements can be used to check Boolean results.
+[2019-01-11 12:07:38,497 INFO  L202        PluginConnector]: Adding new model apna_ats.ats de.uni_freiburg.informatik.ultimate.plugins.generator.automatascriptinterpreter AST 11.01 12:07:38 AutomatonState
+[2019-01-11 12:07:38,497 INFO  L132        PluginConnector]: ------------------------ END AutomataScriptInterpreter----------------------------
+[2019-01-11 12:07:38,499 INFO  L168              Benchmark]: Toolchain (without parser) took 957.72 ms. Allocated memory is still 514.9 MB. Free memory was 476.8 MB in the beginning and 409.4 MB in the end (delta: 67.4 MB). Peak memory consumption was 67.4 MB. Max. memory is 11.5 GB.
+[2019-01-11 12:07:38,505 INFO  L168              Benchmark]: AutomataScriptParser took 0.41 ms. Allocated memory is still 514.9 MB. Free memory is still 479.5 MB. There was no memory consumed. Max. memory is 11.5 GB.
+[2019-01-11 12:07:38,506 INFO  L168              Benchmark]: AutomataScriptInterpreter took 954.07 ms. Allocated memory is still 514.9 MB. Free memory was 476.8 MB in the beginning and 409.4 MB in the end (delta: 67.4 MB). Peak memory consumption was 67.4 MB. Max. memory is 11.5 GB.
+[2019-01-11 12:07:38,510 INFO  L344   ainManager$Toolchain]: #######################  End [Toolchain 1] #######################
  --- Results ---
  * Results from de.uni_freiburg.informatik.ultimate.core:
   - StatisticsResult: Toolchain Benchmarks
     Benchmark results are:
- * AutomataScriptParser took 0.40 ms. Allocated memory is still 514.9 MB. Free memory is still 480.8 MB. There was no memory consumed. Max. memory is 11.5 GB.
- * AutomataScriptInterpreter took 866.07 ms. Allocated memory is still 514.9 MB. Free memory was 478.1 MB in the beginning and 426.8 MB in the end (delta: 51.3 MB). Peak memory consumption was 51.3 MB. Max. memory is 11.5 GB.
+ * AutomataScriptParser took 0.41 ms. Allocated memory is still 514.9 MB. Free memory is still 479.5 MB. There was no memory consumed. Max. memory is 11.5 GB.
+ * AutomataScriptInterpreter took 954.07 ms. Allocated memory is still 514.9 MB. Free memory was 476.8 MB in the beginning and 409.4 MB in the end (delta: 67.4 MB). Peak memory consumption was 67.4 MB. Max. memory is 11.5 GB.
  * Results from de.uni_freiburg.informatik.ultimate.plugins.generator.automatascriptinterpreter:
   - StatisticsResult: automata script interpreter benchmark results
-    {ATS_ID=complement(fha_1), OPERATION_NAME=complement, RUNTIME_TOTAL_MS=40}
+    {ATS_ID=complement(fha_1), OPERATION_NAME=complement, RUNTIME_TOTAL_MS=32}
   - StatisticsResult: automata script interpreter benchmark results
     {ATS_ID=intersect(nfa_0, complement(fha_1)), OPERATION_NAME=intersect, RUNTIME_TOTAL_MS=4}
   - StatisticsResult: automata script interpreter benchmark results
-    {ATS_ID=complement(fha_2), OPERATION_NAME=complement, RUNTIME_TOTAL_MS=31}
+    {ATS_ID=complement(fha_2), OPERATION_NAME=complement, RUNTIME_TOTAL_MS=7}
   - StatisticsResult: automata script interpreter benchmark results
     {ATS_ID=intersect(nfa_1, complement(fha_2)), OPERATION_NAME=intersect, RUNTIME_TOTAL_MS=3}
   - StatisticsResult: automata script interpreter benchmark results
-    {ATS_ID=complement(fha_3), OPERATION_NAME=complement, RUNTIME_TOTAL_MS=27}
+    {ATS_ID=complement(fha_3), OPERATION_NAME=complement, RUNTIME_TOTAL_MS=11}
   - StatisticsResult: automata script interpreter benchmark results
     {ATS_ID=intersect(nfa_2, complement(fha_3)), OPERATION_NAME=intersect, RUNTIME_TOTAL_MS=2}
   - StatisticsResult: automata script interpreter benchmark results
-    {ATS_ID=complement(fha_4), OPERATION_NAME=complement, RUNTIME_TOTAL_MS=71}
+    {ATS_ID=complement(fha_4), OPERATION_NAME=complement, RUNTIME_TOTAL_MS=16}
   - StatisticsResult: automata script interpreter benchmark results
     {ATS_ID=intersect(nfa_3, complement(fha_4)), OPERATION_NAME=intersect, RUNTIME_TOTAL_MS=2}
   - StatisticsResult: automata script interpreter benchmark results
-    {ATS_ID=complement(fha_5), OPERATION_NAME=complement, RUNTIME_TOTAL_MS=3}
+    {ATS_ID=complement(fha_5), OPERATION_NAME=complement, RUNTIME_TOTAL_MS=16}
   - StatisticsResult: automata script interpreter benchmark results
-    {ATS_ID=intersect(nfa_4, complement(fha_5)), OPERATION_NAME=intersect, RUNTIME_TOTAL_MS=3}
+    {ATS_ID=intersect(nfa_4, complement(fha_5)), OPERATION_NAME=intersect, RUNTIME_TOTAL_MS=2}
   - StatisticsResult: automata script interpreter benchmark results
-    {ATS_ID=isEmpty(nfa_5), OPERATION_NAME=isEmpty, RUNTIME_TOTAL_MS=7}
-  - GenericResultAtElement [Line: 433]: print(isEmpty(nfa_5))
+    {ATS_ID=complement(fha_6), OPERATION_NAME=complement, RUNTIME_TOTAL_MS=125}
+  - StatisticsResult: automata script interpreter benchmark results
+    {ATS_ID=intersect(nfa_5, complement(fha_6)), OPERATION_NAME=intersect, RUNTIME_TOTAL_MS=3}
+  - StatisticsResult: automata script interpreter benchmark results
+    {ATS_ID=complement(fha_7), OPERATION_NAME=complement, RUNTIME_TOTAL_MS=8}
+  - StatisticsResult: automata script interpreter benchmark results
+    {ATS_ID=intersect(nfa_6, complement(fha_7)), OPERATION_NAME=intersect, RUNTIME_TOTAL_MS=4}
+  - StatisticsResult: automata script interpreter benchmark results
+    {ATS_ID=complement(fha_8), OPERATION_NAME=complement, RUNTIME_TOTAL_MS=8}
+  - StatisticsResult: automata script interpreter benchmark results
+    {ATS_ID=intersect(nfa_7, complement(fha_8)), OPERATION_NAME=intersect, RUNTIME_TOTAL_MS=3}
+  - StatisticsResult: automata script interpreter benchmark results
+    {ATS_ID=isEmpty(nfa_8), OPERATION_NAME=isEmpty, RUNTIME_TOTAL_MS=6}
+  - GenericResultAtElement [Line: 829]: print(isEmpty(nfa_8))
     true
   - AutomataScriptInterpreterOverallResult: Finished interpretation of automata script.
      You have not used any assert statement in your automata script. Assert statements can be used to check Boolean results.
